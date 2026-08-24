@@ -235,37 +235,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
           </div>
         </section>
 
-        <!-- FOOTER -->
-        <footer class="og1-footer">
-          <div class="og1-container">
-            <div class="og1-footer-inner">
-              <div class="og1-footer-top">
-                <div>
-                  <span style="font-size:1rem;font-weight:800;color:white;letter-spacing:-0.01em;">Ontwikkel Guru</span>
-                  <p class="og1-footer-tagline">AI die werkt voor mensen.</p>
-                </div>
-                <div>
-                  <p class="og1-footer-col-title">Navigatie</p>
-                  <div class="og1-footer-links">
-                    <a href="#">Home</a><a href="#">Portfolio</a><a href="#">Aanbod</a><a href="#">Over ons</a><a href="#">Contact</a>
-                  </div>
-                </div>
-                <div>
-                  <p class="og1-footer-col-title">Contact</p>
-                  <div class="og1-footer-links">
-                    <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a>
-                    <a href="https://businessbaas.com" target="_blank" rel="noopener">BusinessBaas</a>
-                  </div>
-                </div>
-              </div>
-              <div class="og1-footer-bottom">
-                <span class="og1-footer-copyright">&copy; 2026 Ontwikkel Guru. Alle rechten voorbehouden.</span>
-                <span class="og1-footer-copyright">Onderdeel van BusinessBaas</span>
-              </div>
-            </div>
-          </div>
-        </footer>
-
         <!-- VIDEO MODAL -->
         <div class="og1-video-modal" id="og1p-video-modal">
           <div class="og1-video-modal-inner" id="og1p-modal-inner">
