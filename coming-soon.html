@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ontwikkel Guru — Coming Soon</title>
+  <meta name="description" content="Ontwikkel Guru helpt Nederlandse bedrijven met AI. Binnenkort live." />
+  <link rel="icon" type="image/png" href="/Beeldmerk (2026 versie v1.2).png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #182145;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
+    /* Background gradient orbs */
+    .bg-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .bg-orb-1 { width: 600px; height: 600px; background: #5C4FF6; top: -200px; right: -150px; }
+    .bg-orb-2 { width: 400px; height: 400px; background: #DDD1C4; bottom: -100px; left: -100px; }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 580px;
+      width: 100%;
+    }
+
+    .logo-wrap {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+    .logo-img { height: 56px; width: auto; mix-blend-mode: screen; }
+    .logo-name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(92,79,246,0.25);
+      border: 1px solid rgba(92,79,246,0.5);
+      color: #a89cf8;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    h1 span { color: #8B7EFA; }
+
+    p.lead {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.75;
+      margin-bottom: 40px;
+    }
+
+    /* Email form */
+    .form-wrap {
+      display: flex;
+      gap: 0;
+      max-width: 440px;
+      margin: 0 auto 32px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.3);
+    }
+    .form-wrap input[type="email"] {
+      flex: 1;
+      padding: 15px 20px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      border: none;
+      background: rgba(255,255,255,0.96);
+      color: #1a1a2e;
+      outline: none;
+    }
+    .form-wrap input[type="email"]::placeholder { color: #888; }
+    .form-wrap button {
+      padding: 15px 24px;
+      background: #5C4FF6;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .form-wrap button:hover { background: #4a3de0; }
+
+    .form-success-msg {
+      display: none;
+      background: rgba(74,222,128,0.12);
+      border: 1px solid rgba(74,222,128,0.3);
+      color: #4ade80;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .form-success-msg.show { display: block; }
+
+    /* Services teaser */
+    .services-teaser {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .service-pill {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.75);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 7px 16px;
+      border-radius: 20px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: rgba(255,255,255,0.2);
+      margin: 0 auto 28px;
+    }
+
+    .contact-line {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+    }
+    .contact-line a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .contact-line a:hover { color: #fff; }
+
+    @media (max-width: 480px) {
+      .form-wrap { flex-direction: column; border-radius: 10px; }
+      .form-wrap input[type="email"], .form-wrap button { border-radius: 0; }
+      .form-wrap input[type="email"] { border-radius: 10px 10px 0 0; }
+      .form-wrap button { border-radius: 0 0 10px 10px; padding: 14px 20px; }
+      .logo-name { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+
+<div class="content">
+
+  <div class="logo-wrap">
+    <img src="/Beeldmerk (2026 versie v1.2).png" alt="Ontwikkel Guru" class="logo-img" />
+    <span class="logo-name">Ontwikkel Guru</span>
+  </div>
+
+  <div class="badge">Binnenkort live</div>
+
+  <h1>AI die werkt<br />voor <span>mensen</span></h1>
+
+  <p class="lead">
+    We helpen Nederlandse bedrijven om AI echt te laten landen — via workshops, automatisering, video en strategie. Schrijf je in en wij laten je als eerste weten wanneer we live gaan.
+  </p>
+
+  <form id="notify-form" class="form-wrap" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="e725eb57-1af1-45a5-87a9-ff25ad540eb0" />
+    <input type="hidden" name="subject" value="Nieuwe aanmelding Coming Soon — Ontwikkel Guru" />
+    <input type="hidden" name="redirect" value="false" />
+    <input type="hidden" name="to" value="info@ontwikkel.guru" />
+    <input type="email" name="email" placeholder="jouw@emailadres.nl" required aria-label="E-mailadres" />
+    <button type="submit">Houd me op de hoogte</button>
+  </form>
+
+  <div id="notify-success" class="form-success-msg">
+    ✓ Gelukt! Je hoort het als eerste wanneer we live gaan.
+  </div>
+
+  <div class="services-teaser">
+    <span class="service-pill">AI Workshops</span>
+    <span class="service-pill">AI Automatisering</span>
+    <span class="service-pill">AI Avatar &amp; Video</span>
+    <span class="service-pill">AI Campagnevideo</span>
+    <span class="service-pill">AI Strategie</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="contact-line">
+    Vragen? Mail naar <a href="mailto:info@ontwikkelguru.nl">info@ontwikkelguru.nl</a>
+    &nbsp;&middot;&nbsp;
+    Onderdeel van <a href="https://www.businessbaas.com" target="_blank" rel="noopener">BusinessBaas</a>
+  </p>
+
+</div>
+
+<script type="module" src="/src/js/coming-soon.js"></script>
+</body>
+</html>
