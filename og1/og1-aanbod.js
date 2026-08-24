@@ -43,29 +43,7 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
 .og1-btn-primary:hover { background: #4a3de0; border-color: #4a3de0; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(92,79,246,0.35); }
 .og1-btn-outline { background: transparent; color: var(--color-indigo); border-color: var(--color-indigo); }
 .og1-btn-outline:hover { background: var(--color-indigo); color: var(--color-white); transform: translateY(-1px); }
-.og1-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  background: var(--color-navy);
-  transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
-}
-.og1-nav-scrolled { background: rgba(24,33,69,0.97); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
-.og1-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1220px; margin: 0 auto; }
-.og1-nav-logo { display: flex; align-items: center; gap: 10px; }
-.og1-nav-links { display: flex; align-items: center; gap: 8px; }
-.og1-nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 500; padding: 8px 12px; border-radius: 6px; transition: var(--transition); }
-.og1-nav-links a:hover, .og1-nav-links a.active { color: var(--color-white); background: rgba(255,255,255,0.1); }
-.og1-nav-cta { background: var(--color-indigo) !important; color: var(--color-white) !important; padding: 9px 18px !important; border-radius: var(--radius-btn) !important; font-weight: 700 !important; }
-.og1-nav-hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; background: none; border: none; cursor: pointer; }
-.og1-nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--color-white); border-radius: 2px; transition: var(--transition); }
-.og1-nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.og1-nav-hamburger.active span:nth-child(2) { opacity: 0; }
-.og1-nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.og1-nav-mobile { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--color-navy); z-index: 999; padding: 16px 24px 24px; flex-direction: column; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
-.og1-nav-mobile.open { display: flex; }
-.og1-nav-mobile a { color: rgba(255,255,255,0.85); font-size: 1rem; font-weight: 500; padding: 12px 16px; border-radius: 8px; transition: var(--transition); }
-.og1-nav-mobile a:hover { color: var(--color-white); background: rgba(255,255,255,0.08); }
-.og1-nav-mobile .og1-nav-cta { background: var(--color-indigo) !important; color: var(--color-white) !important; margin-top: 8px; text-align: center; display: block; }
-.og1-hero-simple { background: var(--color-navy); min-height: 280px; display: flex; align-items: center; padding: 120px 0 64px; }
+.og1-hero-simple { background: var(--color-navy); min-height: 280px; display: flex; align-items: center; padding: 48px 0 64px; }
 .og1-hero-simple h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; color: white; }
 .og1-hero-simple p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-top: 14px; }
 .og1-service-section { padding: var(--section-pad) 0; }
@@ -115,13 +93,10 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
 }
 @media (max-width: 768px) {
   :root { --section-pad: 56px; }
-  .og1-nav-links { display: none; }
-  .og1-nav-hamburger { display: flex; }
   .og1-footer-top { grid-template-columns: 1fr; gap: 24px; }
 }
 @media (max-width: 480px) {
   .og1-container { padding: 0 16px; }
-  .og1-nav-inner { padding: 0 16px; }
 }
 `;
 
@@ -226,32 +201,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       `).join('');
 
       this.innerHTML = `
-        <!-- NAV -->
-        <nav class="og1-nav" id="og1a-nav">
-          <div class="og1-nav-inner">
-            <a href="#" class="og1-nav-logo">
-              <span style="font-size:1rem;font-weight:800;color:white;letter-spacing:-0.01em;">Ontwikkel Guru</span>
-            </a>
-            <div class="og1-nav-links">
-              <a href="#">Home</a>
-              <a href="#">Portfolio</a>
-              <a href="#" class="active">Aanbod</a>
-              <a href="#">Over ons</a>
-              <a href="#" class="og1-nav-cta">Gratis intake</a>
-            </div>
-            <button class="og1-nav-hamburger" id="og1a-hamburger" aria-label="Menu">
-              <span></span><span></span><span></span>
-            </button>
-          </div>
-        </nav>
-        <div class="og1-nav-mobile" id="og1a-mobile-menu">
-          <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Aanbod</a>
-          <a href="#">Over ons</a>
-          <a href="#" class="og1-nav-cta">Gratis intake</a>
-        </div>
-
         <!-- HERO -->
         <div class="og1-hero-simple">
           <div class="og1-container">
@@ -315,16 +264,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
     }
 
     _setup() {
-      // Nav hamburger
-      const hamburger = this.querySelector('#og1a-hamburger');
-      const mobileMenu = this.querySelector('#og1a-mobile-menu');
-      if (hamburger && mobileMenu) {
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active');
-          mobileMenu.classList.toggle('open');
-        });
-      }
-
       // FAQ accordion
       this.querySelectorAll('.og1-faq-item').forEach(item => {
         const btn = item.querySelector('.og1-faq-question');

@@ -64,34 +64,11 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
 .og1-btn-outline:hover { background: var(--color-indigo); color: var(--color-white); transform: translateY(-1px); }
 .og1-btn-white { background: var(--color-white); color: var(--color-navy); border-color: var(--color-white); }
 .og1-btn-white:hover { background: var(--color-sand); transform: translateY(-1px); }
-.og1-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  transition: background var(--transition), backdrop-filter var(--transition), box-shadow var(--transition);
-}
-.og1-nav-transparent { background: transparent; }
-.og1-nav-scrolled { background: rgba(24,33,69,0.97); backdrop-filter: blur(12px); box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
-.og1-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1220px; margin: 0 auto; }
-.og1-nav-logo { display: flex; align-items: center; gap: 10px; }
-.og1-nav-links { display: flex; align-items: center; gap: 8px; }
-.og1-nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 500; padding: 8px 12px; border-radius: 6px; transition: var(--transition); }
-.og1-nav-links a:hover, .og1-nav-links a.active { color: var(--color-white); background: rgba(255,255,255,0.1); }
-.og1-nav-cta { background: var(--color-indigo) !important; color: var(--color-white) !important; padding: 9px 18px !important; border-radius: var(--radius-btn) !important; font-weight: 700 !important; }
-.og1-nav-cta:hover { background: #4a3de0 !important; }
-.og1-nav-hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; background: none; border: none; cursor: pointer; }
-.og1-nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--color-white); border-radius: 2px; transition: var(--transition); }
-.og1-nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.og1-nav-hamburger.active span:nth-child(2) { opacity: 0; }
-.og1-nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.og1-nav-mobile { display: none; position: fixed; top: 68px; left: 0; right: 0; background: var(--color-navy); z-index: 999; padding: 16px 24px 24px; flex-direction: column; gap: 4px; border-top: 1px solid rgba(255,255,255,0.1); }
-.og1-nav-mobile.open { display: flex; }
-.og1-nav-mobile a { color: rgba(255,255,255,0.85); font-size: 1rem; font-weight: 500; padding: 12px 16px; border-radius: 8px; transition: var(--transition); }
-.og1-nav-mobile a:hover { color: var(--color-white); background: rgba(255,255,255,0.08); }
-.og1-nav-mobile .og1-nav-cta { background: var(--color-indigo) !important; color: var(--color-white) !important; margin-top: 8px; text-align: center; display: block; }
 .og1-hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
 .og1-hero-video-bg { position: absolute; inset: 0; z-index: 0; }
 .og1-hero-video-bg video { width: 100%; height: 100%; object-fit: cover; }
 .og1-hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(24,33,69,0.82) 0%, rgba(24,33,69,0.65) 100%); }
-.og1-hero-content { position: relative; z-index: 1; width: 100%; padding: 120px 0 80px; }
+.og1-hero-content { position: relative; z-index: 1; width: 100%; padding: 60px 0 80px; }
 .og1-hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; margin-bottom: 40px; }
 .og1-trust-signal { display: flex; flex-wrap: wrap; gap: 20px; }
 .og1-trust-item { display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.8); font-size: 0.875rem; font-weight: 500; }
@@ -174,8 +151,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
 }
 @media (max-width: 768px) {
   :root { --section-pad: 56px; }
-  .og1-nav-links { display: none; }
-  .og1-nav-hamburger { display: flex; }
   .og1-grid-2 { grid-template-columns: 1fr; }
   .og1-about-split { grid-template-columns: 1fr; gap: 32px; }
   .og1-portfolio-preview-grid { grid-template-columns: 1fr; }
@@ -188,7 +163,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
 }
 @media (max-width: 480px) {
   .og1-container { padding: 0 16px; }
-  .og1-nav-inner { padding: 0 16px; }
 }
 `;
 
@@ -217,32 +191,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       this._init = true;
       this.style.display = 'block';
       this.innerHTML = `
-        <!-- NAV -->
-        <nav class="og1-nav og1-nav-transparent" id="og1-nav">
-          <div class="og1-nav-inner">
-            <a href="#" class="og1-nav-logo">
-              <span style="font-size:1rem;font-weight:800;color:white;letter-spacing:-0.01em;">Ontwikkel Guru</span>
-            </a>
-            <div class="og1-nav-links">
-              <a href="#">Home</a>
-              <a href="#">Portfolio</a>
-              <a href="#">Aanbod</a>
-              <a href="#">Over ons</a>
-              <a href="#" class="og1-nav-cta">Gratis intake</a>
-            </div>
-            <button class="og1-nav-hamburger" id="og1-hamburger" aria-label="Menu">
-              <span></span><span></span><span></span>
-            </button>
-          </div>
-        </nav>
-        <div class="og1-nav-mobile" id="og1-mobile-menu">
-          <a href="#">Home</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Aanbod</a>
-          <a href="#">Over ons</a>
-          <a href="#" class="og1-nav-cta">Gratis intake</a>
-        </div>
-
         <!-- HERO -->
         <section class="og1-hero">
           <div class="og1-hero-video-bg">
@@ -519,29 +467,6 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
           `;
           card.addEventListener('click', () => this._openModal(v));
           grid.appendChild(card);
-        });
-      }
-
-      // Scroll nav
-      const nav = this.querySelector('#og1-nav');
-      const onScroll = () => {
-        if (window.scrollY > 40) {
-          nav.classList.remove('og1-nav-transparent');
-          nav.classList.add('og1-nav-scrolled');
-        } else {
-          nav.classList.remove('og1-nav-scrolled');
-          nav.classList.add('og1-nav-transparent');
-        }
-      };
-      window.addEventListener('scroll', onScroll);
-
-      // Hamburger
-      const hamburger = this.querySelector('#og1-hamburger');
-      const mobileMenu = this.querySelector('#og1-mobile-menu');
-      if (hamburger && mobileMenu) {
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active');
-          mobileMenu.classList.toggle('open');
         });
       }
 
