@@ -3,100 +3,181 @@
     const l = document.createElement('link');
     l.id = 'og1-fonts';
     l.rel = 'stylesheet';
-    l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap';
+    l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap';
     document.head.appendChild(l);
   }
 
   const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-  --color-navy: #182145;
-  --color-indigo: #5C4FF6;
-  --color-sand: #DDD1C4;
-  --color-warm-white: #F8F7F3;
-  --color-white: #ffffff;
-  --color-text: #1a1a2e;
-  --color-text-muted: #555566;
-  --color-border: #e8e5e0;
-  --radius-card: 14px;
-  --radius-btn: 8px;
-  --shadow-card: 0 4px 24px rgba(24,33,69,0.10);
-  --shadow-hover: 0 8px 40px rgba(24,33,69,0.18);
-  --transition: 0.22s ease;
-  --container-max: 1180px;
-  --section-pad: 88px;
+  --navy:         #182145;
+  --navy-deep:    #0d1630;
+  --indigo:       #5C4FF6;
+  --indigo-light: #7c72f8;
+  --sand:         #DDD1C4;
+  --sand-light:   #eceae1;
+  --warm-white:   #F8F7F3;
+  --white:        #ffffff;
+  --text-dark:    #0d1526;
+  --text-mid:     #4a5568;
+  --radius-sm:    8px;
+  --radius-md:    16px;
+  --radius-lg:    24px;
+  --radius-xl:    40px;
+  --shadow-card:  0 4px 24px rgba(13,22,48,0.08);
+  --shadow-hover: 0 12px 48px rgba(13,22,48,0.16);
+  --transition:   0.25s cubic-bezier(0.4,0,0.2,1);
+  --container-max:1200px;
+  --section-pad:  100px;
 }
-og1-home, og1-portfolio, og1-aanbod, og1-over-ons, og1-contact, og1-coming-soon { display: block; font-family: 'Inter', sans-serif; }
-og1-home *, og1-portfolio *, og1-aanbod *, og1-over-ons *, og1-contact *, og1-coming-soon * { box-sizing: border-box; margin: 0; padding: 0; }
-og1-home a, og1-portfolio a, og1-aanbod a, og1-over-ons a, og1-contact a { color: inherit; text-decoration: none; }
-og1-home ul, og1-portfolio ul, og1-aanbod ul, og1-over-ons ul, og1-contact ul { list-style: none; }
-og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, og1-contact button { cursor: pointer; font-family: inherit; border: none; background: none; }
-.og1-container { max-width: var(--container-max); margin: 0 auto; padding: 0 24px; }
+og1-aanbod { display: block; font-family: 'Inter', system-ui, sans-serif; }
+og1-aanbod * { box-sizing: border-box; margin: 0; padding: 0; }
+og1-aanbod img { max-width: 100%; display: block; }
+og1-aanbod a { text-decoration: none; color: inherit; }
+og1-aanbod ul { list-style: none; }
+og1-aanbod button { cursor: pointer; font-family: inherit; border: none; background: none; }
+
+.og1-container  { max-width: var(--container-max); margin: 0 auto; padding: 0 2rem; }
+.og1-section    { padding: var(--section-pad) 0; }
+
+/* Typography */
+.og1-display-xl { font-size: clamp(3rem,6vw,5.5rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; }
+.og1-display-md { font-size: clamp(1.6rem,3vw,2.5rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+.og1-eyebrow    { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: 1rem; }
+
+/* Section header */
+.og1-section-header { text-align: center; margin-bottom: 4rem; }
+.og1-section-header h2 { color: var(--navy); margin-bottom: 1rem; }
+.og1-section-header p  { color: var(--text-mid); max-width: 560px; margin: 0 auto; font-size: 1.05rem; }
+
+/* Buttons — pill shape */
 .og1-btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 28px; border-radius: var(--radius-btn);
-  font-size: 1rem; font-weight: 700; transition: var(--transition);
-  cursor: pointer; text-decoration: none; border: 2px solid transparent;
-  white-space: nowrap; font-family: 'Inter', sans-serif;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 14px 28px; border-radius: var(--radius-xl);
+  font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; border: 2px solid transparent; transition: var(--transition);
+  white-space: nowrap; text-decoration: none;
 }
-.og1-btn-primary { background: var(--color-indigo); color: var(--color-white); border-color: var(--color-indigo); }
-.og1-btn-primary:hover { background: #4a3de0; border-color: #4a3de0; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(92,79,246,0.35); }
-.og1-btn-outline { background: transparent; color: var(--color-indigo); border-color: var(--color-indigo); }
-.og1-btn-outline:hover { background: var(--color-indigo); color: var(--color-white); transform: translateY(-1px); }
-.og1-hero-simple { background: var(--color-navy); min-height: 280px; display: flex; align-items: center; padding: 48px 0 64px; }
-.og1-hero-simple h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; color: white; }
-.og1-hero-simple p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-top: 14px; }
-.og1-service-section { padding: var(--section-pad) 0; }
-.og1-service-section-odd { background: var(--color-warm-white); }
-.og1-service-section-even { background: var(--color-sand); }
-.og1-service-section-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
-.og1-service-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; color: var(--color-indigo); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 10px; background: rgba(92,79,246,0.08); padding: 4px 10px; border-radius: 20px; }
-.og1-service-section h2 { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.025em; margin-bottom: 14px; }
-.og1-service-section p { color: var(--color-text-muted); line-height: 1.75; }
-.og1-service-benefits { display: flex; flex-direction: column; gap: 10px; margin: 20px 0; }
-.og1-service-benefit { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; }
-.og1-benefit-check { color: var(--color-indigo); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
-.og1-deliverables-box { background: var(--color-white); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 24px; margin-top: 24px; }
-.og1-deliverables-box h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); margin-bottom: 8px; font-weight: 600; }
-.og1-deliverables-box p { font-size: 0.9rem; color: var(--color-text); }
-.og1-service-visual { border-radius: 16px; background: var(--color-navy); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-card); }
-.og1-service-visual-icon { font-size: 5rem; opacity: 0.35; }
-.og1-faq-section { background: var(--color-navy); padding: var(--section-pad) 0; }
-.og1-faq-section h2 { color: var(--color-white); margin-bottom: 40px; text-align: center; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.025em; }
-.og1-faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
-.og1-faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
-.og1-faq-question { display: flex; justify-content: space-between; align-items: center; padding: 22px 4px; cursor: pointer; color: var(--color-white); font-weight: 600; font-size: 1rem; gap: 16px; user-select: none; background: none; border: none; width: 100%; text-align: left; font-family: 'Inter', sans-serif; }
-.og1-faq-chevron { color: var(--color-indigo); font-size: 1.1rem; transition: transform 0.25s; flex-shrink: 0; }
-.og1-faq-item.open .og1-faq-chevron { transform: rotate(180deg); }
-.og1-faq-answer { overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
-.og1-faq-answer p { color: rgba(255,255,255,0.7); font-size: 0.95rem; padding: 0 4px 20px; line-height: 1.75; }
-.og1-cta-section { background: var(--color-navy); padding: var(--section-pad) 0; text-align: center; }
-.og1-cta-section h2 { color: var(--color-white); margin-bottom: 16px; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; }
-.og1-cta-section p { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width: 540px; margin: 0 auto 36px; line-height: 1.75; }
-.og1-footer { background: #0f1629; padding: 56px 0 32px; }
-.og1-footer-inner { display: flex; flex-direction: column; gap: 40px; }
-.og1-footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: start; }
-.og1-footer-tagline { color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.6; margin-top: 8px; }
-.og1-footer-col-title { color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 14px; }
-.og1-footer-links { display: flex; flex-direction: column; gap: 10px; }
-.og1-footer-links a { color: rgba(255,255,255,0.6); font-size: 0.9rem; transition: var(--transition); }
-.og1-footer-links a:hover { color: var(--color-white); }
-.og1-footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.og1-footer-copyright { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
-.og1-fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.og1-fade-in.visible { opacity: 1; transform: none; }
-.og1-fade-in-delay-1 { transition-delay: 0.1s; }
-.og1-fade-in-delay-2 { transition-delay: 0.2s; }
+.og1-btn-lg { padding: 18px 36px; font-size: 1.05rem; }
+.og1-btn-primary  { background: var(--indigo); color: var(--white); border-color: var(--indigo); }
+.og1-btn-primary:hover  { background: var(--indigo-light); border-color: var(--indigo-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(92,79,246,0.35); }
+.og1-btn-outline  { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.4); }
+.og1-btn-outline:hover  { border-color: var(--white); background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+.og1-btn-indigo-outline { background: transparent; color: var(--indigo); border-color: var(--indigo); }
+.og1-btn-indigo-outline:hover { background: var(--indigo); color: var(--white); transform: translateY(-2px); }
+.og1-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* ════════════ HERO ════════════ */
+.og1a-hero {
+  background: var(--navy);
+  padding: 80px 0 64px;
+  position: relative; overflow: hidden;
+}
+.og1a-hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.og1a-hero-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.og1a-hero-orb {
+  position: absolute; width: 400px; height: 400px;
+  background: var(--indigo); top: -100px; right: -100px;
+  border-radius: 50%; filter: blur(80px); opacity: 0.2;
+}
+.og1a-hero-inner { position: relative; z-index: 1; }
+.og1a-eyebrow-row { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; }
+.og1a-eyebrow-line { width: 32px; height: 2px; background: var(--indigo); flex-shrink: 0; }
+.og1a-eyebrow-text { color: var(--sand); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.og1a-hero-h1 { color: var(--white); font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 1rem; }
+.og1a-hero-lead { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 520px; line-height: 1.7; margin-bottom: 2rem; }
+.og1a-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ════════════ SERVICE SECTIONS ════════════ */
+.og1a-service-section { padding: var(--section-pad) 0; }
+.og1a-service-section-light { background: var(--warm-white); }
+.og1a-service-section-alt   { background: var(--sand-light); }
+.og1a-service-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+
+/* Service tag */
+.og1a-service-tag {
+  display: inline-flex; align-items: center; padding: 5px 12px;
+  border-radius: 100px; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em;
+  background: rgba(92,79,246,0.1); color: var(--indigo); margin-bottom: 1rem;
+}
+.og1a-service-h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1rem; }
+.og1a-service-desc { color: var(--text-mid); line-height: 1.75; font-size: 1rem; margin-bottom: 1.25rem; }
+
+/* Benefits list */
+.og1a-benefits { display: flex; flex-direction: column; gap: 10px; margin: 1.25rem 0; }
+.og1a-benefit { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-dark); }
+.og1a-benefit-check { color: var(--indigo); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+
+/* Deliverables box */
+.og1a-deliverables {
+  background: var(--white); border: 1px solid rgba(0,0,0,0.06);
+  border-radius: var(--radius-md); padding: 20px 24px; margin-top: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+.og1a-deliverables h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-mid); margin-bottom: 8px; font-weight: 700; }
+.og1a-deliverables p  { font-size: 0.9rem; color: var(--text-dark); }
+
+/* Visual placeholder card */
+.og1a-service-visual {
+  background: var(--navy); border-radius: var(--radius-xl);
+  aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-card); position: relative; overflow: hidden;
+}
+.og1a-service-visual::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(92,79,246,0.2) 0%, transparent 60%);
+}
+.og1a-service-visual-icon { font-size: 5rem; opacity: 0.35; position: relative; z-index: 1; }
+
+/* ════════════ FAQ ════════════ */
+.og1a-faq { background: var(--navy-deep); padding: var(--section-pad) 0; }
+.og1a-faq-header { text-align: center; margin-bottom: 3rem; }
+.og1a-faq-header h2 { color: var(--white); margin-bottom: 0.75rem; }
+.og1a-faq-header p  { color: rgba(255,255,255,0.6); font-size: 1rem; }
+.og1a-faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; }
+.og1a-faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+.og1a-faq-question {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 4px; cursor: pointer; color: var(--white); font-weight: 600;
+  font-size: 1rem; gap: 16px; user-select: none;
+  background: none; border: none; width: 100%; text-align: left; font-family: 'Inter', sans-serif;
+}
+.og1a-faq-chevron { color: var(--indigo-light); font-size: 1.1rem; transition: transform 0.25s; flex-shrink: 0; }
+.og1a-faq-item.open .og1a-faq-chevron { transform: rotate(180deg); }
+.og1a-faq-answer { overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
+.og1a-faq-answer p { color: rgba(255,255,255,0.7); font-size: 0.95rem; padding: 0 4px 20px; line-height: 1.75; }
+
+/* ════════════ CTA ════════════ */
+.og1a-cta { background: var(--navy); position: relative; overflow: hidden; padding: var(--section-pad) 0; text-align: center; }
+.og1a-cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; width: 500px; height: 500px; background: var(--indigo); top: -100px; right: -100px; pointer-events: none; }
+.og1a-cta-inner { position: relative; z-index: 1; }
+.og1a-cta-inner h2 { color: var(--white); margin-bottom: 1rem; }
+.og1a-cta-inner p  { color: rgba(255,255,255,0.65); font-size: 1.05rem; margin-bottom: 2.5rem; max-width: 540px; margin-left: auto; margin-right: auto; }
+.og1a-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ════════════ REVEAL ════════════ */
+.og1a-r { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.og1a-r.visible { opacity: 1; transform: none; }
+.og1a-r-d1 { transition-delay: 0.1s; }
+.og1a-r-d2 { transition-delay: 0.2s; }
+.og1a-r-d3 { transition-delay: 0.3s; }
+
+/* ════════════ RESPONSIVE ════════════ */
 @media (max-width: 1024px) {
-  .og1-service-section-inner { grid-template-columns: 1fr; gap: 32px; }
-  .og1-footer-top { grid-template-columns: 1fr 1fr; }
+  .og1a-service-inner { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 @media (max-width: 768px) {
-  :root { --section-pad: 56px; }
-  .og1-footer-top { grid-template-columns: 1fr; gap: 24px; }
+  :root { --section-pad: 64px; }
+  .og1a-hero { padding: 64px 0 48px; }
+  .og1a-hero-actions { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
-  .og1-container { padding: 0 16px; }
+  .og1-container { padding: 0 1rem; }
 }
 `;
 
@@ -155,32 +236,36 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       this.style.display = 'block';
 
       const serviceHTML = SERVICES.map((s, i) => {
-        const bgClass = i % 2 === 0 ? 'og1-service-section-odd' : 'og1-service-section-even';
+        const sectionClass = i % 2 === 0 ? 'og1a-service-section-light' : 'og1a-service-section-alt';
         const benefitsHTML = s.benefits.map(b => `
-          <div class="og1-service-benefit">
-            <span class="og1-benefit-check">✓</span>
+          <div class="og1a-benefit">
+            <span class="og1a-benefit-check">✓</span>
             <span>${b}</span>
           </div>
         `).join('');
-        const reverse = i % 2 === 1 ? 'direction:rtl' : '';
-        const contentDir = i % 2 === 1 ? 'direction:ltr' : '';
+        // Alternate layout direction with RTL trick
+        const innerStyle = i % 2 === 1 ? 'direction:rtl' : '';
+        const contentStyle = i % 2 === 1 ? 'direction:ltr' : '';
         return `
-          <section class="og1-service-section ${bgClass}">
+          <section class="og1a-service-section ${sectionClass}">
             <div class="og1-container">
-              <div class="og1-service-section-inner" style="${reverse}">
-                <div style="${contentDir}" class="og1-fade-in">
-                  <span class="og1-service-tag">${s.num} — ${s.title}</span>
-                  <h2>${s.title}</h2>
-                  <p>${s.desc}</p>
-                  <div class="og1-service-benefits">${benefitsHTML}</div>
-                  <div class="og1-deliverables-box">
+              <div class="og1a-service-inner" style="${innerStyle}">
+                <div style="${contentStyle}" class="og1a-r">
+                  <span class="og1a-service-tag">${s.num} — ${s.title}</span>
+                  <h2 class="og1a-service-h2">${s.title}</h2>
+                  <p class="og1a-service-desc">${s.desc}</p>
+                  <div class="og1a-benefits">${benefitsHTML}</div>
+                  <div class="og1a-deliverables">
                     <h4>Wat je ontvangt</h4>
                     <p>${s.deliverables}</p>
                   </div>
-                  <a href="#" class="og1-btn og1-btn-primary" style="margin-top:24px;">Meer weten →</a>
+                  <a href="#" class="og1-btn og1-btn-primary og1a-r og1a-r-d1" style="margin-top:1.5rem;">
+                    Meer weten
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
                 </div>
-                <div class="og1-service-visual og1-fade-in og1-fade-in-delay-1" style="${contentDir}">
-                  <span class="og1-service-visual-icon">${s.icon}</span>
+                <div class="og1a-service-visual og1a-r og1a-r-d1" style="${contentStyle}">
+                  <span class="og1a-service-visual-icon">${s.icon}</span>
                 </div>
               </div>
             </div>
@@ -189,62 +274,89 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       }).join('');
 
       const faqHTML = FAQS.map(f => `
-        <div class="og1-faq-item">
-          <button class="og1-faq-question">
+        <div class="og1a-faq-item">
+          <button class="og1a-faq-question">
             <span>${f.q}</span>
-            <span class="og1-faq-chevron">&#8964;</span>
+            <span class="og1a-faq-chevron">&#8964;</span>
           </button>
-          <div class="og1-faq-answer">
+          <div class="og1a-faq-answer">
             <p>${f.a}</p>
           </div>
         </div>
       `).join('');
 
       this.innerHTML = `
-        <!-- HERO -->
-        <div class="og1-hero-simple">
-          <div class="og1-container">
-            <h1>Wat wij voor je doen</h1>
-            <p>Vijf diensten, één doel: AI die concreet resultaat oplevert voor jouw organisatie.</p>
+        <!-- ══ HERO ══ -->
+        <section class="og1a-hero">
+          <div class="og1a-hero-bg">
+            <div class="og1a-hero-grid"></div>
+            <div class="og1a-hero-orb"></div>
           </div>
-        </div>
+          <div class="og1-container">
+            <div class="og1a-hero-inner">
+              <div class="og1a-eyebrow-row">
+                <div class="og1a-eyebrow-line"></div>
+                <span class="og1a-eyebrow-text">Ons aanbod</span>
+              </div>
+              <h1 class="og1a-hero-h1">Wat wij voor je doen</h1>
+              <p class="og1a-hero-lead">Vijf diensten, één doel: AI die concreet resultaat oplevert voor jouw organisatie.</p>
+              <div class="og1a-hero-actions">
+                <a href="#" class="og1-btn og1-btn-primary">
+                  Gratis intake plannen
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#" class="og1-btn og1-btn-outline">Bekijk het portfolio</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <!-- SERVICE SECTIONS -->
+        <!-- ══ SERVICE SECTIONS ══ -->
         ${serviceHTML}
 
-        <!-- FAQ -->
-        <section class="og1-faq-section">
+        <!-- ══ FAQ ══ -->
+        <section class="og1a-faq">
           <div class="og1-container">
-            <h2>Veelgestelde vragen</h2>
-            <div class="og1-faq-list">${faqHTML}</div>
+            <div class="og1a-faq-header og1a-r">
+              <span class="og1-eyebrow" style="color:var(--sand)">FAQ</span>
+              <h2 class="og1-display-md">Veelgestelde vragen</h2>
+              <p>Alles wat je wilt weten, beknopt beantwoord.</p>
+            </div>
+            <div class="og1a-faq-list">${faqHTML}</div>
           </div>
         </section>
 
-        <!-- CTA -->
-        <section class="og1-cta-section">
+        <!-- ══ CTA ══ -->
+        <section class="og1a-cta">
+          <div class="og1a-cta-orb"></div>
           <div class="og1-container">
-            <h2>Klaar om te beginnen?</h2>
-            <p>Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen.</p>
-            <a href="#" class="og1-btn og1-btn-primary" style="padding:16px 36px;font-size:1.05rem;">Gratis intake plannen</a>
+            <div class="og1a-cta-inner">
+              <span class="og1-eyebrow" style="color:var(--sand)">Nieuwsgierig?</span>
+              <h2 class="og1-display-md og1a-r">Klaar om te beginnen?</h2>
+              <p class="og1a-r og1a-r-d1">Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen.</p>
+              <div class="og1a-cta-actions og1a-r og1a-r-d2">
+                <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
+                <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het portfolio</a>
+              </div>
+            </div>
           </div>
         </section>
-
       `;
       this._setup();
     }
 
     _setup() {
       // FAQ accordion
-      this.querySelectorAll('.og1-faq-item').forEach(item => {
-        const btn = item.querySelector('.og1-faq-question');
-        const answer = item.querySelector('.og1-faq-answer');
+      this.querySelectorAll('.og1a-faq-item').forEach(item => {
+        const btn = item.querySelector('.og1a-faq-question');
+        const answer = item.querySelector('.og1a-faq-answer');
         if (btn && answer) {
           btn.addEventListener('click', () => {
             const isOpen = item.classList.contains('open');
             // Close all
-            this.querySelectorAll('.og1-faq-item').forEach(i => {
+            this.querySelectorAll('.og1a-faq-item').forEach(i => {
               i.classList.remove('open');
-              const a = i.querySelector('.og1-faq-answer');
+              const a = i.querySelector('.og1a-faq-answer');
               if (a) a.style.maxHeight = '0';
             });
             if (!isOpen) {
@@ -255,11 +367,11 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
         }
       });
 
-      // Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      // Scroll reveal
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
       }, { threshold: 0.08 });
-      this.querySelectorAll('.og1-fade-in').forEach(el => observer.observe(el));
+      this.querySelectorAll('.og1a-r').forEach(el => io.observe(el));
     }
   }
 

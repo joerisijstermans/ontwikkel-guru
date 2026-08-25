@@ -3,112 +3,206 @@
     const l = document.createElement('link');
     l.id = 'og1-fonts';
     l.rel = 'stylesheet';
-    l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap';
+    l.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap';
     document.head.appendChild(l);
   }
 
   const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 :root {
-  --color-navy: #182145;
-  --color-indigo: #5C4FF6;
-  --color-sand: #DDD1C4;
-  --color-warm-white: #F8F7F3;
-  --color-white: #ffffff;
-  --color-text: #1a1a2e;
-  --color-text-muted: #555566;
-  --color-border: #e8e5e0;
-  --radius-card: 14px;
-  --radius-btn: 8px;
-  --shadow-card: 0 4px 24px rgba(24,33,69,0.10);
-  --shadow-hover: 0 8px 40px rgba(24,33,69,0.18);
-  --transition: 0.22s ease;
-  --container-max: 1180px;
-  --section-pad: 88px;
+  --navy:         #182145;
+  --navy-deep:    #0d1630;
+  --indigo:       #5C4FF6;
+  --indigo-light: #7c72f8;
+  --sand:         #DDD1C4;
+  --sand-light:   #eceae1;
+  --warm-white:   #F8F7F3;
+  --white:        #ffffff;
+  --text-dark:    #0d1526;
+  --text-mid:     #4a5568;
+  --radius-sm:    8px;
+  --radius-md:    16px;
+  --radius-lg:    24px;
+  --radius-xl:    40px;
+  --shadow-card:  0 4px 24px rgba(13,22,48,0.08);
+  --shadow-hover: 0 12px 48px rgba(13,22,48,0.16);
+  --transition:   0.25s cubic-bezier(0.4,0,0.2,1);
+  --container-max:1200px;
+  --section-pad:  100px;
 }
-og1-home, og1-portfolio, og1-aanbod, og1-over-ons, og1-contact, og1-coming-soon { display: block; font-family: 'Inter', sans-serif; }
-og1-home *, og1-portfolio *, og1-aanbod *, og1-over-ons *, og1-contact *, og1-coming-soon * { box-sizing: border-box; margin: 0; padding: 0; }
-og1-home a, og1-portfolio a, og1-aanbod a, og1-over-ons a, og1-contact a { color: inherit; text-decoration: none; }
-og1-home ul, og1-portfolio ul, og1-aanbod ul, og1-over-ons ul, og1-contact ul { list-style: none; }
-og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, og1-contact button { cursor: pointer; font-family: inherit; border: none; background: none; }
-.og1-container { max-width: var(--container-max); margin: 0 auto; padding: 0 24px; }
+og1-portfolio { display: block; font-family: 'Inter', system-ui, sans-serif; }
+og1-portfolio * { box-sizing: border-box; margin: 0; padding: 0; }
+og1-portfolio img { max-width: 100%; display: block; }
+og1-portfolio a { text-decoration: none; color: inherit; }
+og1-portfolio ul { list-style: none; }
+og1-portfolio button { cursor: pointer; font-family: inherit; border: none; background: none; }
+
+.og1-container  { max-width: var(--container-max); margin: 0 auto; padding: 0 2rem; }
+.og1-section    { padding: var(--section-pad) 0; }
+
+/* Typography */
+.og1-display-xl { font-size: clamp(3rem,6vw,5.5rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.03em; }
+.og1-display-md { font-size: clamp(1.6rem,3vw,2.5rem); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
+.og1-eyebrow    { display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--indigo); margin-bottom: 1rem; }
+
+/* Section header */
+.og1-section-header { text-align: center; margin-bottom: 4rem; }
+.og1-section-header h2 { color: var(--navy); margin-bottom: 1rem; }
+.og1-section-header p  { color: var(--text-mid); max-width: 560px; margin: 0 auto; font-size: 1.05rem; }
+
+/* Buttons — pill shape */
 .og1-btn {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 28px; border-radius: var(--radius-btn);
-  font-size: 1rem; font-weight: 700; transition: var(--transition);
-  cursor: pointer; text-decoration: none; border: 2px solid transparent;
-  white-space: nowrap; font-family: 'Inter', sans-serif;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 14px 28px; border-radius: var(--radius-xl);
+  font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; border: 2px solid transparent; transition: var(--transition);
+  white-space: nowrap; text-decoration: none;
 }
-.og1-btn-primary { background: var(--color-indigo); color: var(--color-white); border-color: var(--color-indigo); }
-.og1-btn-primary:hover { background: #4a3de0; border-color: #4a3de0; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(92,79,246,0.35); }
-.og1-btn-outline { background: transparent; color: var(--color-indigo); border-color: var(--color-indigo); }
-.og1-btn-outline:hover { background: var(--color-indigo); color: var(--color-white); transform: translateY(-1px); }
-.og1-hero-simple { background: var(--color-navy); min-height: 280px; display: flex; align-items: center; padding: 48px 0 64px; }
-.og1-hero-simple h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; color: white; }
-.og1-hero-simple p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-top: 14px; }
-.og1-portfolio-filter-bar { position: sticky; top: 0; z-index: 100; background: var(--color-warm-white); border-bottom: 1px solid var(--color-border); padding: 16px 0; }
-.og1-filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
-.og1-filter-btn { background: transparent; color: var(--color-text-muted); border: 1.5px solid var(--color-border); border-radius: 20px; padding: 8px 18px; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: var(--transition); font-family: 'Inter', sans-serif; }
-.og1-filter-btn:hover { border-color: var(--color-indigo); color: var(--color-indigo); }
-.og1-filter-btn.active { background: var(--color-indigo); color: white; border-color: var(--color-indigo); }
-.og1-portfolio-intro-note { background: rgba(92,79,246,0.06); border: 1px solid rgba(92,79,246,0.15); border-radius: 8px; padding: 12px 18px; font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 32px; font-style: italic; }
-.og1-portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.og1-portfolio-card { border-radius: var(--radius-card); overflow: hidden; box-shadow: var(--shadow-card); cursor: pointer; position: relative; background: #0a0a0a; transition: var(--transition); }
-.og1-portfolio-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
-.og1-card-thumb-wrap { position: relative; overflow: hidden; }
-.og1-card-thumb-wrap.aspect-16-9 { aspect-ratio: 16/9; }
-.og1-card-thumb-wrap.aspect-9-16 { aspect-ratio: 9/16; max-height: 320px; }
-.og1-card-thumb { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-.og1-portfolio-card:hover .og1-card-thumb { transform: scale(1.04); }
-.og1-card-play-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(24,33,69,0); transition: background 0.3s; }
-.og1-portfolio-card:hover .og1-card-play-overlay { background: rgba(24,33,69,0.45); }
-.og1-card-play-btn { width: 52px; height: 52px; background: rgba(255,255,255,0.92); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--color-navy); padding-left: 3px; opacity: 0; transform: scale(0.8); transition: var(--transition); box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
-.og1-portfolio-card:hover .og1-card-play-btn { opacity: 1; transform: scale(1); }
-.og1-card-footer { background: var(--color-white); padding: 14px 16px; }
-.og1-card-title { font-size: 0.9rem; font-weight: 700; color: var(--color-text); margin-bottom: 4px; }
-.og1-card-meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
-.og1-card-brand { font-size: 0.75rem; color: var(--color-text-muted); font-weight: 500; }
-.og1-card-description { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 6px; line-height: 1.5; }
-.og1-badge { display: inline-flex; align-items: center; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.04em; text-transform: uppercase; }
-.og1-badge-demo { border: 1.5px solid var(--color-indigo); color: var(--color-indigo); }
-.og1-badge-brand { background: var(--color-sand); color: var(--color-navy); }
-.og1-card-hidden { display: none !important; }
-.og1-video-modal { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 24px; }
-.og1-video-modal.open { display: flex; }
-.og1-video-modal-inner { position: relative; width: 100%; max-width: 900px; }
-.og1-video-modal-inner.portrait { max-width: 400px; }
-.og1-video-modal video { width: 100%; border-radius: 12px; display: block; max-height: 85vh; }
-.og1-video-modal-close { position: absolute; top: -48px; right: 0; background: rgba(255,255,255,0.15); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition); font-family: inherit; }
-.og1-video-modal-close:hover { background: rgba(255,255,255,0.3); }
-.og1-video-modal-title { color: white; text-align: center; margin-top: 16px; font-size: 0.95rem; font-weight: 600; }
-.og1-cta-section { background: var(--color-navy); padding: var(--section-pad) 0; text-align: center; }
-.og1-cta-section h2 { color: var(--color-white); margin-bottom: 16px; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.025em; }
-.og1-cta-section p { color: rgba(255,255,255,0.75); font-size: 1.1rem; max-width: 540px; margin: 0 auto 36px; line-height: 1.75; }
-.og1-footer { background: #0f1629; padding: 56px 0 32px; }
-.og1-footer-inner { display: flex; flex-direction: column; gap: 40px; }
-.og1-footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: start; }
-.og1-footer-tagline { color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.6; margin-top: 8px; }
-.og1-footer-col-title { color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 14px; }
-.og1-footer-links { display: flex; flex-direction: column; gap: 10px; }
-.og1-footer-links a { color: rgba(255,255,255,0.6); font-size: 0.9rem; transition: var(--transition); }
-.og1-footer-links a:hover { color: var(--color-white); }
-.og1-footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
-.og1-footer-copyright { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
-.og1-fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.og1-fade-in.visible { opacity: 1; transform: none; }
+.og1-btn-lg { padding: 18px 36px; font-size: 1.05rem; }
+.og1-btn-primary  { background: var(--indigo); color: var(--white); border-color: var(--indigo); }
+.og1-btn-primary:hover  { background: var(--indigo-light); border-color: var(--indigo-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(92,79,246,0.35); }
+.og1-btn-outline  { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.4); }
+.og1-btn-outline:hover  { border-color: var(--white); background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+.og1-btn-indigo-outline { background: transparent; color: var(--indigo); border-color: var(--indigo); }
+.og1-btn-indigo-outline:hover { background: var(--indigo); color: var(--white); transform: translateY(-2px); }
+.og1-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* Tags */
+.og1-tag { display: inline-flex; align-items: center; padding: 5px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; }
+.og1-tag-indigo { background: rgba(92,79,246,0.12); color: var(--indigo); }
+.og1-tag-sand   { background: var(--sand); color: var(--navy); }
+
+/* ════════════ HERO ════════════ */
+.og1p-hero {
+  background: var(--navy);
+  padding: 80px 0 64px;
+  position: relative; overflow: hidden;
+}
+.og1p-hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.og1p-hero-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.og1p-hero-orb {
+  position: absolute; width: 400px; height: 400px;
+  background: var(--indigo); top: -100px; right: -100px;
+  border-radius: 50%; filter: blur(80px); opacity: 0.2;
+}
+.og1p-hero-inner { position: relative; z-index: 1; }
+.og1p-eyebrow-row { display: flex; align-items: center; gap: 10px; margin-bottom: 1.25rem; }
+.og1p-eyebrow-line { width: 32px; height: 2px; background: var(--indigo); flex-shrink: 0; }
+.og1p-eyebrow-text { color: var(--sand); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+.og1p-hero-h1 { color: var(--white); font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.08; letter-spacing: -0.03em; margin-bottom: 1rem; }
+.og1p-hero-lead { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 520px; line-height: 1.7; margin-bottom: 2rem; }
+.og1p-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ════════════ FILTER BAR ════════════ */
+.og1p-filter-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--warm-white);
+  border-bottom: 1px solid rgba(0,0,0,0.08); padding: 16px 0;
+}
+.og1p-filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.og1p-filter-btn {
+  background: transparent; color: var(--text-mid);
+  border: 1.5px solid rgba(0,0,0,0.12); border-radius: var(--radius-xl);
+  padding: 8px 18px; font-size: 0.875rem; font-weight: 600;
+  cursor: pointer; transition: var(--transition); font-family: 'Inter', sans-serif;
+}
+.og1p-filter-btn:hover { border-color: var(--indigo); color: var(--indigo); }
+.og1p-filter-btn.active { background: var(--indigo); color: var(--white); border-color: var(--indigo); }
+
+/* ════════════ PORTFOLIO GRID ════════════ */
+.og1p-intro-note {
+  background: rgba(92,79,246,0.06); border: 1px solid rgba(92,79,246,0.15);
+  border-radius: var(--radius-sm); padding: 12px 18px;
+  font-size: 0.85rem; color: var(--text-mid); margin-bottom: 2rem; font-style: italic;
+}
+.og1p-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+/* Portfolio cards — white on light section */
+.og1p-card {
+  background: var(--white); border-radius: var(--radius-md);
+  border: 1px solid rgba(0,0,0,0.06); box-shadow: var(--shadow-card);
+  overflow: hidden; cursor: pointer; position: relative;
+  transition: var(--transition);
+}
+.og1p-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--indigo); transform: scaleX(0); transform-origin: left;
+  transition: transform var(--transition); z-index: 1;
+}
+.og1p-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
+.og1p-card:hover::before { transform: scaleX(1); }
+
+.og1p-thumb-wrap { position: relative; overflow: hidden; }
+.og1p-thumb-wrap.aspect-16-9 { aspect-ratio: 16/9; }
+.og1p-thumb-wrap.aspect-9-16 { aspect-ratio: 9/16; max-height: 320px; }
+.og1p-thumb { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.og1p-card:hover .og1p-thumb { transform: scale(1.04); }
+.og1p-play-overlay {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(13,22,48,0); transition: background 0.3s;
+}
+.og1p-card:hover .og1p-play-overlay { background: rgba(13,22,48,0.45); }
+.og1p-play-btn {
+  width: 52px; height: 52px; background: rgba(255,255,255,0.92);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; color: var(--navy); padding-left: 3px;
+  opacity: 0; transform: scale(0.8); transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.og1p-card:hover .og1p-play-btn { opacity: 1; transform: scale(1); }
+.og1p-card-footer { background: var(--white); padding: 14px 16px; }
+.og1p-card-title { font-size: 0.9rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.og1p-card-meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.og1p-card-brand { font-size: 0.75rem; color: var(--text-mid); font-weight: 500; }
+.og1p-card-description { font-size: 0.78rem; color: var(--text-mid); margin-top: 6px; line-height: 1.5; }
+.og1p-badge { display: inline-flex; align-items: center; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 20px; letter-spacing: 0.04em; text-transform: uppercase; }
+.og1p-badge-demo { border: 1.5px solid var(--indigo); color: var(--indigo); }
+.og1p-badge-brand { background: var(--sand); color: var(--navy); }
+.og1p-card-hidden { display: none !important; }
+
+/* ════════════ CTA ════════════ */
+.og1p-cta { background: var(--navy); padding: var(--section-pad) 0; text-align: center; position: relative; overflow: hidden; }
+.og1p-cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; width: 500px; height: 500px; background: var(--indigo); top: -100px; right: -100px; pointer-events: none; }
+.og1p-cta-inner { position: relative; z-index: 1; }
+.og1p-cta-inner h2 { color: var(--white); margin-bottom: 1rem; }
+.og1p-cta-inner p  { color: rgba(255,255,255,0.65); font-size: 1.05rem; margin-bottom: 2.5rem; max-width: 540px; margin-left: auto; margin-right: auto; }
+
+/* ════════════ VIDEO MODAL ════════════ */
+.og1p-modal { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 24px; }
+.og1p-modal.open { display: flex; }
+.og1p-modal-inner { position: relative; width: 100%; max-width: 900px; }
+.og1p-modal-inner.portrait { max-width: 400px; }
+.og1p-modal-inner video { width: 100%; border-radius: 12px; display: block; max-height: 85vh; }
+.og1p-modal-close { position: absolute; top: -48px; right: 0; background: rgba(255,255,255,0.15); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition); font-family: inherit; }
+.og1p-modal-close:hover { background: rgba(255,255,255,0.3); }
+.og1p-modal-title { color: white; text-align: center; margin-top: 16px; font-size: 0.95rem; font-weight: 600; }
+
+/* ════════════ REVEAL ════════════ */
+.og1p-r { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.og1p-r.visible { opacity: 1; transform: none; }
+.og1p-r-d1 { transition-delay: 0.1s; }
+.og1p-r-d2 { transition-delay: 0.2s; }
+.og1p-r-d3 { transition-delay: 0.3s; }
+
+/* ════════════ RESPONSIVE ════════════ */
 @media (max-width: 1024px) {
-  .og1-portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-  .og1-footer-top { grid-template-columns: 1fr 1fr; }
+  .og1p-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
-  :root { --section-pad: 56px; }
-  .og1-portfolio-grid { grid-template-columns: 1fr; }
-  .og1-footer-top { grid-template-columns: 1fr; gap: 24px; }
-  .og1-filter-buttons { gap: 6px; }
-  .og1-filter-btn { padding: 6px 12px; font-size: 0.8rem; }
+  :root { --section-pad: 64px; }
+  .og1p-hero { padding: 64px 0 48px; }
+  .og1p-grid { grid-template-columns: 1fr; }
+  .og1p-filter-buttons { gap: 6px; }
+  .og1p-filter-btn { padding: 6px 12px; font-size: 0.8rem; }
+  .og1p-hero-actions { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
-  .og1-container { padding: 0 16px; }
+  .og1-container { padding: 0 1rem; }
 }
 `;
 
@@ -203,44 +297,67 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       this._init = true;
       this.style.display = 'block';
       this.innerHTML = `
-        <!-- HERO -->
-        <div class="og1-hero-simple">
-          <div class="og1-container">
-            <h1>Ons portfolio</h1>
-            <p>15 video's — van campagnevideo tot AI-avatar en onboarding.</p>
+        <!-- ══ HERO ══ -->
+        <section class="og1p-hero">
+          <div class="og1p-hero-bg">
+            <div class="og1p-hero-grid"></div>
+            <div class="og1p-hero-orb"></div>
           </div>
-        </div>
-
-        <!-- FILTER BAR -->
-        <div class="og1-portfolio-filter-bar">
           <div class="og1-container">
-            <div class="og1-filter-buttons" id="og1p-filters"></div>
-          </div>
-        </div>
-
-        <!-- PORTFOLIO GRID -->
-        <section style="background: var(--color-warm-white); padding: var(--section-pad) 0;">
-          <div class="og1-container">
-            <p class="og1-portfolio-intro-note">De meeste video's in dit portfolio zijn demo's gemaakt voor fictieve merken. Ze tonen de kwaliteit en stijl van ons werk.</p>
-            <div class="og1-portfolio-grid" id="og1p-grid"></div>
-          </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="og1-cta-section">
-          <div class="og1-container">
-            <h2>Jouw merk in beeld?</h2>
-            <p>Plan een gratis intake en ontdek wat AI-video voor jouw organisatie kan betekenen.</p>
-            <a href="#" class="og1-btn og1-btn-primary" style="padding:16px 36px;font-size:1.05rem;">Gratis intake plannen</a>
+            <div class="og1p-hero-inner">
+              <div class="og1p-eyebrow-row">
+                <div class="og1p-eyebrow-line"></div>
+                <span class="og1p-eyebrow-text">Ons werk</span>
+              </div>
+              <h1 class="og1p-hero-h1">Ons portfolio</h1>
+              <p class="og1p-hero-lead">15 video's — van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
+              <div class="og1p-hero-actions">
+                <a href="#" class="og1-btn og1-btn-primary">
+                  Gratis intake plannen
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#" class="og1-btn og1-btn-outline">Bekijk het aanbod</a>
+              </div>
+            </div>
           </div>
         </section>
 
-        <!-- VIDEO MODAL -->
-        <div class="og1-video-modal" id="og1p-video-modal">
-          <div class="og1-video-modal-inner" id="og1p-modal-inner">
-            <button class="og1-video-modal-close" id="og1p-modal-close">&#x2715;</button>
+        <!-- ══ FILTER BAR ══ -->
+        <div class="og1p-filter-bar">
+          <div class="og1-container">
+            <div class="og1p-filter-buttons" id="og1p-filters"></div>
+          </div>
+        </div>
+
+        <!-- ══ PORTFOLIO GRID ══ -->
+        <section class="og1-section" style="background: var(--warm-white);">
+          <div class="og1-container">
+            <p class="og1p-intro-note">De meeste video's in dit portfolio zijn demo's gemaakt voor fictieve merken. Ze tonen de kwaliteit en stijl van ons werk.</p>
+            <div class="og1p-grid" id="og1p-grid"></div>
+          </div>
+        </section>
+
+        <!-- ══ CTA ══ -->
+        <section class="og1p-cta">
+          <div class="og1p-cta-orb"></div>
+          <div class="og1-container">
+            <div class="og1p-cta-inner">
+              <span class="og1-eyebrow" style="color:var(--sand)">Jouw merk in beeld?</span>
+              <h2 class="og1-display-md og1p-r">Plan een gratis intake</h2>
+              <p class="og1p-r og1p-r-d1">Ontdek wat AI-video voor jouw organisatie kan betekenen — zonder verplichtingen.</p>
+              <div class="og1p-r og1p-r-d2">
+                <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ VIDEO MODAL ══ -->
+        <div class="og1p-modal" id="og1p-video-modal">
+          <div class="og1p-modal-inner" id="og1p-modal-inner">
+            <button class="og1p-modal-close" id="og1p-modal-close">&#x2715;</button>
             <video id="og1p-modal-video" controls playsinline></video>
-            <p class="og1-video-modal-title" id="og1p-modal-title"></p>
+            <p class="og1p-modal-title" id="og1p-modal-title"></p>
           </div>
         </div>
       `;
@@ -252,11 +369,11 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       const filterContainer = this.querySelector('#og1p-filters');
       FILTERS.forEach((f, i) => {
         const btn = document.createElement('button');
-        btn.className = 'og1-filter-btn' + (i === 0 ? ' active' : '');
+        btn.className = 'og1p-filter-btn' + (i === 0 ? ' active' : '');
         btn.textContent = f.label;
         btn.dataset.filter = f.key;
         btn.addEventListener('click', () => {
-          this.querySelectorAll('.og1-filter-btn').forEach(b => b.classList.remove('active'));
+          this.querySelectorAll('.og1p-filter-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           this._filterCards(f.key);
         });
@@ -268,22 +385,22 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       VIDEOS.forEach(v => {
         const aspectClass = v.aspect === '9:16' ? 'aspect-9-16' : 'aspect-16-9';
         const card = document.createElement('div');
-        card.className = 'og1-portfolio-card og1-fade-in';
+        card.className = 'og1p-card og1p-r';
         card.dataset.category = getFilterKey(v.category);
         card.innerHTML = `
-          <div class="og1-card-thumb-wrap ${aspectClass}">
-            <img class="og1-card-thumb" src="${v.poster}" alt="${v.title}" loading="lazy">
-            <div class="og1-card-play-overlay">
-              <div class="og1-card-play-btn">&#9654;</div>
+          <div class="og1p-thumb-wrap ${aspectClass}">
+            <img class="og1p-thumb" src="${v.poster}" alt="${v.title}" loading="lazy">
+            <div class="og1p-play-overlay">
+              <div class="og1p-play-btn">&#9654;</div>
             </div>
           </div>
-          <div class="og1-card-footer">
-            <div class="og1-card-title">${v.title}</div>
-            <div class="og1-card-meta">
-              <span class="og1-card-brand">${v.brand}</span>
-              ${v.demo ? '<span class="og1-badge og1-badge-demo">Demo</span>' : ''}
+          <div class="og1p-card-footer">
+            <div class="og1p-card-title">${v.title}</div>
+            <div class="og1p-card-meta">
+              <span class="og1p-card-brand">${v.brand}</span>
+              ${v.demo ? '<span class="og1p-badge og1p-badge-demo">Demo</span>' : ''}
             </div>
-            <p class="og1-card-description">${v.description}</p>
+            <p class="og1p-card-description">${v.description}</p>
           </div>
         `;
         card.addEventListener('click', () => this._openModal(v));
@@ -297,19 +414,19 @@ og1-home button, og1-portfolio button, og1-aanbod button, og1-over-ons button, o
       if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) this._closeModal(); });
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') this._closeModal(); });
 
-      // Intersection Observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      // Scroll reveal
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
       }, { threshold: 0.08 });
-      this.querySelectorAll('.og1-fade-in').forEach(el => observer.observe(el));
+      this.querySelectorAll('.og1p-r').forEach(el => io.observe(el));
     }
 
     _filterCards(filterKey) {
-      this.querySelectorAll('.og1-portfolio-card').forEach(card => {
+      this.querySelectorAll('.og1p-card').forEach(card => {
         if (filterKey === 'all' || card.dataset.category === filterKey) {
-          card.classList.remove('og1-card-hidden');
+          card.classList.remove('og1p-card-hidden');
         } else {
-          card.classList.add('og1-card-hidden');
+          card.classList.add('og1p-card-hidden');
         }
       });
     }
