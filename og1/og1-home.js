@@ -90,7 +90,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 }
 .og1h-hero-inner {
   position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+  display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 4rem; align-items: center;
 }
 .og1h-eyebrow-row { display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem; }
 .og1h-eyebrow-line { width: 32px; height: 2px; background: var(--indigo); flex-shrink: 0; }
@@ -98,30 +98,62 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-h1 { color: var(--white); margin-bottom: 1.5rem; }
 .og1h-h1 .c-indigo { color: var(--indigo-light); }
 .og1h-h1 .c-sand   { color: var(--sand); }
-.og1h-hero-lead { color: rgba(255,255,255,0.7); font-size: 1.2rem; line-height: 1.7; margin-bottom: 2.5rem; max-width: 480px; }
+.og1h-hero-lead { color: rgba(255,255,255,0.7); font-size: 1.15rem; line-height: 1.75; margin-bottom: 2.5rem; max-width: 500px; }
 .og1h-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem; }
 .og1h-trust { display: flex; flex-wrap: wrap; gap: 20px; }
 .og1h-trust-item { display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.75); font-size: 0.875rem; font-weight: 500; }
 .og1h-trust-check { color: #4ade80; }
 
-/* Hero card (right column) */
-.og1h-hero-visual { position: relative; }
+/* Hero avatar card (right column) */
+.og1h-hero-visual { position: relative; max-width: 340px; margin-left: auto; }
 .og1h-hero-card {
   background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
   backdrop-filter: blur(12px); border-radius: var(--radius-lg); overflow: hidden;
 }
-.og1h-hero-video-wrap { aspect-ratio: 16/10; overflow: hidden; position: relative; cursor: pointer; }
-.og1h-hero-video-wrap video { width: 100%; height: 100%; object-fit: cover; }
-.og1h-hero-play-overlay {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  background: rgba(13,22,48,0.3); opacity: 0; transition: var(--transition);
+.og1h-avatar-wrap {
+  aspect-ratio: 3/4; overflow: hidden; position: relative; cursor: pointer;
+  background: linear-gradient(160deg, rgba(92,79,246,0.22) 0%, rgba(13,22,48,0.85) 55%, rgba(13,22,48,1) 100%);
 }
-.og1h-hero-video-wrap:hover .og1h-hero-play-overlay { opacity: 1; }
+.og1h-avatar-content {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 2.5rem 2rem; gap: 1.25rem;
+}
+.og1h-avatar-ring {
+  width: 96px; height: 96px; border-radius: 50%;
+  border: 2px solid rgba(92,79,246,0.6);
+  background: linear-gradient(135deg, rgba(92,79,246,0.35), rgba(13,22,48,0.6));
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 48px rgba(92,79,246,0.35);
+}
+.og1h-avatar-letters { font-size: 2rem; font-weight: 900; color: var(--white); letter-spacing: -0.02em; }
+.og1h-avatar-meta { text-align: center; }
+.og1h-avatar-name { display: block; color: var(--white); font-size: 1rem; font-weight: 700; }
+.og1h-avatar-role { display: block; color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 4px; }
+.og1h-avatar-soon {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  padding: 7px 16px; border-radius: 100px;
+  color: rgba(255,255,255,0.7); font-size: 0.78rem; font-weight: 600;
+}
+.og1h-soon-dot {
+  width: 7px; height: 7px; background: #4ade80; border-radius: 50%;
+  animation: og1h-blink 1.8s ease-in-out infinite;
+}
+@keyframes og1h-blink {
+  0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
+}
+.og1h-avatar-play {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(13,22,48,0.45); opacity: 0; transition: var(--transition);
+}
+.og1h-avatar-wrap:hover .og1h-avatar-play { opacity: 1; }
 .og1h-play-circle {
   width: 72px; height: 72px; border-radius: 50%; background: var(--indigo);
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 0 40px rgba(92,79,246,0.5); transition: var(--transition);
 }
+.og1h-play-circle:hover { background: var(--indigo-light); transform: scale(1.08); }
 .og1h-play-circle svg { width: 28px; height: 28px; color: white; margin-left: 4px; }
 .og1h-card-foot {
   padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between;
@@ -132,11 +164,11 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 /* Float badges */
 .og1h-float {
   position: absolute; background: var(--white); border-radius: var(--radius-md);
-  padding: 14px 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 12px 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: flex; align-items: center; gap: 10px;
 }
-.og1h-float-1 { bottom: -20px; left: -30px; }
-.og1h-float-2 { top: -16px; right: -20px; }
+.og1h-float-1 { bottom: 60px; left: -36px; }
+.og1h-float-2 { top: 40px; right: -30px; }
 .og1h-float-icon {
   width: 36px; height: 36px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -144,15 +176,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-icon-green  { background: rgba(34,197,94,0.12); color: #16a34a; }
 .og1h-icon-indigo { background: rgba(92,79,246,0.12); color: var(--indigo); }
 .og1h-float-icon svg { width: 18px; height: 18px; }
-.og1h-float-val  { font-weight: 700; font-size: 1rem; color: var(--navy); }
-.og1h-float-desc { font-size: 0.72rem; color: var(--text-mid); }
-
-/* ════════════ LOGO BAR ════════════ */
-.og1h-logo-bar { background: var(--sand); padding: 20px 0; border-bottom: 1px solid rgba(24,33,69,0.1); }
-.og1h-logo-bar-inner { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-.og1h-logo-label { font-size: 0.8rem; font-weight: 600; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
-.og1h-logo-brands { display: flex; gap: 10px; flex-wrap: wrap; }
-.og1h-brand-chip { background: rgba(24,33,69,0.08); color: var(--navy); font-size: 0.8rem; font-weight: 600; padding: 5px 12px; border-radius: 20px; border: 1px solid rgba(24,33,69,0.15); }
+.og1h-float-val  { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+.og1h-float-desc { font-size: 0.7rem; color: var(--text-mid); }
 
 /* ════════════ STATS BAR ════════════ */
 .og1h-stats-bar { background: var(--navy-deep); padding: 40px 0; }
@@ -163,29 +188,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-stat-num span { color: var(--indigo-light); }
 .og1h-stat-lbl { font-size: 0.8rem; color: var(--sand); margin-top: 4px; }
 
-/* ════════════ PAIN SECTION ════════════ */
-.og1h-pain { background: var(--warm-white); }
-.og1h-pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.og1h-pain-card {
-  background: var(--white); border-radius: var(--radius-lg);
-  padding: 2rem; border: 1px solid rgba(0,0,0,0.06);
-  display: flex; align-items: flex-start; gap: 1.25rem;
-  box-shadow: var(--shadow-card); transition: var(--transition);
-  position: relative; overflow: hidden;
-}
-.og1h-pain-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: var(--indigo); transform: scaleX(0); transform-origin: left;
-  transition: transform var(--transition);
-}
-.og1h-pain-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
-.og1h-pain-card:hover::before { transform: scaleX(1); }
-.og1h-pain-icon { font-size: 2rem; flex-shrink: 0; line-height: 1; }
-.og1h-pain-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-.og1h-pain-card p  { font-size: 0.9rem; color: var(--text-mid); line-height: 1.65; }
-
 /* ════════════ PILLARS ════════════ */
-.og1h-pillars { background: var(--warm-white); padding-top: 0; }
+.og1h-pillars { background: var(--warm-white); }
 .og1h-pillars-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
 .og1h-pillar-card {
   background: var(--white); border-radius: var(--radius-lg);
@@ -210,9 +214,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 
 /* ════════════ DIENSTEN ════════════ */
 .og1h-diensten { background: var(--navy); }
-.og1h-diensten .og1-section-header .og1-eyebrow { color: var(--sand); }
-.og1h-diensten .og1-section-header h2 { color: var(--white); }
-.og1h-diensten .og1-section-header p  { color: rgba(255,255,255,0.6); }
 .og1h-diensten-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
 .og1h-dienst-card {
   background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
@@ -325,7 +326,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 @media (max-width: 768px) {
   :root { --section-pad: 64px; }
   .og1h-hero { padding: 80px 0 60px; }
-  .og1h-pain-grid { grid-template-columns: 1fr; }
   .og1h-pillars-grid { grid-template-columns: 1fr; }
   .og1h-diensten-grid { grid-template-columns: 1fr; }
   .og1h-portfolio-grid { grid-template-columns: 1fr; }
@@ -334,7 +334,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   .og1h-stat:nth-last-child(-n+2) { border-bottom: none; }
   .og1h-hero-actions { flex-direction: column; align-items: flex-start; }
   .og1h-trust { flex-direction: column; gap: 8px; }
-  .og1h-logo-bar-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
   .og1h-portfolio-head { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
@@ -350,16 +349,24 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   }
 
   const PREVIEW_VIDEOS = [
-    { id:1,  title:'Brand Story GreenBite',    brand:'GreenBite',     demo:true,  aspect:'16:9',
+    { id:1,  title:'Brand Story GreenBite',     brand:'GreenBite',     demo:true,  aspect:'16:9',
       url:'https://video.wixstatic.com/video/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58f001.jpg'},
-    { id:10, title:'Sales pitch — Joeri',       brand:'Ontwikkel Guru',demo:false, aspect:'16:9',
+    { id:10, title:'Sales pitch — Joeri',        brand:'Ontwikkel Guru',demo:false, aspect:'16:9',
       url:'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'},
-    { id:12, title:'AI-workshop — Verdant Group',brand:'Verdant Group', demo:true,  aspect:'16:9',
+    { id:12, title:'AI-workshop — Verdant Group', brand:'Verdant Group', demo:true,  aspect:'16:9',
       url:'https://video.wixstatic.com/video/6c17f4_478de56aa9954d85a7210814a3b4e759/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_478de56aa9954d85a7210814a3b4e759f001.jpg'}
   ];
+
+  // Hero avatar video placeholder — swap src here once the real AI avatar is ready
+  const AVATAR_VIDEO = {
+    title: 'Joeri — Ontwikkel Guru',
+    aspect: '16:9',
+    url: 'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
+    poster: 'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'
+  };
 
   class Og1Home extends HTMLElement {
     connectedCallback() {
@@ -387,7 +394,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                   AI die werkt<br>
                   <span class="c-indigo">voor</span> <span class="c-sand">mensen</span>
                 </h1>
-                <p class="og1h-hero-lead">Van AI-workshops en slimme automatisering tot cinematic videocontent en gepersonaliseerde AI-avatars — wij maken AI concreet en toepasbaar voor jouw organisatie.</p>
+                <p class="og1h-hero-lead">Je wilt AI inzetten, maar je weet niet waar te beginnen — welke tools werken écht, wie gaat dat uitzoeken, en wat levert het op? Wij nemen dat van je over. Praktisch, concreet en toepasbaar voor het MKB.</p>
                 <div class="og1h-hero-actions">
                   <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">
                     Bekijk ons werk
@@ -404,21 +411,31 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 
               <div class="og1h-hero-visual">
                 <div class="og1h-hero-card">
-                  <div class="og1h-hero-video-wrap" id="og1h-hero-trigger">
-                    <video autoplay muted loop playsinline>
-                      <source src="https://video.wixstatic.com/video/6c17f4_99a1d8b971bb43bfad8b471f85ad2a85/1080p/mp4/file.mp4" type="video/mp4">
-                    </video>
-                    <div class="og1h-hero-play-overlay">
+                  <div class="og1h-avatar-wrap" id="og1h-hero-trigger">
+                    <div class="og1h-avatar-content">
+                      <div class="og1h-avatar-ring">
+                        <span class="og1h-avatar-letters">JS</span>
+                      </div>
+                      <div class="og1h-avatar-meta">
+                        <span class="og1h-avatar-name">Joeri Sijstermans</span>
+                        <span class="og1h-avatar-role">Oprichter — Ontwikkel Guru</span>
+                      </div>
+                      <div class="og1h-avatar-soon">
+                        <span class="og1h-soon-dot"></span>
+                        AI Avatar · Binnenkort live
+                      </div>
+                    </div>
+                    <div class="og1h-avatar-play">
                       <div class="og1h-play-circle">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                       </div>
                     </div>
                   </div>
                   <div class="og1h-card-foot">
-                    <span class="og1h-card-foot-label">AI Video · AI Avatar</span>
+                    <span class="og1h-card-foot-label">AI Avatar · Gepersonaliseerd</span>
                     <div class="og1h-card-foot-tags">
-                      <span class="og1-tag og1-tag-indigo">Video</span>
-                      <span class="og1-tag og1-tag-sand">Avatar</span>
+                      <span class="og1-tag og1-tag-indigo">Avatar</span>
+                      <span class="og1-tag og1-tag-sand">NL</span>
                     </div>
                   </div>
                 </div>
@@ -446,24 +463,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           </div>
         </section>
 
-        <!-- ══ LOGO BAR ══ -->
-        <div class="og1h-logo-bar">
-          <div class="og1-container">
-            <div class="og1h-logo-bar-inner">
-              <span class="og1h-logo-label">Zij werken al met AI:</span>
-              <div class="og1h-logo-brands">
-                <span class="og1h-brand-chip">GreenBite</span>
-                <span class="og1h-brand-chip">Lumion Beauty</span>
-                <span class="og1h-brand-chip">Nexora</span>
-                <span class="og1h-brand-chip">Verdant Group</span>
-                <span class="og1h-brand-chip">Vantage Partners</span>
-                <span class="og1h-brand-chip">BusinessBaas</span>
-                <span class="og1h-brand-chip">Starterscentrum Limburg</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- ══ STATS BAR ══ -->
         <div class="og1h-stats-bar">
           <div class="og1-container">
@@ -488,47 +487,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           </div>
         </div>
 
-        <!-- ══ PAIN ══ -->
-        <section class="og1-section og1h-pain">
-          <div class="og1-container">
-            <div class="og1-section-header">
-              <span class="og1-eyebrow">Herken je dit?</span>
-              <h2 class="og1-display-md og1h-r">Je weet dat AI belangrijk is —<br>maar je weet niet waar te beginnen.</h2>
-            </div>
-            <div class="og1h-pain-grid">
-              <div class="og1h-pain-card og1h-r">
-                <span class="og1h-pain-icon">😓</span>
-                <div>
-                  <h3>Geen tijd voor experimenten</h3>
-                  <p>Je wil AI inzetten, maar wie gaat dat uitzoeken terwijl het bedrijf gewoon doorloopt?</p>
-                </div>
-              </div>
-              <div class="og1h-pain-card og1h-r og1h-r-d1">
-                <span class="og1h-pain-icon">🌊</span>
-                <div>
-                  <h3>Overspoeld door keuzes</h3>
-                  <p>Honderden AI-tools, duizenden beloftes — maar wat werkt écht voor jouw organisatie?</p>
-                </div>
-              </div>
-              <div class="og1h-pain-card og1h-r og1h-r-d2">
-                <span class="og1h-pain-icon">💸</span>
-                <div>
-                  <h3>Hoge productiekosten</h3>
-                  <p>Video laten maken kost duizenden euro's en weken planning. Dat kan slimmer.</p>
-                </div>
-              </div>
-              <div class="og1h-pain-card og1h-r og1h-r-d3">
-                <span class="og1h-pain-icon">🔁</span>
-                <div>
-                  <h3>Steeds repetitief werk</h3>
-                  <p>Je team doet dezelfde taken steeds opnieuw — terwijl AI dat in seconden kan afhandelen.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ══ PILLARS ══ -->
+        <!-- ══ PILLARS — WAT WIJ DOEN ══ -->
         <section class="og1-section og1h-pillars">
           <div class="og1-container">
             <div class="og1-section-header">
@@ -562,7 +521,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           </div>
         </section>
 
-        <!-- ══ DIENSTEN ══ -->
+        <!-- ══ DIENSTEN — ONS AANBOD ══ -->
         <section class="og1-section og1h-diensten">
           <div class="og1-container">
             <div class="og1-section-header">
@@ -626,7 +585,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           </div>
         </section>
 
-        <!-- ══ AANPAK ══ -->
+        <!-- ══ AANPAK — ONZE AANPAK ══ -->
         <section class="og1-section og1h-aanpak">
           <div class="og1-container">
             <div class="og1h-aanpak-grid">
@@ -693,7 +652,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           </div>
         </section>
 
-        <!-- ══ CTA ══ -->
+        <!-- ══ CTA — NIEUWSGIERIG ══ -->
         <section class="og1-section og1h-cta">
           <div class="og1h-cta-orb"></div>
           <div class="og1-container">
@@ -722,7 +681,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
     }
 
     _setup() {
-      // Render portfolio cards
+      // Portfolio cards
       const grid = this.querySelector('#og1h-preview-grid');
       if (grid) {
         PREVIEW_VIDEOS.forEach(v => {
@@ -743,14 +702,10 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
         });
       }
 
-      // Hero video → open in modal at full quality
+      // Hero avatar card — shows current placeholder video until real avatar is ready
       const heroTrigger = this.querySelector('#og1h-hero-trigger');
       if (heroTrigger) {
-        heroTrigger.addEventListener('click', () => this._openModal({
-          title: 'Ontwikkel Guru — AI die werkt voor mensen',
-          aspect: '16:9',
-          url: 'https://video.wixstatic.com/video/6c17f4_99a1d8b971bb43bfad8b471f85ad2a85/1080p/mp4/file.mp4'
-        }));
+        heroTrigger.addEventListener('click', () => this._openModal(AVATAR_VIDEO));
       }
 
       // Modal
