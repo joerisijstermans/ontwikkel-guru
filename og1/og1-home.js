@@ -145,16 +145,23 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 }
 .og1h-avatar-play {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  background: rgba(13,22,48,0.45); opacity: 0; transition: var(--transition);
+  transition: opacity var(--transition), background var(--transition); cursor: pointer;
 }
-.og1h-avatar-wrap:hover .og1h-avatar-play { opacity: 1; }
+.og1h-avatar-wrap.playing .og1h-avatar-content { display: none; }
+.og1h-avatar-wrap.playing .og1h-avatar-play { opacity: 0; background: transparent; }
+.og1h-avatar-wrap.playing:hover .og1h-avatar-play { opacity: 1; background: rgba(13,22,48,0.4); }
+.og1h-hero-inline-video {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none;
+}
+.og1h-avatar-wrap.playing .og1h-hero-inline-video { display: block; }
 .og1h-play-circle {
   width: 72px; height: 72px; border-radius: 50%; background: var(--indigo);
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 40px rgba(92,79,246,0.5); transition: var(--transition);
+  box-shadow: 0 0 40px rgba(92,79,246,0.5), 0 0 0 10px rgba(92,79,246,0.15);
+  transition: var(--transition);
 }
 .og1h-play-circle:hover { background: var(--indigo-light); transform: scale(1.08); }
-.og1h-play-circle svg { width: 28px; height: 28px; color: white; margin-left: 4px; }
+.og1h-play-circle svg { width: 28px; height: 28px; color: white; }
 .og1h-card-foot {
   padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between;
 }
@@ -425,9 +432,12 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                         AI Avatar · Binnenkort live
                       </div>
                     </div>
-                    <div class="og1h-avatar-play">
+                    <!-- Inline video — swap src when real avatar is ready -->
+                    <video class="og1h-hero-inline-video" id="og1h-hero-video" playsinline></video>
+                    <div class="og1h-avatar-play" id="og1h-hero-play-overlay">
                       <div class="og1h-play-circle">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg id="og1h-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                        <svg id="og1h-icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
                       </div>
                     </div>
                   </div>
@@ -702,10 +712,35 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
         });
       }
 
-      // Hero avatar card — shows current placeholder video until real avatar is ready
-      const heroTrigger = this.querySelector('#og1h-hero-trigger');
-      if (heroTrigger) {
-        heroTrigger.addEventListener('click', () => this._openModal(AVATAR_VIDEO));
+      // Hero avatar card — inline play/pause
+      const heroWrap   = this.querySelector('#og1h-hero-trigger');
+      const heroVideo  = this.querySelector('#og1h-hero-video');
+      const iconPlay   = this.querySelector('#og1h-icon-play');
+      const iconPause  = this.querySelector('#og1h-icon-pause');
+
+      if (heroWrap && heroVideo) {
+        heroVideo.src = AVATAR_VIDEO.url;
+        if (AVATAR_VIDEO.poster) heroVideo.poster = AVATAR_VIDEO.poster;
+
+        heroWrap.addEventListener('click', () => {
+          if (!heroWrap.classList.contains('playing')) {
+            heroWrap.classList.add('playing');
+            heroVideo.play();
+          } else if (heroVideo.paused) {
+            heroVideo.play();
+          } else {
+            heroVideo.pause();
+          }
+        });
+
+        heroVideo.addEventListener('play',  () => { if(iconPlay) iconPlay.style.display='none';  if(iconPause) iconPause.style.display='block'; });
+        heroVideo.addEventListener('pause', () => { if(iconPlay) iconPlay.style.display='block'; if(iconPause) iconPause.style.display='none'; });
+        heroVideo.addEventListener('ended', () => {
+          heroWrap.classList.remove('playing');
+          heroVideo.currentTime = 0;
+          if(iconPlay) iconPlay.style.display='block';
+          if(iconPause) iconPause.style.display='none';
+        });
       }
 
       // Modal
