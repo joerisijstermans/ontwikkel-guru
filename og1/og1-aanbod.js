@@ -259,7 +259,7 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
                     <h4>Wat je ontvangt</h4>
                     <p>${s.deliverables}</p>
                   </div>
-                  <a href="#" class="og1-btn og1-btn-primary og1a-r og1a-r-d1" style="margin-top:1.5rem;">
+                  <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1a-r og1a-r-d1" style="margin-top:1.5rem;">
                     Meer weten
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </a>
@@ -301,11 +301,11 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
               <h1 class="og1a-hero-h1">Wat wij voor je doen</h1>
               <p class="og1a-hero-lead">Vijf diensten, één doel: AI die concreet resultaat oplevert voor jouw organisatie.</p>
               <div class="og1a-hero-actions">
-                <a href="#" class="og1-btn og1-btn-primary">
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Gratis intake plannen
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="#" class="og1-btn og1-btn-outline">Bekijk het portfolio</a>
+                <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-outline">Bekijk het portfolio</a>
               </div>
             </div>
           </div>
@@ -335,8 +335,8 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
               <h2 class="og1-display-md og1a-r">Klaar om te beginnen?</h2>
               <p class="og1a-r og1a-r-d1">Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen.</p>
               <div class="og1a-cta-actions og1a-r og1a-r-d2">
-                <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
-                <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het portfolio</a>
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
+                <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het portfolio</a>
               </div>
             </div>
           </div>

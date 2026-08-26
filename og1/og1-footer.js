@@ -69,11 +69,11 @@ og1-footer a { color: inherit; text-decoration: none; }
                 <div>
                   <span class="og1f-col-title">Navigatie</span>
                   <div class="og1f-links">
-                    <a href="#">Home</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Aanbod</a>
-                    <a href="#">Over ons</a>
-                    <a href="#">Contact</a>
+                    <a href="https://www.ontwikkel.guru/home">Home</a>
+                    <a href="https://www.ontwikkel.guru/portfolio">Portfolio</a>
+                    <a href="https://www.ontwikkel.guru/aanbod">Aanbod</a>
+                    <a href="https://www.ontwikkel.guru/over-ons">Over ons</a>
+                    <a href="https://www.ontwikkel.guru/contact">Contact</a>
                   </div>
                 </div>
                 <div>

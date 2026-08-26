@@ -403,11 +403,11 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                 </h1>
                 <p class="og1h-hero-lead">Je wilt AI inzetten, maar je weet niet waar te beginnen — welke tools werken écht, wie gaat dat uitzoeken, en wat levert het op? Wij nemen dat van je over. Praktisch, concreet en toepasbaar voor het MKB.</p>
                 <div class="og1h-hero-actions">
-                  <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">
+                  <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-primary og1-btn-lg">
                     Bekijk ons werk
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                   </a>
-                  <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Gratis intake plannen</a>
+                  <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-outline og1-btn-lg">Gratis intake plannen</a>
                 </div>
                 <div class="og1h-trust">
                   <span class="og1h-trust-item"><span class="og1h-trust-check">✓</span> Geen technische voorkennis nodig</span>
@@ -544,37 +544,37 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                 <div class="og1h-dienst-num">01</div>
                 <h3>AI Workshops</h3>
                 <p>Praktische workshops voor teams van elke omvang — hands-on, direct toepasbaar, afgestemd op jouw branche.</p>
-                <a href="#" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card featured og1h-r og1h-r-d1">
                 <div class="og1h-dienst-num">02</div>
                 <h3>AI Automatisering</h3>
                 <p>Slimme AI-workflows die je 5–20 uur per week besparen. Minder fouten, meer consistentie, direct schaalbaar.</p>
-                <a href="#" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card og1h-r og1h-r-d2">
                 <div class="og1h-dienst-num">03</div>
                 <h3>AI Avatar & Video</h3>
                 <p>Eenmalig opnemen, onbeperkt inzetten. Gepersonaliseerde video's op naam, rol of branche — in elke taal.</p>
-                <a href="#" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card og1h-r og1h-r-d1">
                 <div class="og1h-dienst-num">04</div>
                 <h3>AI Campagnevideo</h3>
                 <p>Cinematic videocontent voor social media en campagnes — geen crew, geen locatie, wél spectaculair resultaat.</p>
-                <a href="#" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card og1h-r og1h-r-d2">
                 <div class="og1h-dienst-num">05</div>
                 <h3>AI Strategie & Advies</h3>
                 <p>Concreet AI-plan dat je direct kunt uitvoeren. Inclusief AI-scan, roadmap en prioriteitenmatrix.</p>
-                <a href="#" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card dashed og1h-r og1h-r-d3">
                 <span style="font-size:2rem;margin-bottom:12px;">🤔</span>
                 <h3>Weet je niet waar te beginnen?</h3>
                 <p>Dat begrijpen we. Onze gratis intake helpt je de juiste keuze te maken — zonder verplichtingen.</p>
-                <a href="#" class="og1-btn og1-btn-outline" style="margin-top:16px;">Gratis intake →</a>
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-outline" style="margin-top:16px;">Gratis intake →</a>
               </div>
             </div>
           </div>
@@ -589,7 +589,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                 <h2 class="og1-display-md og1h-r">Zien is geloven</h2>
                 <p class="og1h-r og1h-r-d1">Voorbeelden uit onze praktijk — van campagnevideo tot AI-avatar.</p>
               </div>
-              <a href="#" class="og1-btn og1-btn-indigo-outline og1h-r">Volledig portfolio →</a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-indigo-outline og1h-r">Volledig portfolio →</a>
             </div>
             <div class="og1h-portfolio-grid" id="og1h-preview-grid"></div>
           </div>
@@ -671,8 +671,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
               <h2 class="og1-display-md og1h-r">Klaar om te beginnen?</h2>
               <p class="og1h-r og1h-r-d1">Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen — zonder verplichtingen.</p>
               <div class="og1h-cta-actions og1h-r og1h-r-d2">
-                <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
-                <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
               </div>
             </div>
           </div>

@@ -257,11 +257,11 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
               <h1 class="og1o-hero-h1">Achter Ontwikkel Guru</h1>
               <p class="og1o-hero-lead">Ik ben Joeri Sijstermans — toegepast psycholoog, tech-enthousiasteling en ondernemer. Ik help MKB-bedrijven om AI concreet en werkbaar te maken — niet als project, maar als dagelijks gereedschap.</p>
               <div class="og1o-hero-actions">
-                <a href="#" class="og1-btn og1-btn-primary">
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Plan een kennismaking
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="#" class="og1-btn og1-btn-outline">Bekijk het aanbod</a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1-btn og1-btn-outline">Bekijk het aanbod</a>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
                   <span class="og1o-skill-chip">Ondernemer</span>
                   <span class="og1o-skill-chip">Trainer & Coach</span>
                 </div>
-                <a href="#" class="og1-btn og1-btn-primary" style="margin-top:1.75rem;">
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary" style="margin-top:1.75rem;">
                   Plan een kennismaking
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -389,8 +389,8 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
               <h2 class="og1-display-md og1o-r">Klaar om kennis te maken?</h2>
               <p class="og1o-r og1o-r-d1">Plan een gratis intakegesprek van 30 minuten en ontdek wat AI concreet voor jouw bedrijf kan doen.</p>
               <div class="og1o-cta-actions og1o-r og1o-r-d2">
-                <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
-                <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
+                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
+                <a href="https://www.ontwikkel.guru/aanbod" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
               </div>
             </div>
           </div>
