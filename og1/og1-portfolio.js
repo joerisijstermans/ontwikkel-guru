@@ -137,9 +137,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
 .og1p-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
 .og1p-card:hover::before { transform: scaleX(1); }
 
-.og1p-thumb-wrap { position: relative; overflow: hidden; }
-.og1p-thumb-wrap.aspect-16-9 { aspect-ratio: 16/9; }
-.og1p-thumb-wrap.aspect-9-16 { aspect-ratio: 9/16; max-height: 320px; }
+.og1p-thumb-wrap { position: relative; overflow: hidden; aspect-ratio: 16/9; }
 .og1p-thumb { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
 .og1p-card:hover .og1p-thumb { transform: scale(1.04); }
 .og1p-play-overlay {
@@ -214,64 +212,94 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
   }
 
   const VIDEOS = [
-    { id:1, title:'Brand Story GreenBite', brand:'GreenBite', category:'campagne', aspect:'16:9', demo:true,
-      description:'Cinematic brand story voor een duurzaam food-merk.',
+    { id:1,
+      title:'Campagne: "Groen Begint Hier"',
+      brand:'GreenBite', category:'campagne', aspect:'16:9', demo:true,
+      description:'Cinematic brand film voor een duurzaam food-merk. Laat zien hoe je in 60 seconden je missie vertelt — zonder voice-over, puur op beeld en muziek.',
       url:'https://video.wixstatic.com/video/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58f001.jpg'},
-    { id:2, title:'Productvideo Lumion', brand:'Lumion Beauty', category:'product', aspect:'16:9', demo:true,
-      description:'Klassieke productvideo voor een luxe skincare merk.',
+    { id:2,
+      title:'Campagne: "Luxe Huid, Pure Natuur"',
+      brand:'Lumion Beauty', category:'product', aspect:'16:9', demo:true,
+      description:'Productvideo voor een luxe skincare lijn. Toepasbaar als webshop-hero, social ad of productlancering — zonder fotostudio of filmploeg.',
       url:'https://video.wixstatic.com/video/6c17f4_ace8978932e24fb9a8aedacdfa0c234d/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ace8978932e24fb9a8aedacdfa0c234df001.jpg'},
-    { id:3, title:'Lifestyle Lumion (V1)', brand:'Lumion Beauty', category:'product', aspect:'16:9', demo:true,
-      description:'Lifestyle-video met model voor luxe skincare campagne.',
+    { id:3,
+      title:'Campagne: "Voelen, Niet Praten"',
+      brand:'Lumion Beauty', category:'product', aspect:'16:9', demo:true,
+      description:'Lifestyle video die de beleving verkoopt, niet het product. Ideaal als aanvulling op een productpagina of als Instagram-campagne die de zin in het gebruik wekt.',
       url:'https://video.wixstatic.com/video/6c17f4_cc26d20dae9a45538c3d8b09d0f557c0/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_cc26d20dae9a45538c3d8b09d0f557c0f001.jpg'},
-    { id:4, title:'Nexora Reel', brand:'Nexora', category:'corporate', aspect:'9:16', demo:true,
-      description:'Social media reel voor een B2B HR-softwarebedrijf.',
+    { id:4,
+      title:'Social Reel: "De Slimste Werkdag"',
+      brand:'Nexora', category:'corporate', aspect:'9:16', demo:true,
+      description:'Verticale reel voor LinkedIn en Instagram Stories. Toont hoe je een B2B-softwareproduct menselijk en herkenbaar positioneert bij de doelgroep die je wil bereiken.',
       url:'https://video.wixstatic.com/video/6c17f4_c33775070f99478e93b3ed01ebc82ff4/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_c33775070f99478e93b3ed01ebc82ff4f001.jpg'},
-    { id:5, title:'GreenBite Markt', brand:'GreenBite', category:'campagne', aspect:'9:16', demo:true,
-      description:'Markt-reel voor social media — vers, dynamisch.',
+    { id:5,
+      title:'Social Reel: "Vers, Elke Dag"',
+      brand:'GreenBite', category:'campagne', aspect:'9:16', demo:true,
+      description:'Dynamische vertical reel voor Reels, Stories en TikTok. Laat zien hoe je een markt-sfeer vastlegt zonder filmcrew — authentiek, snel en deelbaar.',
       url:'https://video.wixstatic.com/video/6c17f4_e574a6a90cb14cb6b6a6633e48179914/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_e574a6a90cb14cb6b6a6633e48179914f001.jpg'},
-    { id:6, title:'Lumion Zomercampagne — Clip 1', brand:'Lumion Beauty', category:'campagne', aspect:'16:9', demo:true,
-      description:'Eerste clip van tweedelige zomercampagne voor skincare.',
+    { id:6,
+      title:'Campagne: "Zomerhuid" — Deel 1',
+      brand:'Lumion Beauty', category:'campagne', aspect:'16:9', demo:true,
+      description:'Eerste clip van een tweedelige seizoenscampagne. Geeft structuur en herkenbaarheid aan je merk door de campagneperiode heen — ideaal voor merken die consistent zichtbaar willen zijn.',
       url:'https://video.wixstatic.com/video/6c17f4_8c6323abeb1747d8a3ba2f91f7ab35f4/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_8c6323abeb1747d8a3ba2f91f7ab35f4f001.jpg'},
-    { id:7, title:'Lumion Zomercampagne — Clip 2', brand:'Lumion Beauty', category:'campagne', aspect:'16:9', demo:true,
-      description:'Tweede clip — huidverzorging in luxe setting.',
+    { id:7,
+      title:'Campagne: "Zomerhuid" — Deel 2',
+      brand:'Lumion Beauty', category:'campagne', aspect:'16:9', demo:true,
+      description:'Tweede clip van de zomercampagne. Dezelfde visuele taal, nieuwe invalshoek. Samen sterker dan apart — een reeks werkt als een merk.',
       url:'https://video.wixstatic.com/video/6c17f4_c755d780e51f41d2947b4b032ef009c0/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_c755d780e51f41d2947b4b032ef009c0f001.jpg'},
-    { id:8, title:'Nexora B-roll — Werkplek', brand:'Nexora', category:'corporate', aspect:'16:9', demo:true,
-      description:'B-roll footage van een moderne kantooromgeving.',
+    { id:8,
+      title:'Corporate Video: "Modern Werken"',
+      brand:'Nexora', category:'corporate', aspect:'16:9', demo:true,
+      description:'Kantoor-b-roll voor gebruik in presentaties, pitch decks of video-advertenties. Geeft je merk een professionele visuele uitstraling — zonder duur filmteam.',
       url:'https://video.wixstatic.com/video/6c17f4_2326b4d923b249fda29aaa8824b6f475/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_2326b4d923b249fda29aaa8824b6f475f001.jpg'},
-    { id:9, title:'Nexora B-roll — Verbinding', brand:'Nexora', category:'corporate', aspect:'16:9', demo:true,
-      description:'B-roll footage over samenwerking en verbinding.',
+    { id:9,
+      title:'Corporate Video: "Samen Verder"',
+      brand:'Nexora', category:'corporate', aspect:'16:9', demo:true,
+      description:'B-roll over samenwerking en teamdynamiek. Universeel inzetbaar als achtergrond bij thought leadership content, employee advocacy of interne communicatie.',
       url:'https://video.wixstatic.com/video/6c17f4_8e821b5ca9cf46cfaa1f1645cf0e8bf4/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_8e821b5ca9cf46cfaa1f1645cf0e8bf4f001.jpg'},
-    { id:10, title:'Sales pitch — Joeri', brand:'Ontwikkel Guru', category:'avatar', aspect:'16:9', demo:false,
-      description:'AI-avatar salespitch: gepersonaliseerde video op naam van de ontvanger.',
+    { id:10,
+      title:'AI Avatar Sales Pitch — Joeri Sijstermans',
+      brand:'Ontwikkel Guru', category:'avatar', aspect:'16:9', demo:false,
+      description:'Gepersonaliseerde salespitch via AI-avatar. Eén opname, oneindig veel versies — elk op naam van de ontvanger. Verhoogt openingsratio\'s en geeft je acquisitie een gezicht.',
       url:'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'},
-    { id:11, title:'Onboarding — Emma', brand:'Nexora', category:'onboarding', aspect:'16:9', demo:true,
-      description:'AI-avatar onboarding video voor nieuwe medewerkers.',
+    { id:11,
+      title:'Onboarding Avatar: "Welkom bij Nexora"',
+      brand:'Nexora', category:'onboarding', aspect:'16:9', demo:true,
+      description:'AI-avatar Emma verwelkomt nieuwe medewerkers. Bespaart HR-uren en geeft elke nieuwe collega een warme, consistente start — schaalbaar naar elke afdeling of locatie.',
       url:'https://video.wixstatic.com/video/6c17f4_4279c45016d34a2ea81ad8053a6598b9/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_4279c45016d34a2ea81ad8053a6598b9f001.jpg'},
-    { id:12, title:'AI-workshop — Verdant Group', brand:'Verdant Group', category:'onboarding', aspect:'16:9', demo:true,
-      description:'Introworkshop AI gegeven door AI-avatar workshoptrainer Alex.',
+    { id:12,
+      title:'AI-trainer Avatar: Workshop "Aan de Slag met AI"',
+      brand:'Verdant Group', category:'onboarding', aspect:'16:9', demo:true,
+      description:'AI-avatar als workshoptrainer. Ideaal voor bedrijven die een kennissessie willen schalen naar meerdere teams of locaties — zelfde kwaliteit, elke keer opnieuw.',
       url:'https://video.wixstatic.com/video/6c17f4_478de56aa9954d85a7210814a3b4e759/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_478de56aa9954d85a7210814a3b4e759f001.jpg'},
-    { id:13, title:'BusinessBaas Onboarding — Bodhi', brand:'BusinessBaas', category:'onboarding', aspect:'16:9', demo:false,
-      description:'AI-onboarding avatar Bodhi verwelkomt nieuwe leden van BusinessBaas.',
+    { id:13,
+      title:'Platform Onboarding: Bodhi verwelkomt BusinessBaas-leden',
+      brand:'BusinessBaas', category:'onboarding', aspect:'16:9', demo:false,
+      description:'AI-avatar Bodhi leidt nieuwe platformleden door de eerste stappen. Vermindert drop-off in de onboarding en geeft elk lid een persoonlijk welkom — geautomatiseerd en schaalbaar.',
       url:'https://video.wixstatic.com/video/6c17f4_2c41b196c8564667bc00791ab2650d2d/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_2c41b196c8564667bc00791ab2650d2df001.jpg'},
-    { id:14, title:'Nova stelt zich voor', brand:'BusinessBaas', category:'coaching', aspect:'9:16', demo:false,
-      description:'Nova, de AI businesscoach van BusinessBaas, stelt zichzelf voor.',
+    { id:14,
+      title:'AI Coach Avatar: Nova stelt zich voor',
+      brand:'BusinessBaas', category:'coaching', aspect:'9:16', demo:false,
+      description:'Nova is de AI business coach van BusinessBaas. Deze introductievideo toont hoe een coaching-relatie via een video-avatar eruitziet — persoonlijk, toegankelijk en altijd beschikbaar.',
       url:'https://video.wixstatic.com/video/6c17f4_ea9a4440158c4778a249a2d9a059fc82/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ea9a4440158c4778a249a2d9a059fc82f001.jpg'},
-    { id:15, title:'Starterscentrum Limburg × BusinessBaas', brand:'BusinessBaas', category:'aankondiging', aspect:'9:16', demo:false,
-      description:'Aankondiging van de samenwerking tussen Starterscentrum Limburg en BusinessBaas.',
+    { id:15,
+      title:'Aankondiging: BusinessBaas × Starterscentrum Limburg',
+      brand:'BusinessBaas', category:'aankondiging', aspect:'9:16', demo:false,
+      description:'Verticale aankondigingsvideo voor een strategische samenwerking. Inzetbaar als social post of e-mailcampagne — laat zien hoe je een partnership krachtig en snel naar buiten brengt.',
       url:'https://video.wixstatic.com/video/6c17f4_e34bc46b435943d9aec671eb72b18f3b/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_e34bc46b435943d9aec671eb72b18f3bf001.jpg'}
   ];
@@ -365,7 +393,6 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     }
 
     _setup() {
-      // Render filter buttons
       const filterContainer = this.querySelector('#og1p-filters');
       FILTERS.forEach((f, i) => {
         const btn = document.createElement('button');
@@ -380,41 +407,34 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
         filterContainer.appendChild(btn);
       });
 
-      // Render portfolio cards
       const grid = this.querySelector('#og1p-grid');
       VIDEOS.forEach(v => {
-        const aspectClass = v.aspect === '9:16' ? 'aspect-9-16' : 'aspect-16-9';
         const card = document.createElement('div');
         card.className = 'og1p-card og1p-r';
         card.dataset.category = getFilterKey(v.category);
-        card.innerHTML = `
-          <div class="og1p-thumb-wrap ${aspectClass}">
-            <img class="og1p-thumb" src="${v.poster}" alt="${v.title}" loading="lazy">
-            <div class="og1p-play-overlay">
-              <div class="og1p-play-btn">&#9654;</div>
-            </div>
-          </div>
-          <div class="og1p-card-footer">
-            <div class="og1p-card-title">${v.title}</div>
-            <div class="og1p-card-meta">
-              <span class="og1p-card-brand">${v.brand}</span>
-              ${v.demo ? '<span class="og1p-badge og1p-badge-demo">Demo</span>' : ''}
-            </div>
-            <p class="og1p-card-description">${v.description}</p>
-          </div>
-        `;
+        const thumbHtml = '<div class="og1p-thumb-wrap">'
+          + '<img class="og1p-thumb" src="' + v.poster + '" alt="' + v.title + '" loading="lazy">'
+          + '<div class="og1p-play-overlay"><div class="og1p-play-btn">&#9654;</div></div>'
+          + '</div>';
+        const footerHtml = '<div class="og1p-card-footer">'
+          + '<div class="og1p-card-title">' + v.title + '</div>'
+          + '<div class="og1p-card-meta">'
+          + '<span class="og1p-card-brand">' + v.brand + '</span>'
+          + (v.demo ? '<span class="og1p-badge og1p-badge-demo">Demo</span>' : '')
+          + '</div>'
+          + '<p class="og1p-card-description">' + v.description + '</p>'
+          + '</div>';
+        card.innerHTML = thumbHtml + footerHtml;
         card.addEventListener('click', () => this._openModal(v));
         grid.appendChild(card);
       });
 
-      // Modal
       const modal = this.querySelector('#og1p-video-modal');
       const modalClose = this.querySelector('#og1p-modal-close');
       if (modalClose) modalClose.addEventListener('click', () => this._closeModal());
       if (modal) modal.addEventListener('click', (e) => { if (e.target === modal) this._closeModal(); });
       document.addEventListener('keydown', (e) => { if (e.key === 'Escape') this._closeModal(); });
 
-      // Scroll reveal
       const io = new IntersectionObserver(entries => {
         entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
       }, { threshold: 0.08 });

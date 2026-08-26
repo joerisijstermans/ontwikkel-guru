@@ -252,10 +252,10 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1o-hero-inner">
               <div class="og1o-eyebrow-row">
                 <div class="og1o-eyebrow-line"></div>
-                <span class="og1o-eyebrow-text">Over ons</span>
+                <span class="og1o-eyebrow-text">Over mij</span>
               </div>
-              <h1 class="og1o-hero-h1">Over Ontwikkel Guru</h1>
-              <p class="og1o-hero-lead">Wij helpen MKB-bedrijven om AI concreet en toepasbaar te maken — met workshops, automatisering, video en strategie.</p>
+              <h1 class="og1o-hero-h1">Achter Ontwikkel Guru</h1>
+              <p class="og1o-hero-lead">Ik ben Joeri Sijstermans — toegepast psycholoog, tech-enthousiasteling en ondernemer. Ik help MKB-bedrijven om AI concreet en werkbaar te maken — niet als project, maar als dagelijks gereedschap.</p>
               <div class="og1o-hero-actions">
                 <a href="#" class="og1-btn og1-btn-primary">
                   Plan een kennismaking
@@ -273,15 +273,15 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1o-about-grid">
               <div class="og1o-r">
                 <span class="og1o-tag">Oprichter</span>
-                <h2 class="og1o-about-h2">Hoi, ik ben Joeri Schilders</h2>
-                <p class="og1o-about-p">Ik ben trainer, oprichter en AI-enthousiasteling. Met een achtergrond in training en organisatieontwikkeling help ik bedrijven om AI niet als bedreiging, maar als kans te zien.</p>
-                <p class="og1o-about-p">Ontwikkel Guru is mijn praktijk voor concrete AI-inzet bij MKB-bedrijven in Nederland. Geen vage beloftes, geen ingewikkeld jargon — gewoon aan de slag met wat werkt.</p>
-                <p class="og1o-about-p">Naast Ontwikkel Guru ben ik ook actief via BusinessBaas — een platform voor ondernemers die serieus willen groeien met AI als partner.</p>
+                <h2 class="og1o-about-h2">Hoi, ik ben Joeri</h2>
+                <p class="og1o-about-p">Van huis uit ben ik toegepast psycholoog en heb ik jarenlang in het hoger onderwijs gewerkt. Naast dat werk heb ik altijd ondernemerschap in me gehad — ik heb door de jaren heen diverse bedrijven opgezet, grotendeels in de zakelijke dienstverlening.</p>
+                <p class="og1o-about-p">Tech zit me al in mijn bloed vanaf mijn elfde. Ik haalde mijn eerste computer uit elkaar, bouwde op de middelbare school een eigen website waarop klasgenoten spelletjes konden spelen, en hielp iedereen in het dorp met computers en websites. Niet als hobby — gewoon omdat het logisch was.</p>
+                <p class="og1o-about-p">Toen ik BusinessBaas startte, een platform dat startende ondernemers van idee naar eerste betalende klanten begeleidt, bouwde ik Nova: de eerste volledig functionele AI businesscoach van Nederland. Dat was het moment dat ik zag hoeveel er mogelijk is — én hoeveel MKB-bedrijven achterblijven omdat ze niet weten waar te beginnen. Daar is Ontwikkel Guru uit voortgekomen.</p>
                 <div class="og1o-skill-chips">
-                  <span class="og1o-skill-chip">Trainer & Coach</span>
+                  <span class="og1o-skill-chip">Toegepast Psycholoog</span>
                   <span class="og1o-skill-chip">AI Specialist</span>
-                  <span class="og1o-skill-chip">MKB Expert</span>
-                  <span class="og1o-skill-chip">Organisatieontwikkeling</span>
+                  <span class="og1o-skill-chip">Ondernemer</span>
+                  <span class="og1o-skill-chip">Trainer & Coach</span>
                 </div>
                 <a href="#" class="og1-btn og1-btn-primary" style="margin-top:1.75rem;">
                   Plan een kennismaking
@@ -292,13 +292,42 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
                 <div class="og1o-avatar-ring">
                   <span class="og1o-avatar-letters">JS</span>
                 </div>
-                <div class="og1o-avatar-name">Joeri Schilders</div>
-                <div class="og1o-avatar-role">Oprichter & AI Trainer</div>
+                <div class="og1o-avatar-name">Joeri Sijstermans</div>
+                <div class="og1o-avatar-role">Oprichter — Ontwikkel Guru</div>
                 <div class="og1o-avatar-badges">
-                  <span class="og1o-avatar-badge">Ontwikkel Guru</span>
-                  <span class="og1o-avatar-badge">BusinessBaas</span>
+                  <span class="og1o-avatar-badge">Toegepast Psycholoog</span>
+                  <span class="og1o-avatar-badge">AI Specialist</span>
+                  <span class="og1o-avatar-badge">Ondernemer</span>
                 </div>
-                <p class="og1o-avatar-quote">"AI is geen magie — het is een gereedschap. En wij leren je er mee te werken."</p>
+                <p class="og1o-avatar-quote">"AI is geen bedreiging en geen magie. Het is een gereedschap — en ik leer je er mee te werken."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ FOR WHO ══ -->
+        <section class="og1-section og1o-values">
+          <div class="og1-container">
+            <div class="og1-section-header og1o-r">
+              <span class="og1-eyebrow" style="color:var(--sand)">Voor wie</span>
+              <h2 class="og1-display-md" style="color:var(--white)">Met wie werk ik het liefst?</h2>
+              <p style="color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;">Ik help bedrijven die vooruitstrevend zijn — die nieuwe technologie niet zien als bedreiging, maar als een kans om te groeien.</p>
+            </div>
+            <div class="og1o-values-grid">
+              <div class="og1o-value-card og1o-r">
+                <div class="og1o-value-icon">&#128640;</div>
+                <h3 class="og1o-value-h3">Vooruitstrevende MKB'ers</h3>
+                <p class="og1o-value-p">Je wil niet achter de feiten aanlopen. Je ziet AI als een kans — en zoekt iemand die je helpt die kans concreet te maken voor jouw bedrijf.</p>
+              </div>
+              <div class="og1o-value-card og1o-r og1o-r-d1">
+                <div class="og1o-value-icon">&#128218;</div>
+                <h3 class="og1o-value-h3">Teams die willen leren</h3>
+                <p class="og1o-value-p">Jouw mensen zijn nieuwsgierig en willen groeien. Ze zijn misschien sceptisch over AI — maar ze staan open. Dat is precies genoeg om mee te werken.</p>
+              </div>
+              <div class="og1o-value-card og1o-r og1o-r-d2">
+                <div class="og1o-value-icon">&#128200;</div>
+                <h3 class="og1o-value-h3">Resultaatgericht denkers</h3>
+                <p class="og1o-value-p">Je wil geen eindeloos traject of theoretische presentaties. Je wil weten wat AI jou oplevert — en dat liefst zo snel mogelijk ervaren.</p>
               </div>
             </div>
           </div>
@@ -314,16 +343,17 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1o-bb-card og1o-r og1o-r-d1">
               <div>
                 <p class="og1o-bb-title">BusinessBaas</p>
-                <p class="og1o-bb-desc">BusinessBaas is het platform voor ondernemers die willen groeien met AI als partner. Van AI-coaching door Nova tot praktische tools en een actieve community — alles om je bedrijf slimmer te laten draaien.</p>
-                <a href="https://businessbaas.com" target="_blank" rel="noopener" class="og1-btn og1-btn-primary">
+                <p class="og1o-bb-desc">BusinessBaas is het platform voor startende ondernemers die van een goed idee naar hun eerste betalende klanten willen. Via workshops en slimme tech — waaronder Nova, de eerste volledig functionele AI businesscoach van Nederland — helpt BusinessBaas ondernemers een vliegende start te maken.</p>
+                <p class="og1o-bb-desc" style="margin-top:0.75rem;">Ontwikkel Guru en BusinessBaas zijn zusterorganisaties met dezelfde missie: mensen écht laten profiteren van AI. Waarbij BusinessBaas focust op de starter, en Ontwikkel Guru op het gevestigde MKB.</p>
+                <a href="https://www.businessbaas.com" target="_blank" rel="noopener" class="og1-btn og1-btn-primary">
                   Bezoek BusinessBaas
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
               <div class="og1o-bb-visual">
-                <span class="og1o-bb-visual-icon">🤖</span>
+                <span class="og1o-bb-visual-icon">&#129302;</span>
                 <p class="og1o-bb-visual-name">Nova — AI Business Coach</p>
-                <p class="og1o-bb-visual-desc">24/7 beschikbaar, volledig op jouw bedrijf afgestemd.</p>
+                <p class="og1o-bb-visual-desc">De eerste volledig functionele AI businesscoach van Nederland. 24/7 beschikbaar via BusinessBaas.</p>
               </div>
             </div>
           </div>
@@ -334,42 +364,17 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
           <div class="og1-container">
             <div class="og1-section-header og1o-r" style="text-align:left;margin-bottom:2.5rem;">
               <h2 class="og1-display-md" style="color:var(--navy)">Samenwerking</h2>
-              <p style="color:var(--text-mid);font-size:1.05rem;margin-top:0.5rem;">Wij werken samen met betrouwbare partners die onze visie delen.</p>
+              <p style="color:var(--text-mid);font-size:1.05rem;margin-top:0.5rem;">Partnerorganisaties die dezelfde visie delen.</p>
             </div>
             <div class="og1o-partnership-card og1o-r og1o-r-d1">
-              <span class="og1o-partnership-icon">🤝</span>
+              <span class="og1o-partnership-icon">&#129309;</span>
               <div>
-                <h3 class="og1o-partnership-h3">Samen met Starterscentrum Limburg</h3>
-                <p class="og1o-partnership-p">Ontwikkel Guru werkt samen met Starterscentrum Limburg om startende ondernemers in Limburg te ondersteunen met praktische AI-kennis en tools. Via workshops en begeleiding helpen we de volgende generatie ondernemers om met AI een vliegende start te maken.</p>
-                <a href="#" class="og1-btn og1-btn-indigo-outline">Meer over de samenwerking →</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ══ VALUES ══ -->
-        <section class="og1-section og1o-values">
-          <div class="og1-container">
-            <div class="og1-section-header og1o-r">
-              <span class="og1-eyebrow" style="color:var(--sand)">Onze waarden</span>
-              <h2 class="og1-display-md" style="color:var(--white)">Hier staan wij voor</h2>
-              <p style="color:rgba(255,255,255,0.6)">De principes die alles wat wij doen aansturen.</p>
-            </div>
-            <div class="og1o-values-grid">
-              <div class="og1o-value-card og1o-r">
-                <div class="og1o-value-icon">🔧</div>
-                <h3 class="og1o-value-h3">Praktisch boven theoretisch</h3>
-                <p class="og1o-value-p">Wij geven geen lezingen over AI. We rollen onze mouwen op en gaan met je aan de slag — met tastbaar resultaat als doel.</p>
-              </div>
-              <div class="og1o-value-card og1o-r og1o-r-d1">
-                <div class="og1o-value-icon">👥</div>
-                <h3 class="og1o-value-h3">Mensen centraal</h3>
-                <p class="og1o-value-p">AI is een middel, geen doel. Wij zorgen ervoor dat de technologie de mens ondersteunt — niet andersom.</p>
-              </div>
-              <div class="og1o-value-card og1o-r og1o-r-d2">
-                <div class="og1o-value-icon">🎯</div>
-                <h3 class="og1o-value-h3">Op maat</h3>
-                <p class="og1o-value-p">Geen kant-en-klare oplossingen die toch niet passen. Alles wat wij doen is specifiek afgestemd op jouw organisatie, team en doelen.</p>
+                <h3 class="og1o-partnership-h3">Starterscentrum Limburg × BusinessBaas</h3>
+                <p class="og1o-partnership-p">Starterscentrum Limburg werkt samen met BusinessBaas om startende ondernemers in Limburg te ondersteunen met praktische AI-kennis en begeleiding. Via workshops en tools helpen ze de volgende generatie ondernemers een vliegende start te maken — met slimme tech als fundament.</p>
+                <a href="https://www.businessbaas.com" target="_blank" rel="noopener" class="og1-btn og1-btn-indigo-outline">
+                  Meer via BusinessBaas
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
             </div>
           </div>
@@ -382,7 +387,7 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1o-cta-inner">
               <span class="og1-eyebrow" style="color:var(--sand)">Nieuwsgierig?</span>
               <h2 class="og1-display-md og1o-r">Klaar om kennis te maken?</h2>
-              <p class="og1o-r og1o-r-d1">Plan een gratis intakegesprek en ontdek wat wij voor jouw organisatie kunnen betekenen.</p>
+              <p class="og1o-r og1o-r-d1">Plan een gratis intakegesprek van 30 minuten en ontdek wat AI concreet voor jouw bedrijf kan doen.</p>
               <div class="og1o-cta-actions og1o-r og1o-r-d2">
                 <a href="#" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
                 <a href="#" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
