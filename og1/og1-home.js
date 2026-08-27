@@ -370,9 +370,9 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   // Hero avatar video placeholder — swap src here once the real AI avatar is ready
   const AVATAR_VIDEO = {
     title: 'Joeri — Ontwikkel Guru',
-    aspect: '16:9',
-    url: 'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
-    poster: 'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'
+    aspect: '9:16',
+    url: 'https://video.wixstatic.com/video/6c17f4_83b4f992ea284d3d9d0bcfe8680c0740/1080p/mp4/file.mp4',
+    poster: 'https://static.wixstatic.com/media/6c17f4_83b4f992ea284d3d9d0bcfe8680c0740f001.jpg'
   };
 
   class Og1Home extends HTMLElement {
@@ -428,8 +428,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                         <span class="og1h-avatar-role">Oprichter — Ontwikkel Guru</span>
                       </div>
                       <div class="og1h-avatar-soon">
-                        <span class="og1h-soon-dot"></span>
-                        AI Avatar · Binnenkort live
+                        <span class="og1h-soon-dot" style="background:#4ade80;box-shadow:0 0 8px #4ade80;animation:none;"></span>
+                        AI Avatar · Joeri Sijstermans
                       </div>
                     </div>
                     <!-- Inline video — swap src when real avatar is ready -->
