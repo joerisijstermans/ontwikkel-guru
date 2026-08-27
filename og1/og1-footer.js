@@ -86,7 +86,10 @@ og1-footer a { color: inherit; text-decoration: none; }
               </div>
               <div class="og1f-bottom">
                 <span class="og1f-copy">&copy; 2026 Ontwikkel Guru. Alle rechten voorbehouden.</span>
-                <span class="og1f-copy">Onderdeel van BusinessBaas</span>
+                <div style="display:flex;gap:16px;flex-wrap:wrap;">
+                  <a href="https://www.ontwikkel.guru/privacybeleid" class="og1f-copy" style="text-decoration:none;">Privacybeleid</a>
+                  <a href="https://www.ontwikkel.guru/algemene-voorwaarden" class="og1f-copy" style="text-decoration:none;">Algemene Voorwaarden</a>
+                </div>
               </div>
             </div>
           </div>
