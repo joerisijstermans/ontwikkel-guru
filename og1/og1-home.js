@@ -116,8 +116,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 }
 .og1h-avatar-content {
   position: absolute; inset: 0;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 2.5rem 2rem; gap: 1.25rem;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  padding: 1.5rem; z-index: 3;
 }
 .og1h-avatar-ring {
   width: 96px; height: 96px; border-radius: 50%;
@@ -145,15 +145,23 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 }
 .og1h-avatar-play {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  transition: opacity var(--transition), background var(--transition); cursor: pointer;
+  transition: opacity var(--transition), background var(--transition); cursor: pointer; z-index: 4;
 }
 .og1h-avatar-wrap.playing .og1h-avatar-content { display: none; }
 .og1h-avatar-wrap.playing .og1h-avatar-play { opacity: 0; background: transparent; }
 .og1h-avatar-wrap.playing:hover .og1h-avatar-play { opacity: 1; background: rgba(13,22,48,0.4); }
 .og1h-hero-inline-video {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none;
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: none; z-index: 2;
 }
 .og1h-avatar-wrap.playing .og1h-hero-inline-video { display: block; }
+.og1h-avatar-poster {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; z-index: 1; display: block;
+}
+.og1h-avatar-overlay {
+  position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,22,48,0.05) 40%, rgba(13,22,48,0.7) 100%); z-index: 2; pointer-events: none;
+}
+.og1h-avatar-wrap.playing .og1h-avatar-poster,
+.og1h-avatar-wrap.playing .og1h-avatar-overlay { display: none; }
 .og1h-play-circle {
   width: 72px; height: 72px; border-radius: 50%; background: var(--indigo);
   display: flex; align-items: center; justify-content: center;
@@ -174,8 +182,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   padding: 12px 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: flex; align-items: center; gap: 10px;
 }
-.og1h-float-1 { bottom: 60px; left: -36px; }
-.og1h-float-2 { top: 40px; right: -30px; }
+.og1h-float-1 { bottom: -48px; left: 0; }
+.og1h-float-2 { top: -48px; right: 0; }
 .og1h-float-icon {
   width: 36px; height: 36px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -419,20 +427,14 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
               <div class="og1h-hero-visual">
                 <div class="og1h-hero-card">
                   <div class="og1h-avatar-wrap" id="og1h-hero-trigger">
+                    <img class="og1h-avatar-poster" src="${AVATAR_VIDEO.poster}" alt="Joeri Sijstermans">
+                    <div class="og1h-avatar-overlay"></div>
                     <div class="og1h-avatar-content">
-                      <div class="og1h-avatar-ring">
-                        <span class="og1h-avatar-letters">JS</span>
-                      </div>
-                      <div class="og1h-avatar-meta">
-                        <span class="og1h-avatar-name">Joeri Sijstermans</span>
-                        <span class="og1h-avatar-role">Oprichter — Ontwikkel Guru</span>
-                      </div>
                       <div class="og1h-avatar-soon">
                         <span class="og1h-soon-dot" style="background:#4ade80;box-shadow:0 0 8px #4ade80;animation:none;"></span>
                         AI Avatar · Joeri Sijstermans
                       </div>
                     </div>
-                    <!-- Inline video — swap src when real avatar is ready -->
                     <video class="og1h-hero-inline-video" id="og1h-hero-video" playsinline></video>
                     <div class="og1h-avatar-play" id="og1h-hero-play-overlay">
                       <div class="og1h-play-circle">
