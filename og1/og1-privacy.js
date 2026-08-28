@@ -91,6 +91,13 @@ og1-privacy a:hover { text-decoration: underline; }
 .og1pr-table td { padding: 9px 14px; border-bottom: 1px solid rgba(0,0,0,0.06); color: var(--text-mid); vertical-align: top; }
 .og1pr-table tr:nth-child(even) td { background: rgba(92,79,246,0.03); }
 
+.og1pr-note {
+  background: rgba(92,79,246,0.05); border-left: 3px solid var(--indigo);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.75rem 1rem; margin: 0.75rem 0;
+  font-size: 0.875rem; color: var(--text-mid); line-height: 1.7;
+}
+
 .og1pr-meta {
   margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.07);
   font-size: 0.8rem; color: rgba(74,85,104,0.6); line-height: 1.7;
@@ -145,21 +152,26 @@ og1-privacy a:hover { text-decoration: underline; }
                 Ontwikkel Guru, gevestigd te Echt en ingeschreven bij de Kamer van Koophandel onder nummer 90226801,
                 hecht veel waarde aan de bescherming van uw persoonsgegevens. In dit privacybeleid leggen wij uit welke
                 gegevens wij verzamelen, waarom, hoe lang wij deze bewaren en met wie wij ze delen.
-                Dit beleid is opgesteld in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG).
+                Dit beleid is opgesteld in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG /
+                GDPR) en is van toepassing op alle bezoekers van onze website en op (potenti&euml;le) opdrachtgevers.
               </p>
 
+              <!-- Artikel 1 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 1</span>
-                  Verantwoordelijke
+                  Verwerkingsverantwoordelijke
                 </div>
                 <p>De verwerkingsverantwoordelijke voor uw persoonsgegevens is:</p>
-                <p><strong>Ontwikkel Guru</strong> (eenmanszaak)<br>
-                KvK: 90226801 &nbsp;&middot;&nbsp; Echt, Nederland<br>
-                E-mail: <a href="mailto:info@businessbaas.com">info@businessbaas.com</a><br>
-                Website: <a href="https://www.ontwikkel.guru" target="_blank" rel="noopener">www.ontwikkel.guru</a></p>
+                <p>
+                  <strong>Ontwikkel Guru</strong> (eenmanszaak)<br>
+                  KvK: 90226801 &nbsp;&middot;&nbsp; Echt, Nederland<br>
+                  E-mail: <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a><br>
+                  Website: <a href="https://www.ontwikkel.guru" target="_blank" rel="noopener">www.ontwikkel.guru</a>
+                </p>
               </div>
 
+              <!-- Artikel 2 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 2</span>
@@ -176,15 +188,20 @@ og1-privacy a:hover { text-decoration: underline; }
                       <tr><td>E-mailadres</td><td>Contactformulier, offertetraject, facturering</td></tr>
                       <tr><td>Telefoonnummer</td><td>Indien vrijwillig opgegeven via contactformulier of e-mail</td></tr>
                       <tr><td>Bedrijfsnaam en -gegevens</td><td>Zakelijke opdrachten en facturering</td></tr>
-                      <tr><td>Betalingsgegevens</td><td>Facturering (via onze boekhoudsoftware)</td></tr>
-                      <tr><td>Beeldmateriaal / videomateriaal</td><td>Indien u ons uw beeldmateriaal aanlevert voor AI-videoproductie</td></tr>
-                      <tr><td>IP-adres / cookiedata</td><td>Wix websitebezoek (zie artikel 8)</td></tr>
+                      <tr><td>Betalingsgegevens</td><td>Facturering (via boekhoudsoftware)</td></tr>
+                      <tr><td>Beeldmateriaal / videomateriaal</td><td>Indien aangeleverd voor AI-videoproductie of avatar-diensten</td></tr>
+                      <tr><td>Stem- en geluidmateriaal</td><td>Indien aangeleverd voor AI-stemkloning (uitsluitend op verzoek en met expliciete toestemming)</td></tr>
+                      <tr><td>IP-adres en technische gegevens</td><td>Automatisch via Wix-websitebezoek (zie artikel 8)</td></tr>
                     </tbody>
                   </table>
                 </div>
                 <p>Wij verwerken uitsluitend gegevens die u actief aan ons verstrekt of die noodzakelijk zijn voor de uitvoering van de overeengekomen dienst.</p>
+                <div class="og1pr-note">
+                  <strong>Bijzondere persoonsgegevens:</strong> Wij verwerken geen bijzondere categorie&euml;n van persoonsgegevens zoals medische gegevens, politieke opvattingen of gegevens over ras of etniciteit. Stem- en beeldmateriaal dat uitsluitend voor contentcreatie wordt gebruikt, wordt niet voor identificatiedoeleinden verwerkt.
+                </div>
               </div>
 
+              <!-- Artikel 3 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 3</span>
@@ -192,63 +209,75 @@ og1-privacy a:hover { text-decoration: underline; }
                 </div>
                 <p>Wij verwerken uw persoonsgegevens voor de volgende doeleinden:</p>
                 <ul>
-                  <li><strong>Uitvoering van de overeenkomst</strong> &mdash; om onze diensten te kunnen leveren (rechtsgrondslag: uitvoering overeenkomst, art. 6 lid 1 sub b AVG).</li>
-                  <li><strong>Facturering en administratie</strong> &mdash; voor het opstellen en verwerken van facturen (rechtsgrondslag: wettelijke verplichting, art. 6 lid 1 sub c AVG).</li>
-                  <li><strong>Communicatie</strong> &mdash; om uw vragen te beantwoorden en u te informeren over de voortgang van uw opdracht (rechtsgrondslag: uitvoering overeenkomst of gerechtvaardigd belang, art. 6 lid 1 sub b/f AVG).</li>
-                  <li><strong>Producties met beeldmateriaal</strong> &mdash; wanneer u beeldmateriaal aanlevert voor AI-videowerk, verwerken wij dit uitsluitend ten behoeve van de opdracht (rechtsgrondslag: uitvoering overeenkomst).</li>
+                  <li><strong>Uitvoering van de overeenkomst</strong> &mdash; om onze diensten (workshops, automatisering, AI-video) te kunnen leveren (rechtsgrondslag: art. 6 lid 1 sub b AVG).</li>
+                  <li><strong>Facturering en administratie</strong> &mdash; voor het opstellen en verwerken van facturen en het bijhouden van onze boekhouding (rechtsgrondslag: art. 6 lid 1 sub c AVG &mdash; wettelijke verplichting).</li>
+                  <li><strong>Communicatie</strong> &mdash; om uw vragen te beantwoorden en u te informeren over de voortgang van uw opdracht (rechtsgrondslag: art. 6 lid 1 sub b/f AVG).</li>
+                  <li><strong>AI-dienstverlening</strong> &mdash; bij de uitvoering van AI-gerelateerde opdrachten delen wij minimale, relevant projectinformatie met AI-dienstverleners. Wij vermijden het doorgeven van onnodige persoonsgegevens aan deze systemen (rechtsgrondslag: art. 6 lid 1 sub b AVG).</li>
+                  <li><strong>Stem- en beeldproducties</strong> &mdash; wanneer u materiaal aanlevert voor AI-video of stemkloning, verwerken wij dit uitsluitend ten behoeve van de overeengekomen productie, op basis van uw toestemming (art. 6 lid 1 sub a AVG) of de uitvoering van de overeenkomst (art. 6 lid 1 sub b AVG).</li>
                 </ul>
-                <p>Wij versturen geen commerci&euml;le nieuwsbrief zonder uw uitdrukkelijke toestemming.</p>
+                <p>Wij versturen geen commerci&euml;le nieuwsbrief zonder uw uitdrukkelijke toestemming. Indien verwerking plaatsvindt op basis van toestemming, heeft u te allen tijde het recht deze toestemming in te trekken (zie artikel 7).</p>
               </div>
 
+              <!-- Artikel 4 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 4</span>
                   Bewaartermijnen
                 </div>
-                <p>Wij bewaren uw persoonsgegevens niet langer dan noodzakelijk:</p>
+                <p>Wij bewaren uw persoonsgegevens niet langer dan noodzakelijk voor het doel waarvoor zij zijn verwerkt:</p>
                 <ul>
-                  <li><strong>Klantgegevens en offertes:</strong> 2 jaar na het einde van de zakelijke relatie.</li>
-                  <li><strong>Facturen en boekhoudkundige gegevens:</strong> 7 jaar conform de wettelijke bewaarplicht (Belastingdienst).</li>
-                  <li><strong>Contactformulierberichten (zonder opdracht):</strong> maximaal 1 jaar.</li>
-                  <li><strong>Beeldmateriaal voor producties:</strong> wordt na oplevering van de opdracht verwijderd, tenzij schriftelijk anders overeengekomen.</li>
+                  <li><strong>Klantgegevens, offertes en projectdocumentatie:</strong> 2 jaar na afronding van de zakelijke relatie.</li>
+                  <li><strong>Facturen en boekhoudkundige gegevens:</strong> 7 jaar conform de wettelijke bewaarplicht van de Belastingdienst.</li>
+                  <li><strong>Contactformulierberichten (zonder vervolgopdracht):</strong> maximaal 1 jaar.</li>
+                  <li><strong>Beeldmateriaal en videoproducties:</strong> wordt na oplevering van de opdracht verwijderd van onze systemen en die van subverwerkers, tenzij schriftelijk anders overeengekomen.</li>
+                  <li><strong>Stem- en geluidmateriaal:</strong> wordt direct na de productie verwijderd, tenzij de opdrachtgever schriftelijk heeft verzocht dit te bewaren voor toekomstige producties.</li>
                 </ul>
               </div>
 
+              <!-- Artikel 5 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 5</span>
                   Subverwerkers en derden
                 </div>
-                <p>Voor de uitvoering van onze diensten maken wij gebruik van de volgende verwerkers. Met alle subverwerkers zijn, voor zover vereist, verwerkersovereenkomsten of vergelijkbare afspraken gemaakt:</p>
+                <p>Voor de uitvoering van onze diensten maken wij gebruik van de volgende verwerkers. Met alle subverwerkers zijn, voor zover de AVG dit vereist, verwerkersovereenkomsten of vergelijkbare passende afspraken gemaakt:</p>
                 <div class="og1pr-table-wrap">
                   <table class="og1pr-table">
                     <thead>
                       <tr><th>Partij</th><th>Doel</th><th>Land</th></tr>
                     </thead>
                     <tbody>
-                      <tr><td><strong>Wix.com</strong></td><td>Website hosting en contactformulieren</td><td>VS / EU</td></tr>
-                      <tr><td><strong>Web3Forms</strong></td><td>Verwerking contactformulierberichten</td><td>VS</td></tr>
-                      <tr><td><strong>GitHub / jsDelivr</strong></td><td>Hosting van websitecomponenten (JS-bestanden)</td><td>VS</td></tr>
-                      <tr><td><strong>HeyGen</strong></td><td>AI-avatarvideos (indien opdracht dit vereist)</td><td>VS</td></tr>
-                      <tr><td><strong>Higgsfield.ai</strong></td><td>AI-videoproductie (indien opdracht dit vereist)</td><td>VS</td></tr>
-                      <tr><td><strong>Anthropic (Claude)</strong></td><td>AI-automatiseringen en contentcreatie</td><td>VS</td></tr>
-                      <tr><td><strong>OpenAI</strong></td><td>AI-automatiseringen en contentcreatie</td><td>VS</td></tr>
+                      <tr><td><strong>Wix.com</strong></td><td>Website hosting, contactformulieren en cookie-/analytics-functionaliteit</td><td>VS / EU</td></tr>
+                      <tr><td><strong>Web3Forms</strong></td><td>Doorsturen van contactformulierberichten naar onze e-mail</td><td>VS</td></tr>
+                      <tr><td><strong>HeyGen</strong></td><td>AI-avatarvideos en stemkloning (uitsluitend bij opdrachten die dit vereisen)</td><td>VS</td></tr>
+                      <tr><td><strong>Higgsfield.ai</strong></td><td>AI-videoproductie (uitsluitend bij opdrachten die dit vereisen)</td><td>VS</td></tr>
+                      <tr><td><strong>Anthropic (Claude AI)</strong></td><td>AI-automatiseringen, contentontwikkeling en werkstromen</td><td>VS</td></tr>
+                      <tr><td><strong>OpenAI (ChatGPT)</strong></td><td>AI-automatiseringen en contentontwikkeling</td><td>VS</td></tr>
                     </tbody>
                   </table>
                 </div>
-                <p>Gegevens worden uitsluitend gedeeld met derden voor zover dit noodzakelijk is voor de uitvoering van uw opdracht. Wij verstrekken uw gegevens nooit aan derden voor commerci&euml;le doeleinden zonder uw toestemming.</p>
-                <p>Overdracht naar landen buiten de EU vindt uitsluitend plaats op basis van passende waarborgen (Standard Contractual Clauses of adequaatheidsbesluit).</p>
+                <div class="og1pr-note">
+                  Bij het gebruik van AI-tools (Anthropic, OpenAI) delen wij uitsluitend de minimaal benodigde projectinformatie. Wij verstrekken geen klantnamen, contactgegevens of andere direct identificerende persoonsgegevens aan AI-systemen, tenzij dit uitdrukkelijk noodzakelijk is voor de opdracht en de opdrachtgever hier schriftelijk mee heeft ingestemd.
+                </div>
+                <p>Gegevens worden nooit aan derden verstrekt voor commerci&euml;le doeleinden zonder uw toestemming. Overdracht naar landen buiten de EU/EER vindt uitsluitend plaats op basis van passende waarborgen, zoals Standard Contractual Clauses (SCC) of het EU-VS Data Privacy Framework, voor zover van toepassing.</p>
               </div>
 
+              <!-- Artikel 6 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 6</span>
                   Beveiliging
                 </div>
-                <p>Ontwikkel Guru neemt passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen ongeautoriseerde toegang, verlies of misbruik. Dit omvat onder andere het gebruik van versleutelde verbindingen (HTTPS) en toegangsbeveiliging voor systemen die persoonsgegevens bevatten.</p>
-                <p>Bij een datalek dat mogelijk gevolgen heeft voor uw rechten en vrijheden, zullen wij u en de Autoriteit Persoonsgegevens informeren conform de wettelijke meldplicht.</p>
+                <p>Ontwikkel Guru neemt passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen ongeautoriseerde toegang, verlies, vernietiging of ongeoorloofde openbaarmaking. Dit omvat onder andere:</p>
+                <ul>
+                  <li>Gebruik van versleutelde verbindingen (HTTPS) voor alle communicatie;</li>
+                  <li>Toegangsbeveiliging met sterke wachtwoorden en twee-factor-authenticatie op systemen die persoonsgegevens bevatten;</li>
+                  <li>Minimale gegevensdeling: wij geven derden alleen toegang tot gegevens die zij strikt nodig hebben.</li>
+                </ul>
+                <p>Bij een datalek dat waarschijnlijk nadelige gevolgen heeft voor uw rechten en vrijheden, zullen wij dit melden bij de Autoriteit Persoonsgegevens (binnen 72 uur) en u informeren conform de wettelijke meldplicht.</p>
               </div>
 
+              <!-- Artikel 7 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 7</span>
@@ -256,42 +285,49 @@ og1-privacy a:hover { text-decoration: underline; }
                 </div>
                 <p>Op grond van de AVG heeft u de volgende rechten met betrekking tot uw persoonsgegevens:</p>
                 <ul>
-                  <li><strong>Inzagerecht</strong> &mdash; u kunt opvragen welke gegevens wij van u verwerken.</li>
-                  <li><strong>Correctierecht</strong> &mdash; u kunt onjuiste gegevens laten corrigeren.</li>
+                  <li><strong>Inzagerecht</strong> &mdash; u kunt opvragen welke persoonsgegevens wij van u verwerken.</li>
+                  <li><strong>Correctierecht</strong> &mdash; u kunt onjuiste of onvolledige gegevens laten corrigeren.</li>
                   <li><strong>Recht op vergetelheid</strong> &mdash; u kunt verzoeken uw gegevens te verwijderen, voor zover wij niet wettelijk verplicht zijn deze te bewaren.</li>
-                  <li><strong>Recht op beperking</strong> &mdash; u kunt verzoeken de verwerking van uw gegevens te beperken.</li>
-                  <li><strong>Recht op overdraagbaarheid</strong> &mdash; u kunt uw gegevens in een gestructureerd formaat opvragen.</li>
-                  <li><strong>Recht van bezwaar</strong> &mdash; u kunt bezwaar maken tegen de verwerking op basis van gerechtvaardigd belang.</li>
+                  <li><strong>Recht op beperking</strong> &mdash; u kunt verzoeken de verwerking tijdelijk te beperken, bijvoorbeeld terwijl een bezwaar wordt beoordeeld.</li>
+                  <li><strong>Recht op overdraagbaarheid</strong> &mdash; u kunt uw gegevens in een gestructureerd, gangbaar en machine-leesbaar formaat opvragen.</li>
+                  <li><strong>Recht van bezwaar</strong> &mdash; u kunt bezwaar maken tegen verwerking op basis van gerechtvaardigd belang (art. 6 lid 1 sub f AVG).</li>
+                  <li><strong>Recht om toestemming in te trekken</strong> &mdash; indien de verwerking is gebaseerd op uw toestemming, kunt u deze te allen tijde intrekken zonder opgave van reden. Het intrekken doet geen afbreuk aan de rechtmatigheid van de verwerking v&oacute;&oacute;r de intrekking.</li>
                 </ul>
-                <p>U kunt uw verzoek sturen naar <a href="mailto:info@businessbaas.com">info@businessbaas.com</a>. Wij reageren binnen 30 dagen. U heeft ook het recht een klacht in te dienen bij de <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+                <p>U kunt uw verzoek sturen naar <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a>. Wij reageren binnen <strong>30 dagen</strong>. U heeft ook het recht om een klacht in te dienen bij de <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
               </div>
 
+              <!-- Artikel 8 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 8</span>
-                  Cookies
+                  Cookies en tracking
                 </div>
-                <p>Onze website wordt gehost via <strong>Wix.com</strong>. Wix plaatst functionele en analytische cookies die noodzakelijk zijn voor het goed functioneren van de website. Wij plaatsen zelf geen aanvullende tracking- of advertentiecookies (zoals Google Analytics of Meta Pixel).</p>
-                <p>Voor meer informatie over de cookies die Wix plaatst, verwijzen wij u naar het <a href="https://support.wix.com/nl/article/cookies-en-je-wix-site" target="_blank" rel="noopener">cookiebeleid van Wix</a>.</p>
+                <p>Onze website wordt gehost via <strong>Wix.com</strong>. Wix plaatst functionele cookies die noodzakelijk zijn voor het correct functioneren van de website (zoals sessiebeheer). Daarnaast kan Wix analytische cookies plaatsen om websiteverkeer te meten. Wij hebben zelf geen Google Analytics, Meta Pixel of andere externe advertentienetwerken ge&iuml;nstalleerd.</p>
+                <p>Bij uw eerste bezoek toont de website een cookiebanner. U kunt uw cookievoorkeuren aanpassen of intrekken via deze banner. Houd er rekening mee dat het uitschakelen van functionele cookies de werking van de website kan be&iuml;nvloeden.</p>
+                <p>Voor een volledig overzicht van de cookies die Wix gebruikt, verwijzen wij u naar het <a href="https://support.wix.com/nl/article/cookies-en-je-wix-site" target="_blank" rel="noopener">cookiebeleid van Wix</a>.</p>
               </div>
 
+              <!-- Artikel 9 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 9</span>
                   Wijzigingen
                 </div>
-                <p>Ontwikkel Guru behoudt zich het recht voor dit privacybeleid te wijzigen. Wijzigingen worden gepubliceerd op deze pagina met vermelding van de ingangsdatum. Wij adviseren u dit beleid periodiek te raadplegen.</p>
+                <p>Ontwikkel Guru behoudt zich het recht voor dit privacybeleid te wijzigen. Wijzigingen worden gepubliceerd op deze pagina met vermelding van de nieuwe ingangsdatum. Bij wezenlijke wijzigingen die van invloed zijn op de verwerking van uw gegevens, informeren wij bestaande opdrachtgevers hierover per e-mail. Wij adviseren u dit beleid periodiek te raadplegen.</p>
               </div>
 
+              <!-- Artikel 10 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 10</span>
                   Contact
                 </div>
-                <p>Heeft u vragen of opmerkingen over dit privacybeleid of over de verwerking van uw persoonsgegevens? Neem dan contact met ons op:</p>
-                <p><strong>Ontwikkel Guru</strong><br>
-                E-mail: <a href="mailto:info@businessbaas.com">info@businessbaas.com</a><br>
-                Website: <a href="https://www.ontwikkel.guru/contact" target="_blank" rel="noopener">www.ontwikkel.guru/contact</a></p>
+                <p>Heeft u vragen of opmerkingen over dit privacybeleid, of wilt u een beroep doen op een van uw rechten? Neem dan contact met ons op:</p>
+                <p>
+                  <strong>Ontwikkel Guru</strong><br>
+                  E-mail: <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a><br>
+                  Website: <a href="https://www.ontwikkel.guru/contact" target="_blank" rel="noopener">www.ontwikkel.guru/contact</a>
+                </p>
               </div>
 
               <div class="og1pr-meta">
