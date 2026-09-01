@@ -207,7 +207,7 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
     },
     {
       num: '02', icon: '⚡', title: 'AI Automatisering',
-      img: '',
+      img: 'https://static.wixstatic.com/media/6c17f4_2f1eb63557614d01a49dd5cbd702fee9~mv2.png',
       desc: 'Wij brengen in kaart welke processen in jouw organisatie voor automatisering in aanmerking komen en bouwen slimme AI-workflows die je direct tijd en geld besparen.',
       benefits: ['Tijdsbesparing van 5–20 uur per week', 'Minder fouten, meer consistentie', 'Schaalbaar en aanpasbaar'],
       deliverables: 'Werkende automatisering, documentatie, instructievideo.'
@@ -221,14 +221,14 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
     },
     {
       num: '04', icon: '🎬', title: 'AI Campagnevideo',
-      img: '',
+      img: 'https://static.wixstatic.com/media/6c17f4_c93477b7326b451e8b1226af0c0420a1~mv2.png',
       desc: 'Wij genereren cinematic video-content voor social media, campagnes en events. Geen camera, geen crew, geen locatie. Wel spectaculair resultaat.',
       benefits: ['Sneller dan traditionele productie', 'Flexibel in stijl en formaat', 'Geschikt voor social, campagne en events'],
       deliverables: 'Video\'s in gewenste formaten, aangeleverd als MP4.'
     },
     {
       num: '05', icon: '🧭', title: 'AI Strategie & Advies',
-      img: '',
+      img: 'https://static.wixstatic.com/media/6c17f4_2f1eb63557614d01a49dd5cbd702fee9~mv2.png',
       desc: 'Wij denken strategisch met je mee over hoe AI past bij jouw organisatie. Geen advies dat in een la verdwijnt, maar een concreet plan dat je direct kunt uitvoeren.',
       benefits: ['Onafhankelijk advies, jouw belang centraal', 'Concreet en uitvoerbaar', 'Inclusief prioriteitenmatrix'],
       deliverables: 'AI-scan, roadmap, implementatieplan, prioriteitenmatrix.'
