@@ -270,20 +270,20 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
       title:'AI Avatar Sales Pitch — Joeri Sijstermans',
       brand:'Ontwikkel Guru', category:'avatar', aspect:'16:9', demo:false,
       description:'Gepersonaliseerde salespitch via AI-avatar. Eén opname, oneindig veel versies — elk op naam van de ontvanger. Verhoogt openingsratio\'s en geeft je acquisitie een gezicht.',
-      url:'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'},
+      url:'https://video.wixstatic.com/video/6c17f4_ee6c06f261d346ffb27384ddd7370368/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_ee6c06f261d346ffb27384ddd7370368f001.jpg'},
     { id:11,
       title:'Onboarding Avatar: "Welkom bij Nexora"',
       brand:'Nexora', category:'onboarding', aspect:'16:9', demo:true,
       description:'AI-avatar Emma verwelkomt nieuwe medewerkers. Bespaart HR-uren en geeft elke nieuwe collega een warme, consistente start — schaalbaar naar elke afdeling of locatie.',
-      url:'https://video.wixstatic.com/video/6c17f4_4279c45016d34a2ea81ad8053a6598b9/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_4279c45016d34a2ea81ad8053a6598b9f001.jpg'},
+      url:'https://video.wixstatic.com/video/6c17f4_cbb83ac1c0c04f8999bd280346a1dccb/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_cbb83ac1c0c04f8999bd280346a1dccbf001.jpg'},
     { id:12,
       title:'AI-trainer Avatar: Workshop "Aan de Slag met AI"',
       brand:'Verdant Group', category:'onboarding', aspect:'16:9', demo:true,
       description:'AI-avatar als workshoptrainer. Ideaal voor bedrijven die een kennissessie willen schalen naar meerdere teams of locaties — zelfde kwaliteit, elke keer opnieuw.',
-      url:'https://video.wixstatic.com/video/6c17f4_478de56aa9954d85a7210814a3b4e759/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_478de56aa9954d85a7210814a3b4e759f001.jpg'},
+      url:'https://video.wixstatic.com/video/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87ff/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87fff001.jpg'},
     { id:13,
       title:'Platform Onboarding: Bodhi verwelkomt BusinessBaas-leden',
       brand:'BusinessBaas', category:'onboarding', aspect:'16:9', demo:false,
@@ -301,7 +301,31 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
       brand:'BusinessBaas', category:'aankondiging', aspect:'9:16', demo:false,
       description:'Verticale aankondigingsvideo voor een strategische samenwerking. Inzetbaar als social post of e-mailcampagne — laat zien hoe je een partnership krachtig en snel naar buiten brengt.',
       url:'https://video.wixstatic.com/video/6c17f4_e34bc46b435943d9aec671eb72b18f3b/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_e34bc46b435943d9aec671eb72b18f3bf001.jpg'}
+      poster:'https://static.wixstatic.com/media/6c17f4_e34bc46b435943d9aec671eb72b18f3bf001.jpg'},
+    { id:16,
+      title:'Cinematic: "Van het Land op het Bord"',
+      brand:'Forchetta', category:'campagne', aspect:'16:9', demo:true,
+      description:'8-seconden cinematic shot van een chef die met blote handen verse kruiden op een gerecht legt. Sterk openingsshot voor een menufilm, website-hero of Instagram-ad — voedsel dat verleidt vóór het eerste woord.',
+      url:'https://video.wixstatic.com/video/6c17f4_9b165df43cb045f2a739644e022907be/720p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_9b165df43cb045f2a739644e022907bef001.jpg'},
+    { id:17,
+      title:'Social Reel: "Energie op de Werkvloer"',
+      brand:'Nexora', category:'corporate', aspect:'9:16', demo:true,
+      description:'6-seconden verticale reel van een bruisende kantoortuin met medewerkers in actie. Ideaal als employer branding content op LinkedIn of Instagram — authentiek, levend en herkenbaar.',
+      url:'https://video.wixstatic.com/video/6c17f4_9b165df43cb045f2a739644e022907be/720p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_9b165df43cb045f2a739644e022907bef001.jpg'},
+    { id:18,
+      title:'Cinematic: "Voor de Aftrap"',
+      brand:'ProSport', category:'campagne', aspect:'16:9', demo:true,
+      description:'Spelers die opwarmen in een voetbalstadion — de spanning van de laatste minuten voor de wedstrijd. Toont hoe AI-video emotie en schaal combineert voor sportcampagnes, ticketing of sponsoractivaties.',
+      url:'https://video.wixstatic.com/video/6c17f4_06b306a4a35d4ebca6b14ea2cb4bd98b/720p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_06b306a4a35d4ebca6b14ea2cb4bd98bf001.jpg'},
+    { id:19,
+      title:'Cinematic: "Een Leeg Stadion Spreekt"',
+      brand:'ProSport', category:'campagne', aspect:'16:9', demo:true,
+      description:'Cinematische rondgang door een leeg voetbalstadion — grandioze architectuur, stille spanning. Krachtig openingsshot voor een sponsorfilm, eventaankondiging of merkfilm die indruk moet maken.',
+      url:'https://video.wixstatic.com/video/6c17f4_b2bf3db239ea4fe7a00314d327003b82/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_b2bf3db239ea4fe7a00314d327003b82f001.jpg'}
   ];
 
   const FILTERS = [
@@ -338,7 +362,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
                 <span class="og1p-eyebrow-text">Ons werk</span>
               </div>
               <h1 class="og1p-hero-h1">Ons portfolio</h1>
-              <p class="og1p-hero-lead">15 video's — van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
+              <p class="og1p-hero-lead">19 video's — van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
               <div class="og1p-hero-actions">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Gratis intake plannen

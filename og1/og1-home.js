@@ -375,11 +375,11 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
       url:'https://video.wixstatic.com/video/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58f001.jpg'},
     { id:10, title:'Sales pitch — Joeri',        brand:'Ontwikkel Guru',demo:false, aspect:'16:9',
-      url:'https://video.wixstatic.com/video/6c17f4_e01c602b707f4e869686a30305f6cd4e/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_e01c602b707f4e869686a30305f6cd4ef001.jpg'},
+      url:'https://video.wixstatic.com/video/6c17f4_ee6c06f261d346ffb27384ddd7370368/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_ee6c06f261d346ffb27384ddd7370368f001.jpg'},
     { id:12, title:'AI-workshop — Verdant Group', brand:'Verdant Group', demo:true,  aspect:'16:9',
-      url:'https://video.wixstatic.com/video/6c17f4_478de56aa9954d85a7210814a3b4e759/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_478de56aa9954d85a7210814a3b4e759f001.jpg'}
+      url:'https://video.wixstatic.com/video/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87ff/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87fff001.jpg'}
   ];
 
   // Hero avatar video placeholder — swap src here once the real AI avatar is ready
