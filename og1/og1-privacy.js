@@ -190,6 +190,15 @@ og1-privacy a:hover { text-decoration: underline; }
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
                   <span class="og1pr-sec-num">Artikel 3</span>
+                  Minimumleeftijd
+                </div>
+                <p>Onze diensten zijn uitsluitend bestemd voor personen van <strong>18 jaar en ouder</strong>. Wij verzamelen niet bewust persoonsgegevens van minderjarigen. Indien wij constateren of redelijke gronden hebben om aan te nemen dat gegevens van een minderjarige zijn verstrekt, zullen wij deze onverwijld verwijderen. Heeft u het vermoeden dat wij per abuis gegevens van een minderjarige verwerken, neemt u dan contact met ons op via <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a>.</p>
+              </div>
+
+              <!-- Artikel 4 -->
+              <div class="og1pr-section">
+                <div class="og1pr-section-title">
+                  <span class="og1pr-sec-num">Artikel 4</span>
                   Welke persoonsgegevens verwerken wij?
                 </div>
                 <p>Afhankelijk van de diensten die u afneemt, kunnen wij de volgende categorie&euml;n persoonsgegevens verwerken:</p>
@@ -206,10 +215,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 </div>
               </div>
 
-              <!-- Artikel 4 -->
+              <!-- Artikel 5 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 4</span>
+                  <span class="og1pr-sec-num">Artikel 5</span>
                   Doeleinden en rechtsgrondslag
                 </div>
                 <p>Wij verwerken persoonsgegevens uitsluitend voor welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden:</p>
@@ -221,13 +230,13 @@ og1-privacy a:hover { text-decoration: underline; }
                   <li><strong>Stem- en beeldproducties:</strong> bij het aanleveren van stem- of beeldmateriaal voor AI-avatarproducties verwerken wij dit materiaal uitsluitend voor de overeengekomen productie. Grondslag: toestemming (art. 6 lid 1 sub a AVG) of uitvoering van de overeenkomst (art. 6 lid 1 sub b AVG).</li>
                   <li><strong>Naleving van wettelijke verplichtingen:</strong> belastingadministratie en het voldoen aan andere wettelijke bewaarplichten. Grondslag: wettelijke verplichting (art. 6 lid 1 sub c AVG).</li>
                 </ul>
-                <p>Wij versturen geen commerci&euml;le nieuwsbrief zonder uw uitdrukkelijke toestemming. Indien verwerking plaatsvindt op basis van toestemming, heeft u het recht deze te allen tijde in te trekken (zie artikel 10).</p>
+                <p>Wij versturen geen commerci&euml;le nieuwsbrief zonder uw uitdrukkelijke toestemming. Indien verwerking plaatsvindt op basis van toestemming, heeft u het recht deze te allen tijde in te trekken (zie artikel 11).</p>
               </div>
 
-              <!-- Artikel 5 -->
+              <!-- Artikel 6 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 5</span>
+                  <span class="og1pr-sec-num">Artikel 6</span>
                   AI-tools en gegevensbescherming
                 </div>
                 <p>Bij de uitvoering van onze diensten maken wij gebruik van AI-platforms zoals <strong>HeyGen</strong> (AI-avatarproducties en stemkloning), <strong>Higgsfield.ai</strong> (AI-videoproductie), <strong>Anthropic Claude</strong> en <strong>OpenAI ChatGPT</strong> (automatiseringen en contentcreatie). Invoer die wij verstrekken aan deze tools wordt verwerkt via de infrastructuur van de betreffende aanbieders.</p>
@@ -237,10 +246,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 <p>Voor AI-avatarproducties en stemkloning via HeyGen geldt dat stem- en beeldmateriaal na oplevering van de opdracht wordt verwijderd van de HeyGen-servers, tenzij schriftelijk anders overeengekomen.</p>
               </div>
 
-              <!-- Artikel 6 -->
+              <!-- Artikel 7 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 6</span>
+                  <span class="og1pr-sec-num">Artikel 7</span>
                   Subverwerkers en derden
                 </div>
                 <p>Ontwikkel Guru maakt gebruik van de volgende subverwerkers bij de uitvoering van haar diensten. Met alle verwerkers zijn, voor zover de AVG dit vereist, verwerkersovereenkomsten of vergelijkbare passende afspraken gemaakt:</p>
@@ -262,10 +271,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 <p>Wij verstrekken geen persoonsgegevens aan derden voor commerci&euml;le doeleinden zonder uw uitdrukkelijke toestemming. Overdracht naar landen buiten de EU/EER vindt uitsluitend plaats op basis van passende waarborgen, zoals Standard Contractual Clauses (SCC) of het EU-VS Data Privacy Framework, voor zover van toepassing.</p>
               </div>
 
-              <!-- Artikel 7 -->
+              <!-- Artikel 8 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 7</span>
+                  <span class="og1pr-sec-num">Artikel 8</span>
                   Bewaartermijnen
                 </div>
                 <p>Wij bewaren persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor zij zijn verzameld, of zo lang als wettelijk verplicht. De volgende termijnen zijn van toepassing:</p>
@@ -279,10 +288,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 </ul>
               </div>
 
-              <!-- Artikel 8 -->
+              <!-- Artikel 9 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 8</span>
+                  <span class="og1pr-sec-num">Artikel 9</span>
                   Cookies en tracking
                 </div>
                 <p>Onze website wordt gehost via <strong>Wix.com</strong>. Wij onderscheiden de volgende categorie&euml;n cookies:</p>
@@ -294,10 +303,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 <p>Voor een volledig overzicht van de cookies die Wix plaatst, verwijzen wij u naar het <a href="https://support.wix.com/nl/article/cookies-en-je-wix-site" target="_blank" rel="noopener">cookiebeleid van Wix</a>.</p>
               </div>
 
-              <!-- Artikel 9 -->
+              <!-- Artikel 10 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 9</span>
+                  <span class="og1pr-sec-num">Artikel 10</span>
                   Beveiliging
                 </div>
                 <p>Ontwikkel Guru neemt passende technische en organisatorische maatregelen om uw persoonsgegevens te beschermen tegen ongeautoriseerde toegang, verlies, openbaarmaking of vernietiging. Dit omvat onder meer:</p>
@@ -310,10 +319,10 @@ og1-privacy a:hover { text-decoration: underline; }
                 <p>In geval van een datalek dat waarschijnlijk nadelige gevolgen heeft voor uw rechten en vrijheden, zullen wij dit melden bij de Autoriteit Persoonsgegevens (binnen 72 uur) en u informeren conform de wettelijke meldplicht.</p>
               </div>
 
-              <!-- Artikel 10 -->
+              <!-- Artikel 11 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 10</span>
+                  <span class="og1pr-sec-num">Artikel 11</span>
                   Uw rechten
                 </div>
                 <p>Op grond van de AVG heeft u de volgende rechten met betrekking tot uw persoonsgegevens:</p>
@@ -330,20 +339,20 @@ og1-privacy a:hover { text-decoration: underline; }
                 <p>U heeft ook het recht een klacht in te dienen bij de <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
               </div>
 
-              <!-- Artikel 11 -->
+              <!-- Artikel 12 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 11</span>
+                  <span class="og1pr-sec-num">Artikel 12</span>
                   Wijzigingen
                 </div>
                 <p>Ontwikkel Guru behoudt zich het recht voor dit privacybeleid te wijzigen, bijvoorbeeld als gevolg van wijzigingen in wet- of regelgeving, nieuwe diensten of gewijzigde verwerkingsactiviteiten. De meest actuele versie is steeds beschikbaar op onze website.</p>
                 <p>Bij wezenlijke wijzigingen die uw rechten of de verwerking van uw gegevens materieel be&iuml;nvloeden, informeren wij bestaande opdrachtgevers hierover per e-mail, minimaal <strong>14 dagen</strong> v&oacute;&oacute;r de ingangsdatum van de wijziging.</p>
               </div>
 
-              <!-- Artikel 12 -->
+              <!-- Artikel 13 -->
               <div class="og1pr-section">
                 <div class="og1pr-section-title">
-                  <span class="og1pr-sec-num">Artikel 12</span>
+                  <span class="og1pr-sec-num">Artikel 13</span>
                   Contact
                 </div>
                 <p>Voor vragen over dit privacybeleid of de verwerking van uw persoonsgegevens kunt u contact opnemen via:</p>

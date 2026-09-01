@@ -263,15 +263,16 @@ og1-voorwaarden a:hover { text-decoration: underline; }
                   <span class="og1v-art-num">Artikel 8</span>
                   Annulering en opzegging
                 </div>
-                <p>8.1 &nbsp;Annulering van een opdracht, workshop of sessie dient schriftelijk te geschieden. De volgende annuleringsregeling is van toepassing:</p>
+                <p>8.1 &nbsp;Annulering van een opdracht, workshop of sessie dient schriftelijk te geschieden. Omdat Ontwikkel Guru bij maatwerkopdrachten doorgaans direct start met de voorbereiding (zoals de ontwikkeling van trainingsmaterialen, uitwerking van concepten of inrichting van automatiseringen), is er geen kosteloze annuleringsperiode. De volgende annuleringsregeling is van toepassing:</p>
                 <ul>
-                  <li><strong>Meer dan 14 kalenderdagen</strong> voor de geplande start- of uitvoeringsdatum: geen kosten.</li>
-                  <li><strong>Tussen 7 en 14 kalenderdagen</strong> voor de geplande datum: 50% van het overeengekomen bedrag is verschuldigd.</li>
-                  <li><strong>Minder dan 7 kalenderdagen</strong> voor de geplande datum of bij no-show: 100% van het overeengekomen bedrag is verschuldigd.</li>
+                  <li><strong>Meer dan 30 kalenderdagen</strong> voor de geplande start- of uitvoeringsdatum: uitsluitend de aanbetaling (30%) is verschuldigd en wordt niet gerestitueerd.</li>
+                  <li><strong>Tussen 14 en 30 kalenderdagen</strong> voor de geplande datum: 60% van het overeengekomen bedrag is verschuldigd.</li>
+                  <li><strong>Minder dan 14 kalenderdagen</strong> voor de geplande datum of bij no-show: 100% van het overeengekomen bedrag is verschuldigd.</li>
                 </ul>
-                <p>8.2 &nbsp;Reeds betaalde aanbetalingen worden verrekend met eventueel verschuldigde annuleringskosten. Een positief saldo wordt gerestitueerd binnen 14 dagen.</p>
-                <p>8.3 &nbsp;Ontwikkel Guru heeft het recht een opdracht te annuleren in geval van overmacht (zie artikel 13). In dat geval worden reeds betaalde bedragen, voor zover geen kosten zijn gemaakt, gerestitueerd binnen 14 dagen.</p>
-                <p>8.4 &nbsp;Bij doorlopende opdrachten of retainerovereenkomsten geldt een opzegtermijn van <strong>30 kalenderdagen</strong>, tenzij schriftelijk anders overeengekomen. Opzegging dient schriftelijk te geschieden.</p>
+                <p>8.2 &nbsp;Ongeacht de annuleringstermijn zijn de kosten van reeds verrichte werkzaamheden &mdash; zoals de ontwikkeling van trainingsmaterialen, uitwerking van concepten of inrichting van automatiseringen &mdash; altijd volledig verschuldigd, ook indien deze hoger zijn dan de op basis van bovenstaande termijnen berekende annuleringskosten.</p>
+                <p>8.3 &nbsp;De aanbetaling is in alle gevallen niet restitueerbaar. Overige reeds betaalde bedragen worden verrekend met de verschuldigde annuleringskosten. Een eventueel positief saldo wordt gerestitueerd binnen 14 dagen.</p>
+                <p>8.4 &nbsp;Ontwikkel Guru heeft het recht een opdracht te annuleren in geval van overmacht (zie artikel 13). In dat geval worden reeds betaalde bedragen, voor zover geen kosten zijn gemaakt, gerestitueerd binnen 14 dagen.</p>
+                <p>8.5 &nbsp;Bij doorlopende opdrachten of retainerovereenkomsten geldt een opzegtermijn van <strong>30 kalenderdagen</strong>, tenzij schriftelijk anders overeengekomen. Opzegging dient schriftelijk te geschieden.</p>
               </div>
 
               <!-- Artikel 9 -->
@@ -303,7 +304,13 @@ og1-voorwaarden a:hover { text-decoration: underline; }
                   <li>schade als gevolg van onjuiste, onvolledige of misleidende output van AI-tools;</li>
                   <li>schade die voortvloeit uit onjuiste of onvolledige informatie verstrekt door de opdrachtgever.</li>
                 </ul>
-                <p>10.4 &nbsp;De aansprakelijkheidsbeperking geldt niet in geval van opzet of bewuste roekeloosheid van Ontwikkel Guru.</p>
+                <p>10.4 &nbsp;De dienstverlening van Ontwikkel Guru heeft in alle gevallen het karakter van een <strong>inspanningsverbintenis</strong> en nimmer van een resultaatsverbintenis. In het bijzonder geldt:</p>
+                <ul>
+                  <li><strong>Workshops en trainingen:</strong> Ontwikkel Guru biedt kennis, structuur en begeleiding op basis van professioneel inzicht. Ontwikkel Guru garandeert geen specifieke resultaten, gedragsveranderingen of bedrijfsuitkomsten bij deelnemers. De toepassing van opgedane kennis en inzichten is de eigen verantwoordelijkheid van de opdrachtgever en diens medewerkers.</li>
+                  <li><strong>Advies en aanbevelingen:</strong> adviezen, strategische aanbevelingen en implementatierichtlijnen zijn gebaseerd op professioneel inzicht en de op dat moment beschikbare informatie. Ontwikkel Guru is niet aansprakelijk voor bedrijfsbeslissingen, uitkomsten of schade die voortvloeien uit de toepassing van verstrekte adviezen. De opdrachtgever blijft te allen tijde verantwoordelijk voor zijn eigen besluitvorming.</li>
+                  <li><strong>Automatiseringen:</strong> geïmplementeerde automatiseringen worden opgeleverd op basis van de door de opdrachtgever goedgekeurde specificaties. Na schriftelijke goedkeuring en ingebruikname door de opdrachtgever is Ontwikkel Guru niet aansprakelijk voor bedrijfsgevolgen, dataverlies, systeemfouten of andere schade die voortvloeien uit de werking van die automatiseringen in de productieomgeving van de opdrachtgever.</li>
+                </ul>
+                <p>10.5 &nbsp;De aansprakelijkheidsbeperking geldt niet in geval van opzet of bewuste roekeloosheid van Ontwikkel Guru.</p>
               </div>
 
               <!-- Artikel 11 -->
