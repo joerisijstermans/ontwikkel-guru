@@ -76,9 +76,9 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-hero {
   min-height: 100vh; background: var(--navy);
   display: flex; align-items: center;
-  position: relative; overflow: hidden; padding: 60px 0 80px;
+  position: relative; overflow: visible; padding: 60px 0 80px;
 }
-.og1h-hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.og1h-hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
 .og1h-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.25; }
 .og1h-orb-1 { width: 600px; height: 600px; background: var(--indigo); top: -100px; right: -100px; }
 .og1h-orb-2 { width: 400px; height: 400px; background: #3B82F6; bottom: -50px; left: 5%; opacity: 0.15; }
@@ -182,8 +182,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   padding: 12px 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: flex; align-items: center; gap: 10px;
 }
-.og1h-float-1 { bottom: -48px; left: 0; }
-.og1h-float-2 { top: -48px; right: 0; }
+.og1h-float-1 { bottom: -48px; left: 0; transform: translateX(-50%); }
+.og1h-float-2 { top: -48px; right: 0; transform: translateX(50%); }
 .og1h-float-icon {
   width: 36px; height: 36px; border-radius: 8px;
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
@@ -241,7 +241,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-dienst-card.dashed {
   border-style: dashed; border-color: rgba(255,255,255,0.2);
   background: rgba(255,255,255,0.02);
-  align-items: center; text-align: center; justify-content: center;
 }
 .og1h-dienst-num { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; color: var(--sand); opacity: 0.7; }
 .og1h-dienst-card.featured .og1h-dienst-num { color: rgba(255,255,255,0.5); }
@@ -257,7 +256,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-dienst-card:hover .og1h-dienst-link svg { transform: translateX(4px); }
 
 /* ════════════ PORTFOLIO ════════════ */
-.og1h-portfolio { background: var(--warm-white); }
+.og1h-portfolio { background: var(--navy); }
 .og1h-portfolio-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem; }
 .og1h-portfolio-head h2 { color: var(--navy); }
 .og1h-portfolio-head p  { color: var(--text-mid); font-size: 1.05rem; margin-top: 0.5rem; }
@@ -557,10 +556,10 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
               <div class="og1h-dienst-card og1h-r og1h-r-d2">
                 <div class="og1h-dienst-num">03</div>
                 <h3>AI Avatar & Video</h3>
-                <p>Eenmalig opnemen, onbeperkt inzetten. Gepersonaliseerde video's op naam, rol of branche — in elke taal.</p>
+                <p>Op basis van een paar foto's of korte videoclips bouwen wij jouw AI-avatar. Onbeperkt inzetbaar, volledig gepersonaliseerd — in elke taal.</p>
                 <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
-              <div class="og1h-dienst-card og1h-r og1h-r-d1">
+              <div class="og1h-dienst-card featured og1h-r og1h-r-d1">
                 <div class="og1h-dienst-num">04</div>
                 <h3>AI Campagnevideo</h3>
                 <p>Cinematic videocontent voor social media en campagnes — geen crew, geen locatie, wél spectaculair resultaat.</p>
@@ -573,10 +572,10 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                 <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card dashed og1h-r og1h-r-d3">
-                <span style="font-size:2rem;margin-bottom:12px;">🤔</span>
+                <div class="og1h-dienst-num">06</div>
                 <h3>Weet je niet waar te beginnen?</h3>
-                <p>Dat begrijpen we. Onze gratis intake helpt je de juiste keuze te maken — zonder verplichtingen.</p>
-                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-outline" style="margin-top:16px;">Gratis intake →</a>
+                <p>Dat begrijpen we. Onze gratis intake helpt je de juiste richting te kiezen — geen voorbereiding nodig, geen verplichtingen.</p>
+                <a href="https://www.ontwikkel.guru/contact" class="og1h-dienst-link" style="margin-top:auto;">Gratis intake plannen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
             </div>
           </div>
@@ -587,11 +586,11 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           <div class="og1-container">
             <div class="og1h-portfolio-head">
               <div>
-                <span class="og1-eyebrow" style="text-align:left">Portfolio</span>
-                <h2 class="og1-display-md og1h-r">Zien is geloven</h2>
-                <p class="og1h-r og1h-r-d1">Voorbeelden uit onze praktijk — van campagnevideo tot AI-avatar.</p>
+                <span class="og1-eyebrow" style="text-align:left;color:var(--sand)">Portfolio</span>
+                <h2 class="og1-display-md og1h-r" style="color:var(--white)">Zien is geloven</h2>
+                <p class="og1h-r og1h-r-d1" style="color:rgba(255,255,255,0.65)">Voorbeelden uit onze praktijk — van campagnevideo tot AI-avatar.</p>
               </div>
-              <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-indigo-outline og1h-r">Volledig portfolio →</a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-outline og1h-r">Volledig portfolio →</a>
             </div>
             <div class="og1h-portfolio-grid" id="og1h-preview-grid"></div>
           </div>
@@ -610,7 +609,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                     <div class="og1h-step-num">1</div>
                     <div>
                       <h4>Kennismakingsgesprek</h4>
-                      <p>Gratis 30 minuten. Wij leren jouw organisatie kennen en signaleren de kansen.</p>
+                      <p>Gratis 30 minuten. We bespreken de mogelijkheden voor jouw organisatie — geen voorbereiding nodig, geen verplichtingen.</p>
                     </div>
                   </div>
                   <div class="og1h-step og1h-r og1h-r-d2">
@@ -648,15 +647,13 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                   </div>
                 </div>
                 <div class="og1h-tools-block">
-                  <div class="og1h-tools-label">Tools die wij inzetten</div>
+                  <div class="og1h-tools-label">Onze beloftes</div>
                   <div class="og1h-tools-chips">
-                    <span class="og1h-tool-chip">Higgsfield AI</span>
-                    <span class="og1h-tool-chip">HeyGen</span>
-                    <span class="og1h-tool-chip">ChatGPT</span>
-                    <span class="og1h-tool-chip">Make.com</span>
-                    <span class="og1h-tool-chip">Midjourney</span>
-                    <span class="og1h-tool-chip">Claude AI</span>
-                    <span class="og1h-tool-chip">Zapier</span>
+                    <span class="og1h-tool-chip">✓ Gratis kennismaking</span>
+                    <span class="og1h-tool-chip">✓ Resultaat binnen 2 weken</span>
+                    <span class="og1h-tool-chip">✓ 100% maatwerk</span>
+                    <span class="og1h-tool-chip">✓ Geen technische kennis nodig</span>
+                    <span class="og1h-tool-chip">✓ Altijd eerlijk advies</span>
                   </div>
                 </div>
               </div>
