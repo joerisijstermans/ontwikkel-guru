@@ -202,6 +202,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-stat-num { font-size: 2.5rem; font-weight: 900; color: var(--white); letter-spacing: -0.04em; }
 .og1h-stat-num span { color: var(--indigo-light); }
 .og1h-stat-lbl { font-size: 0.8rem; color: var(--sand); margin-top: 4px; }
+.og1h-stat-lbl sup { font-size: 0.65em; vertical-align: super; opacity: 0.7; }
+.og1h-stats-foot { text-align: center; margin-top: 1.75rem; color: rgba(255,255,255,0.28); font-size: 0.68rem; line-height: 1.6; }
 
 /* ════════════ PILLARS ════════════ */
 .og1h-pillars { background: var(--warm-white); }
@@ -485,22 +487,23 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
           <div class="og1-container">
             <div class="og1h-stats-inner">
               <div class="og1h-stat og1h-r">
-                <div class="og1h-stat-num">65<span>%</span></div>
-                <div class="og1h-stat-lbl">van groeiende NL-bedrijven draait AI-pilots</div>
+                <div class="og1h-stat-num">30<span>%</span></div>
+                <div class="og1h-stat-lbl">van het Nederlandse MKB gebruikt AI<sup>1</sup></div>
               </div>
               <div class="og1h-stat og1h-r og1h-r-d1">
-                <div class="og1h-stat-num">3<span>×</span></div>
-                <div class="og1h-stat-lbl">hogere email click-through met video</div>
+                <div class="og1h-stat-num">3,4<span>×</span></div>
+                <div class="og1h-stat-lbl">hogere click-through met video-e-mail<sup>2</sup></div>
               </div>
               <div class="og1h-stat og1h-r og1h-r-d2">
-                <div class="og1h-stat-num">68<span>%</span></div>
-                <div class="og1h-stat-lbl">kostenbesparing contentproductie door AI</div>
+                <div class="og1h-stat-num">45<span>%</span></div>
+                <div class="og1h-stat-lbl">van middelgrote NL-bedrijven gebruikt AI<sup>1</sup></div>
               </div>
               <div class="og1h-stat og1h-r og1h-r-d3">
-                <div class="og1h-stat-num">40<span>%</span></div>
-                <div class="og1h-stat-lbl">jaarlijkse groei AI avatar markt</div>
+                <div class="og1h-stat-num">43<span>%</span></div>
+                <div class="og1h-stat-lbl">verwachte jaarlijkse groei avatar-markt<sup>3</sup></div>
               </div>
             </div>
+            <p class="og1h-stats-foot">¹ CBS, 2025 &nbsp;·&nbsp; ² Vidyard, Video in Motion Benchmark Report 2026 &nbsp;·&nbsp; ³ Technavio, Digital Human Avatar Market Forecast 2026–2030</p>
           </div>
         </div>
 
