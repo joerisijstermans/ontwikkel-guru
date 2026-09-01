@@ -228,7 +228,7 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
     },
     {
       num: '05', icon: '🧭', title: 'AI Strategie & Advies',
-      img: 'https://static.wixstatic.com/media/6c17f4_2f1eb63557614d01a49dd5cbd702fee9~mv2.png',
+      img: 'https://static.wixstatic.com/media/6c17f4_1c331282d12a419db33a2a793e9b429f~mv2.png',
       desc: 'Wij denken strategisch met je mee over hoe AI past bij jouw organisatie. Geen advies dat in een la verdwijnt, maar een concreet plan dat je direct kunt uitvoeren.',
       benefits: ['Onafhankelijk advies, jouw belang centraal', 'Concreet en uitvoerbaar', 'Inclusief prioriteitenmatrix'],
       deliverables: 'AI-scan, roadmap, implementatieplan, prioriteitenmatrix.'
