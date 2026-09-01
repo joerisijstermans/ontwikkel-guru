@@ -122,17 +122,25 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
 .og1a-deliverables h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-mid); margin-bottom: 8px; font-weight: 700; }
 .og1a-deliverables p  { font-size: 0.9rem; color: var(--text-dark); }
 
-/* Visual placeholder card */
+/* Visual card */
 .og1a-service-visual {
-  background: var(--navy); border-radius: var(--radius-xl);
-  aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
-  box-shadow: var(--shadow-card); position: relative; overflow: hidden;
+  border-radius: var(--radius-xl);
+  aspect-ratio: 4/3; overflow: hidden;
+  box-shadow: var(--shadow-card); position: relative;
+  background: var(--navy);
+}
+.og1a-service-visual img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.og1a-service-visual-icon {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 5rem; opacity: 0.35;
 }
 .og1a-service-visual::after {
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(92,79,246,0.2) 0%, transparent 60%);
+  pointer-events: none;
 }
-.og1a-service-visual-icon { font-size: 5rem; opacity: 0.35; position: relative; z-index: 1; }
 
 /* ════════════ FAQ ════════════ */
 .og1a-faq { background: var(--navy-deep); padding: var(--section-pad) 0; }
@@ -192,31 +200,36 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
   const SERVICES = [
     {
       num: '01', icon: '🎓', title: 'AI Workshops',
+      img: 'https://static.wixstatic.com/media/6c17f4_719f5ec4dff8420e9269e9721a6e5ade~mv2.jpeg',
       desc: 'Wij verzorgen praktische AI-workshops voor teams van elke omvang en elk niveau. Na afloop weet je team precies welke AI-tools relevant zijn en hoe je ze inzet in je dagelijkse werk.',
       benefits: ['Hands-on op locatie of online', 'Volledig afgestemd op jouw branche', 'Resultaat: je team gebruikt AI direct erna'],
       deliverables: 'Workshopmateriaal, praktijkopdrachten, naslag-gids.'
     },
     {
       num: '02', icon: '⚡', title: 'AI Automatisering',
+      img: '',
       desc: 'Wij brengen in kaart welke processen in jouw organisatie voor automatisering in aanmerking komen en bouwen slimme AI-workflows die je direct tijd en geld besparen.',
       benefits: ['Tijdsbesparing van 5–20 uur per week', 'Minder fouten, meer consistentie', 'Schaalbaar en aanpasbaar'],
       deliverables: 'Werkende automatisering, documentatie, instructievideo.'
     },
     {
       num: '03', icon: '🎭', title: 'AI Avatar & Personalisatie',
-      desc: 'Wij maken voor jou een AI-avatar van jezelf of een medewerker. Vervolgens genereren wij gepersonaliseerde video\'s op maat — in elke taal, voor elke doelgroep.',
+      img: 'https://static.wixstatic.com/media/6c17f4_1887f4cf830544e5a0a8560a42cfd9af~mv2.png',
+      desc: 'Wij maken voor jou een AI-avatar van jezelf of een medewerker. Vervolgens genereren wij gepersonaliseerde video\'s op maat, in elke taal, voor elke doelgroep.',
       benefits: ['Eenmalig opnemen, onbeperkt inzetten', 'Gepersonaliseerd op naam, rol of branche', 'White label beschikbaar'],
       deliverables: 'Avatar-setup, video\'s op maat, white label optie.'
     },
     {
       num: '04', icon: '🎬', title: 'AI Campagnevideo',
-      desc: 'Wij genereren cinematic video-content voor social media, campagnes en events. Geen camera, geen crew, geen locatie — wel spectaculair resultaat.',
+      img: '',
+      desc: 'Wij genereren cinematic video-content voor social media, campagnes en events. Geen camera, geen crew, geen locatie. Wel spectaculair resultaat.',
       benefits: ['Sneller dan traditionele productie', 'Flexibel in stijl en formaat', 'Geschikt voor social, campagne en events'],
       deliverables: 'Video\'s in gewenste formaten, aangeleverd als MP4.'
     },
     {
       num: '05', icon: '🧭', title: 'AI Strategie & Advies',
-      desc: 'Wij denken strategisch met je mee over hoe AI past bij jouw organisatie. Geen advies dat in een la verdwijnt — wél een concreet plan dat je direct kunt uitvoeren.',
+      img: '',
+      desc: 'Wij denken strategisch met je mee over hoe AI past bij jouw organisatie. Geen advies dat in een la verdwijnt, maar een concreet plan dat je direct kunt uitvoeren.',
       benefits: ['Onafhankelijk advies, jouw belang centraal', 'Concreet en uitvoerbaar', 'Inclusief prioriteitenmatrix'],
       deliverables: 'AI-scan, roadmap, implementatieplan, prioriteitenmatrix.'
     }
@@ -266,7 +279,7 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
                   </a>
                 </div>
                 <div class="og1a-service-visual og1a-r og1a-r-d1" style="${contentStyle}">
-                  <span class="og1a-service-visual-icon">${s.icon}</span>
+                  ${s.img ? `<img src="${s.img}" alt="${s.title}" loading="lazy">` : `<span class="og1a-service-visual-icon">${s.icon}</span>`}
                 </div>
               </div>
             </div>
