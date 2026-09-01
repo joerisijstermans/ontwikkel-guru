@@ -255,7 +255,7 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
                 <span class="og1o-eyebrow-text">Over mij</span>
               </div>
               <h1 class="og1o-hero-h1">Achter Ontwikkel Guru</h1>
-              <p class="og1o-hero-lead">Ik ben Joeri Sijstermans — toegepast psycholoog, tech-enthousiasteling en ondernemer. Ik help MKB-bedrijven om AI concreet en werkbaar te maken — niet als project, maar als dagelijks gereedschap.</p>
+              <p class="og1o-hero-lead">Ik ben Joeri Sijstermans, toegepast psycholoog, tech-enthousiasteling en ondernemer. Ik help MKB-bedrijven om AI concreet en werkbaar te maken: niet als project, maar als dagelijks gereedschap.</p>
               <div class="og1o-hero-actions">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Plan een kennismaking
@@ -299,7 +299,7 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
                   <span class="og1o-avatar-badge">AI Specialist</span>
                   <span class="og1o-avatar-badge">Ondernemer</span>
                 </div>
-                <p class="og1o-avatar-quote">"AI is geen bedreiging en geen magie. Het is een gereedschap — en ik leer je er mee te werken."</p>
+                <p class="og1o-avatar-quote">"AI is geen bedreiging en geen magie. Het is een gereedschap, en ik leer je er mee te werken."</p>
               </div>
             </div>
           </div>

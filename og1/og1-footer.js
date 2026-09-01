@@ -16,7 +16,7 @@
   --color-white: #ffffff;
   --color-text-muted: #555566;
   --transition: 0.22s ease;
-  --container-max: 1180px;
+  --container-max: 1200px;
 }
 og1-footer { display: block; font-family: 'Inter', sans-serif; }
 og1-footer * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -64,7 +64,7 @@ og1-footer a { color: inherit; text-decoration: none; }
               <div class="og1f-top">
                 <div>
                   <span class="og1f-brand-name">Ontwikkel Guru</span>
-                  <p class="og1f-tagline">AI die werkt voor mensen &mdash;<br>Praktisch, concreet en toepasbaar voor het MKB.</p>
+                  <p class="og1f-tagline">AI die werkt voor mensen. Praktisch, concreet en toepasbaar voor het MKB.</p>
                 </div>
                 <div>
                   <span class="og1f-col-title">Navigatie</span>

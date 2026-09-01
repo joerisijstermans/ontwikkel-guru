@@ -275,7 +275,7 @@ og1-contact button { cursor: pointer; font-family: inherit; border: none; backgr
                 </div>
                 <div class="og1c-detail">
                   <div class="og1c-detail-icon">&#127758;</div>
-                  <div class="og1c-detail-text">Nederland — remote &amp; op locatie</div>
+                  <div class="og1c-detail-text">Nederland, remote en op locatie</div>
                 </div>
                 <div class="og1c-expect">
                   <h4>Wat kun je verwachten</h4>
@@ -289,7 +289,7 @@ og1-contact button { cursor: pointer; font-family: inherit; border: none; backgr
                   </div>
                   <div class="og1c-expect-item">
                     <span class="og1c-expect-check">&#10003;</span>
-                    <span>Voorstel op maat — geen standaard pakket</span>
+                    <span>Voorstel op maat, geen standaard pakket</span>
                   </div>
                   <div class="og1c-expect-item">
                     <span class="og1c-expect-check">&#10003;</span>

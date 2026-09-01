@@ -416,7 +416,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                   AI die werkt<br>
                   <span class="c-indigo">voor</span> <span class="c-sand">mensen</span>
                 </h1>
-                <p class="og1h-hero-lead">Je wilt AI inzetten, maar je weet niet waar te beginnen — welke tools werken écht, wie gaat dat uitzoeken, en wat levert het op? Wij nemen dat van je over. Praktisch, concreet en toepasbaar voor het MKB.</p>
+                <p class="og1h-hero-lead">Je wilt AI inzetten maar weet niet waar te beginnen: welke tools werken écht, wie gaat dat uitzoeken en wat levert het op? Wij nemen dat van je over. Praktisch, concreet en toepasbaar voor het MKB.</p>
                 <div class="og1h-hero-actions">
                   <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-primary og1-btn-lg">
                     Bekijk ons werk
@@ -599,7 +599,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
               <div>
                 <span class="og1-eyebrow" style="text-align:left">Portfolio</span>
                 <h2 class="og1-display-md og1h-r">Zien is geloven</h2>
-                <p class="og1h-r og1h-r-d1">Voorbeelden uit onze praktijk — van campagnevideo tot AI-avatar.</p>
+                <p class="og1h-r og1h-r-d1">Voorbeelden uit onze praktijk: van campagnevideo tot AI-avatar.</p>
               </div>
               <a href="https://www.ontwikkel.guru/portfolio" class="og1-btn og1-btn-indigo-outline og1h-r">Volledig portfolio →</a>
             </div>
@@ -620,7 +620,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                     <div class="og1h-step-num">1</div>
                     <div>
                       <h4>Kennismakingsgesprek</h4>
-                      <p>Gratis 30 minuten. We bespreken de mogelijkheden voor jouw organisatie — geen voorbereiding nodig, geen verplichtingen.</p>
+                      <p>Gratis 30 minuten. We bespreken de mogelijkheden voor jouw organisatie. Geen voorbereiding nodig, geen verplichtingen.</p>
                     </div>
                   </div>
                   <div class="og1h-step og1h-r og1h-r-d2">
@@ -648,7 +648,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
               </div>
               <div class="og1h-aanpak-visual og1h-r">
                 <div class="og1h-quote">
-                  "AI is niet de toekomst — <span>het is het heden.</span> Wie nu begint, heeft morgen de voorsprong."
+                  "AI is niet de toekomst: <span>het is het heden.</span> Wie nu begint, heeft morgen de voorsprong."
                   <div class="og1h-quote-author">
                     <div class="og1h-quote-avatar">JS</div>
                     <div>
@@ -679,7 +679,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
             <div class="og1h-cta-inner">
               <span class="og1-eyebrow" style="color:var(--sand)">Nieuwsgierig?</span>
               <h2 class="og1-display-md og1h-r">Klaar om te beginnen?</h2>
-              <p class="og1h-r og1h-r-d1">Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen — zonder verplichtingen.</p>
+              <p class="og1h-r og1h-r-d1">Plan een gratis intakegesprek en ontdek wat AI voor jouw organisatie kan betekenen. Zonder verplichtingen.</p>
               <div class="og1h-cta-actions og1h-r og1h-r-d2">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
                 <a href="https://www.ontwikkel.guru/aanbod" class="og1-btn og1-btn-outline og1-btn-lg">Bekijk het aanbod</a>
