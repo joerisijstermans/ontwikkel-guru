@@ -105,7 +105,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-trust-check { color: #4ade80; }
 
 /* Hero avatar card (right column) */
-.og1h-hero-visual { position: relative; max-width: 340px; margin-left: auto; }
+.og1h-hero-visual { position: relative; max-width: 400px; margin-left: auto; }
 .og1h-hero-card {
   background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
   backdrop-filter: blur(12px); border-radius: var(--radius-lg); overflow: hidden;
@@ -449,12 +449,6 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                       </div>
                     </div>
                   </div>
-                  <div class="og1h-card-foot">
-                    <span class="og1h-card-foot-label">Joeri Sijstermans</span>
-                    <div class="og1h-card-foot-tags">
-                      <span class="og1-tag og1-tag-sand">NL</span>
-                    </div>
-                  </div>
                 </div>
                 <div class="og1h-float og1h-float-1">
                   <div class="og1h-float-icon og1h-icon-green">
@@ -579,7 +573,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                 <a href="https://www.ontwikkel.guru/aanbod" class="og1h-dienst-link">Meer info <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
               </div>
               <div class="og1h-dienst-card cta og1h-r og1h-r-d3">
-                <div class="og1h-dienst-num">?</div>
+                <div class="og1h-dienst-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></div>
                 <h3>Weet je niet waar te beginnen?</h3>
                 <p>Dat begrijpen we. Onze gratis intake helpt je de juiste richting te kiezen, geen voorbereiding nodig, geen verplichtingen.</p>
                 <a href="https://www.ontwikkel.guru/contact" class="og1h-dienst-link">Gratis intake plannen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>

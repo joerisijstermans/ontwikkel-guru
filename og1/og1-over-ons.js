@@ -124,14 +124,13 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
   width: 200px; height: 200px; background: var(--indigo);
   border-radius: 50%; filter: blur(60px); opacity: 0.2;
 }
-.og1o-avatar-ring {
-  width: 96px; height: 96px; border-radius: 50%;
-  border: 2px solid rgba(92,79,246,0.6);
-  background: linear-gradient(135deg, rgba(92,79,246,0.35), rgba(13,22,48,0.6));
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 48px rgba(92,79,246,0.35); position: relative; z-index: 1;
+.og1o-photo-wrap {
+  width: 140px; height: 140px; border-radius: 50%;
+  overflow: hidden; border: 3px solid rgba(92,79,246,0.5);
+  box-shadow: 0 0 48px rgba(92,79,246,0.3);
+  position: relative; z-index: 1; flex-shrink: 0;
 }
-.og1o-avatar-letters { font-size: 2rem; font-weight: 900; color: var(--white); letter-spacing: -0.02em; }
+.og1o-photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .og1o-avatar-name { color: var(--white); font-size: 1.05rem; font-weight: 700; position: relative; z-index: 1; }
 .og1o-avatar-role { color: rgba(255,255,255,0.55); font-size: 0.8rem; position: relative; z-index: 1; }
 .og1o-avatar-badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; position: relative; z-index: 1; }
@@ -141,8 +140,8 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
   border-radius: 100px; border: 1px solid rgba(255,255,255,0.15);
 }
 .og1o-avatar-quote {
-  font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65;
-  max-width: 220px; font-style: italic; position: relative; z-index: 1;
+  font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.65;
+  font-style: italic; position: relative; z-index: 1; width: 100%;
 }
 
 /* ════════════ BUSINESSBAAS ════════════ */
@@ -160,7 +159,8 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
   flex-direction: column; gap: 1rem; align-items: center;
   border: 1px solid rgba(255,255,255,0.08);
 }
-.og1o-bb-visual-icon { font-size: 3rem; }
+.og1o-bb-visual-photo { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(255,255,255,0.15); }
+.og1o-bb-visual-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .og1o-bb-visual-name { color: var(--white); font-weight: 700; font-size: 1.05rem; }
 .og1o-bb-visual-desc { color: rgba(255,255,255,0.55); font-size: 0.875rem; line-height: 1.6; }
 
@@ -274,30 +274,21 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
               <div class="og1o-r">
                 <span class="og1o-tag">Oprichter</span>
                 <h2 class="og1o-about-h2">Hoi, ik ben Joeri</h2>
-                <p class="og1o-about-p">Van huis uit ben ik toegepast psycholoog en heb ik jarenlang in het hoger onderwijs gewerkt. Naast dat werk heb ik altijd ondernemerschap in me gehad — ik heb door de jaren heen diverse bedrijven opgezet, grotendeels in de zakelijke dienstverlening.</p>
-                <p class="og1o-about-p">Tech zit me al in mijn bloed vanaf mijn elfde. Ik haalde mijn eerste computer uit elkaar, bouwde op de middelbare school een eigen website waarop klasgenoten spelletjes konden spelen, en hielp iedereen in het dorp met computers en websites. Niet als hobby — gewoon omdat het logisch was.</p>
-                <p class="og1o-about-p">Toen ik BusinessBaas startte, een platform dat startende ondernemers van idee naar eerste betalende klanten begeleidt, bouwde ik Nova: de eerste volledig functionele AI businesscoach van Nederland. Dat was het moment dat ik zag hoeveel er mogelijk is — én hoeveel MKB-bedrijven achterblijven omdat ze niet weten waar te beginnen. Daar is Ontwikkel Guru uit voortgekomen.</p>
-                <div class="og1o-skill-chips">
-                  <span class="og1o-skill-chip">Toegepast Psycholoog</span>
-                  <span class="og1o-skill-chip">AI Specialist</span>
-                  <span class="og1o-skill-chip">Ondernemer</span>
-                  <span class="og1o-skill-chip">Trainer & Coach</span>
-                </div>
-                <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary" style="margin-top:1.75rem;">
-                  Plan een kennismaking
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
+                <p class="og1o-about-p">Van huis uit ben ik toegepast psycholoog en heb ik jarenlang in het hoger onderwijs gewerkt. Maar ondernemerschap heb ik altijd al in me gehad: door de jaren heen heb ik verschillende bedrijven opgezet, voornamelijk in de zakelijke dienstverlening.</p>
+                <p class="og1o-about-p">Een passie voor technologie zat er bij mij al jong in. Op mijn elfde haalde ik mijn eerste computer uit elkaar, bouwde op de middelbare school een eigen website waarop klasgenoten spelletjes konden spelen, en hielp ik iedereen in het dorp met computers en websites.</p>
+                <p class="og1o-about-p">Die twee werelden kwamen samen toen ik BusinessBaas startte, een platform dat startende ondernemers begeleidt van idee naar eerste betalende klant. Daarvoor bouwde ik Nova, de eerste volledig functionele AI-businesscoach van Nederland. Dat was het moment waarop ik zag hoeveel er mogelijk is met technologie en hoeveel MKB-bedrijven achterblijven simpelweg omdat ze niet weten waar te beginnen. Vanuit die drijfveer is Ontwikkel Guru ontstaan: wij helpen bedrijven met workshops, automatisering en AI-video om technologie niet alleen te begrijpen, maar er ook morgen al mee aan de slag te gaan.</p>
               </div>
               <div class="og1o-avatar-card og1o-r og1o-r-d1">
-                <div class="og1o-avatar-ring">
-                  <span class="og1o-avatar-letters">JS</span>
+                <div class="og1o-photo-wrap">
+                  <img src="https://static.wixstatic.com/media/6c17f4_f22c46fe395d4aefbeaf7bc810134551~mv2.jpg" alt="Joeri Sijstermans">
                 </div>
                 <div class="og1o-avatar-name">Joeri Sijstermans</div>
-                <div class="og1o-avatar-role">Oprichter — Ontwikkel Guru</div>
+                <div class="og1o-avatar-role">Oprichter & AI-strateeg</div>
                 <div class="og1o-avatar-badges">
                   <span class="og1o-avatar-badge">Toegepast Psycholoog</span>
                   <span class="og1o-avatar-badge">AI Specialist</span>
                   <span class="og1o-avatar-badge">Ondernemer</span>
+                  <span class="og1o-avatar-badge">Trainer & Coach</span>
                 </div>
                 <p class="og1o-avatar-quote">"AI is geen bedreiging en geen magie. Het is een gereedschap, en ik leer je er mee te werken."</p>
               </div>
@@ -343,17 +334,19 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1o-bb-card og1o-r og1o-r-d1">
               <div>
                 <p class="og1o-bb-title">BusinessBaas</p>
-                <p class="og1o-bb-desc">BusinessBaas is het platform voor startende ondernemers die van een goed idee naar hun eerste betalende klanten willen. Via workshops en slimme tech — waaronder Nova, de eerste volledig functionele AI businesscoach van Nederland — helpt BusinessBaas ondernemers een vliegende start te maken.</p>
-                <p class="og1o-bb-desc" style="margin-top:0.75rem;">Ontwikkel Guru en BusinessBaas zijn zusterorganisaties met dezelfde missie: mensen écht laten profiteren van AI. Waarbij BusinessBaas focust op de starter, en Ontwikkel Guru op het gevestigde MKB.</p>
+                <p class="og1o-bb-desc">BusinessBaas is het platform voor startende ondernemers: van een goed idee naar hun eerste betalende klanten. Via workshops en slimme tech, waaronder Nova, de eerste volledig functionele AI-businesscoach van Nederland, helpt BusinessBaas de volgende generatie ondernemers een vliegende start te maken.</p>
+                <p class="og1o-bb-desc" style="margin-top:0.75rem;">Beide organisaties zijn van Joeri, maar met een duidelijk eigen focus. Ontwikkel Guru richt zich op AI-implementatie bij het gevestigde MKB: workshops, automatisering en AI-video. BusinessBaas richt zich op startende ondernemers die hun eerste betalende klanten willen binnenhalen.</p>
                 <a href="https://www.businessbaas.com" target="_blank" rel="noopener" class="og1-btn og1-btn-primary">
                   Bezoek BusinessBaas
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
               <div class="og1o-bb-visual">
-                <span class="og1o-bb-visual-icon">&#129302;</span>
+                <div class="og1o-bb-visual-photo">
+                  <img src="https://static.wixstatic.com/media/6c17f4_165b28b4d2d140b1bd9c76da8de32c2f~mv2.png" alt="Nova — AI Business Coach">
+                </div>
                 <p class="og1o-bb-visual-name">Nova — AI Business Coach</p>
-                <p class="og1o-bb-visual-desc">De eerste volledig functionele AI businesscoach van Nederland. 24/7 beschikbaar via BusinessBaas.</p>
+                <p class="og1o-bb-visual-desc">De eerste volledig functionele AI-businesscoach van Nederland. 24/7 beschikbaar via BusinessBaas.</p>
               </div>
             </div>
           </div>

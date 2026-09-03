@@ -238,7 +238,7 @@ og1-aanbod button { cursor: pointer; font-family: inherit; border: none; backgro
   const FAQS = [
     { q: 'Voor welke bedrijven werken jullie?', a: 'Voor MKB-bedrijven in Nederland die serieus aan de slag willen met AI. Van 5 tot 500 medewerkers. De schaal maakt niet uit, de wil om te verbeteren wel.' },
     { q: 'Wat kost een project?', a: 'Dat hangt af van de dienst en omvang. Een intake is altijd gratis. Daarna maken we een voorstel op maat — zonder verrassingen.' },
-    { q: 'Hoe snel zien we resultaat?', a: 'Bij workshops en video: binnen dagen. Bij automatisering: doorgaans binnen 2–4 weken. Bij strategie: de roadmap lever je uit in de eerste sessie.' },
+    { q: 'Hoe snel zien we resultaat?', a: 'Bij workshops en video: binnen dagen. Bij automatisering: doorgaans binnen 2-4 weken. Bij strategie: in de eerste sessie leveren we een concrete roadmap op, waarna we samen de prioriteiten en termijnen bepalen.' },
     { q: 'Is mijn data veilig?', a: 'Ja. We werken met vertrouwde, GDPR-conforme tools en gebruiken nooit klantdata voor training van AI-modellen.' },
     { q: 'Kunnen jullie ook White Label leveren?', a: 'Ja. Zowel de avatar-video\'s als de workshop-content kunnen volledig worden geleverd onder de huisstijl van jouw organisatie.' }
   ];

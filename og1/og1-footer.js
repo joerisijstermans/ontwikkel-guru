@@ -24,7 +24,7 @@ og1-footer a { color: inherit; text-decoration: none; }
 .og1f-footer { background: #0f1629; padding: 56px 0 32px; }
 .og1f-container { max-width: var(--container-max); margin: 0 auto; padding: 0 24px; }
 .og1f-inner { display: flex; flex-direction: column; gap: 40px; }
-.og1f-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: start; }
+.og1f-top { display: flex; justify-content: space-between; align-items: start; gap: 40px; }
 .og1f-brand-name { font-size: 1rem; font-weight: 800; color: var(--color-white); letter-spacing: -0.01em; display: block; margin-bottom: 8px; }
 .og1f-tagline { color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.6; }
 .og1f-col-title { color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; margin-bottom: 14px; display: block; }
@@ -34,10 +34,10 @@ og1-footer a { color: inherit; text-decoration: none; }
 .og1f-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 .og1f-copy { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
 @media (max-width: 1024px) {
-  .og1f-top { grid-template-columns: 1fr 1fr; }
+  .og1f-top { flex-wrap: wrap; }
 }
 @media (max-width: 768px) {
-  .og1f-top { grid-template-columns: 1fr; gap: 24px; }
+  .og1f-top { flex-direction: column; gap: 24px; }
   .og1f-bottom { flex-direction: column; align-items: flex-start; gap: 4px; }
 }
 @media (max-width: 480px) {
