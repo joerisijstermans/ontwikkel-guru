@@ -251,7 +251,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     { id:7,
       title:'Campagne: "Zomerhuid" — Deel 2',
       brand:'Lumion Beauty', category:'campagne', aspect:'16:9', demo:true,
-      description:'Tweede clip van de zomercampagne. Dezelfde visuele taal, nieuwe invalshoek. Samen sterker dan apart: een reeks werkt als een merk.',
+      description:'Tweede clip van de zomercampagne voor Lumion Beauty, met dezelfde visuele taal en een nieuwe invalshoek. Een videoreeks vergroot herkenning en merkbeleving door de campagneperiode heen.',
       url:'https://video.wixstatic.com/video/6c17f4_c755d780e51f41d2947b4b032ef009c0/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_c755d780e51f41d2947b4b032ef009c0f001.jpg'},
     { id:8,
@@ -269,7 +269,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     { id:10,
       title:'AI Avatar Sales Pitch — Joeri Sijstermans',
       brand:'Ontwikkel Guru', category:'avatar', aspect:'16:9', demo:false,
-      description:'Gepersonaliseerde salespitch via AI-avatar. Eén opname, oneindig veel versies, elk op naam van de ontvanger. Verhoogt openingsratio\'s en geeft je acquisitie een gezicht.',
+      description:'Gepersonaliseerde AI-avatar salespitch, schaalbaar naar oneindig veel unieke versies op naam van de ontvanger. Verhoogt openingsratio\'s en geeft je acquisitie een herkenbaar gezicht.',
       url:'https://video.wixstatic.com/video/6c17f4_ee6c06f261d346ffb27384ddd7370368/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ee6c06f261d346ffb27384ddd7370368f001.jpg'},
     { id:11,
@@ -293,7 +293,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     { id:14,
       title:'AI Coach Avatar: Nova stelt zich voor',
       brand:'BusinessBaas', category:'coaching', aspect:'9:16', demo:false,
-      description:'Nova is de AI business coach van BusinessBaas. Deze introductievideo toont hoe een coaching-relatie via een video-avatar eruitziet — persoonlijk, toegankelijk en altijd beschikbaar.',
+      description:'Nova is de AI business coach van BusinessBaas. Deze introductievideo laat zien hoe een coaching-relatie via video-avatar eruitziet: persoonlijk, toegankelijk en altijd beschikbaar.',
       url:'https://video.wixstatic.com/video/6c17f4_ea9a4440158c4778a249a2d9a059fc82/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ea9a4440158c4778a249a2d9a059fc82f001.jpg'},
     { id:15,
@@ -305,13 +305,13 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     { id:16,
       title:'Cinematic: "Van het Land op het Bord"',
       brand:'Forchetta', category:'campagne', aspect:'16:9', demo:true,
-      description:'8-seconden cinematic shot van een chef die met blote handen verse kruiden op een gerecht legt. Sterk openingsshot voor een menufilm, website-hero of Instagram-ad. Voedsel dat verleidt vóór het eerste woord.',
+      description:'Cinematic 8-seconden shot van een chef die verse kruiden op een gerecht legt, krachtig openingsmateriaal voor een menufilm, website-hero of Instagram-ad. Toont hoe AI-video een high-end restaurantbeleving vastlegt zonder filmcrew.',
       url:'https://video.wixstatic.com/video/6c17f4_9b165df43cb045f2a739644e022907be/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_9b165df43cb045f2a739644e022907bef001.jpg'},
     { id:17,
       title:'Social Reel: "Energie op de Werkvloer"',
       brand:'Nexora', category:'corporate', aspect:'9:16', demo:true,
-      description:'6-seconden verticale reel van een bruisende kantoortuin met medewerkers in actie. Ideaal als employer branding content op LinkedIn of Instagram — authentiek, levend en herkenbaar.',
+      description:'6-seconden verticale reel van een bruisende kantoortuin met medewerkers in actie. Ideaal als employer branding content op LinkedIn of Instagram: authentiek en direct herkenbaar voor je doelgroep.',
       url:'https://video.wixstatic.com/video/6c17f4_aa1d9548d09343a8bd3bdffabcd43284/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_aa1d9548d09343a8bd3bdffabcd43284f001.jpg'},
     { id:18,
@@ -323,9 +323,15 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
     { id:19,
       title:'Cinematic: "Een Leeg Stadion Spreekt"',
       brand:'ProSport', category:'campagne', aspect:'16:9', demo:true,
-      description:'Cinematische rondgang door een leeg voetbalstadion — grandioze architectuur, stille spanning. Krachtig openingsshot voor een sponsorfilm, eventaankondiging of merkfilm die indruk moet maken.',
+      description:'Cinematische rondgang door een leeg voetbalstadion, grandioze architectuur en stille spanning. Krachtig openingsshot voor een sponsorfilm, eventaankondiging of merkfilm die indruk moet maken.',
       url:'https://video.wixstatic.com/video/6c17f4_b2bf3db239ea4fe7a00314d327003b82/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_b2bf3db239ea4fe7a00314d327003b82f001.jpg'}
+      poster:'https://static.wixstatic.com/media/6c17f4_b2bf3db239ea4fe7a00314d327003b82f001.jpg'},
+    { id:20,
+      title:'Zorgavatar: "Uw Verpleegkundige is Beschikbaar"',
+      brand:'ZorgConnect', category:'avatar', aspect:'9:16', demo:true,
+      description:'AI-avatar die als verpleegkundige patiënten op afstand begeleidt bij herstel, medicatie en dagelijkse vragen. Maakt schaalbaar en persoonlijk zorgcontact mogelijk zonder extra personeel.',
+      url:'https://video.wixstatic.com/video/6c17f4_d91c90769bb8463f960ec5b9d331b6fc/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_d91c90769bb8463f960ec5b9d331b6fcf001.jpg'}
   ];
 
   const FILTERS = [
@@ -362,7 +368,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
                 <span class="og1p-eyebrow-text">Ons werk</span>
               </div>
               <h1 class="og1p-hero-h1">Ons portfolio</h1>
-              <p class="og1p-hero-lead">19 video's: van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
+              <p class="og1p-hero-lead">20 video's: van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
               <div class="og1p-hero-actions">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Gratis intake plannen

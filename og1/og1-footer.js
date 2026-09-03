@@ -80,7 +80,7 @@ og1-footer a { color: inherit; text-decoration: none; }
                   <span class="og1f-col-title">Contact</span>
                   <div class="og1f-links">
                     <a href="mailto:info@ontwikkel.guru">info@ontwikkel.guru</a>
-                    <a href="https://businessbaas.com" target="_blank" rel="noopener">BusinessBaas</a>
+                    <span style="color:rgba(255,255,255,0.35);font-size:0.85rem;">KvK 90226801</span>
                   </div>
                 </div>
               </div>
