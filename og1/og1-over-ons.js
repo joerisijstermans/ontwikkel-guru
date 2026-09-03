@@ -224,7 +224,7 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
   .og1o-hero { padding: 64px 0 48px; }
   .og1o-about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .og1o-values-grid { grid-template-columns: 1fr; }
-  .og1o-sectoren-grid { grid-template-columns: repeat(2, 1fr); }
+  .og1o-sectoren-grid { grid-template-columns: 1fr; }
   .og1o-hero-actions { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
@@ -305,23 +305,23 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
             <div class="og1-section-header og1o-r">
               <span class="og1-eyebrow" style="color:var(--sand)">Voor wie</span>
               <h2 class="og1-display-md" style="color:var(--white)">Met wie werk ik het liefst?</h2>
-              <p style="color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;">Ik help bedrijven die vooruitstrevend zijn — die nieuwe technologie niet zien als bedreiging, maar als een kans om te groeien.</p>
+              <p style="color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;">Ik help bedrijven die vooruitstrevend zijn: bedrijven die nieuwe technologie niet zien als bedreiging, maar als een kans om te groeien.</p>
             </div>
             <div class="og1o-values-grid">
               <div class="og1o-value-card og1o-r">
                 <div class="og1o-value-icon">&#128640;</div>
                 <h3 class="og1o-value-h3">Vooruitstrevende MKB'ers</h3>
-                <p class="og1o-value-p">Je wil niet achter de feiten aanlopen. Je ziet AI als een kans — en zoekt iemand die je helpt die kans concreet te maken voor jouw bedrijf.</p>
+                <p class="og1o-value-p">Je wil niet achter de feiten aanlopen. Je ziet AI als een kans en zoekt iemand die je helpt die kans concreet te maken voor jouw bedrijf.</p>
               </div>
               <div class="og1o-value-card og1o-r og1o-r-d1">
                 <div class="og1o-value-icon">&#128218;</div>
                 <h3 class="og1o-value-h3">Teams die willen leren</h3>
-                <p class="og1o-value-p">Jouw mensen zijn nieuwsgierig en willen groeien. Ze zijn misschien sceptisch over AI — maar ze staan open. Dat is precies genoeg om mee te werken.</p>
+                <p class="og1o-value-p">Jouw mensen zijn nieuwsgierig en willen groeien. Ze zijn misschien sceptisch over AI, maar ze staan open. Dat is precies genoeg om mee te werken.</p>
               </div>
               <div class="og1o-value-card og1o-r og1o-r-d2">
                 <div class="og1o-value-icon">&#128200;</div>
                 <h3 class="og1o-value-h3">Resultaatgericht denkers</h3>
-                <p class="og1o-value-p">Je wil geen eindeloos traject of theoretische presentaties. Je wil weten wat AI jou oplevert — en dat liefst zo snel mogelijk ervaren.</p>
+                <p class="og1o-value-p">Je wil geen eindeloos traject of theoretische presentaties. Je wil weten wat AI jou oplevert, en dat liefst zo snel mogelijk ervaren.</p>
               </div>
             </div>
           </div>

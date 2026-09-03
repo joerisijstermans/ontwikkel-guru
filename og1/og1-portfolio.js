@@ -401,7 +401,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
             <div class="og1p-cta-inner">
               <span class="og1-eyebrow" style="color:var(--sand)">Jouw merk in beeld?</span>
               <h2 class="og1-display-md og1p-r">Plan een gratis intake</h2>
-              <p class="og1p-r og1p-r-d1">Ontdek wat AI-video voor jouw organisatie kan betekenen — zonder verplichtingen.</p>
+              <p class="og1p-r og1p-r-d1">Ontdek wat AI-video voor jouw organisatie kan betekenen. Zonder verplichtingen.</p>
               <div class="og1p-r og1p-r-d2">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary og1-btn-lg">Gratis intake plannen</a>
               </div>
