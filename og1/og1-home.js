@@ -318,9 +318,8 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 /* ════════════ VIDEO MODAL ════════════ */
 .og1h-modal { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 24px; }
 .og1h-modal.open { display: flex; }
-.og1h-modal-inner { position: relative; width: 100%; max-width: 900px; }
-.og1h-modal-inner.portrait { max-width: 400px; }
-.og1h-modal-inner video { width: 100%; border-radius: 12px; display: block; max-height: 85vh; }
+.og1h-modal-inner { position: relative; }
+.og1h-modal-inner video { display: block; border-radius: 12px; max-width: min(90vw, 960px); max-height: 80vh; width: auto; height: auto; min-width: 280px; }
 .og1h-modal-close { position: absolute; top: -48px; right: 0; background: rgba(255,255,255,0.15); color: white; width: 40px; height: 40px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
 .og1h-modal-close:hover { background: rgba(255,255,255,0.3); }
 .og1h-modal-title { color: white; text-align: center; margin-top: 16px; font-size: 0.95rem; font-weight: 600; }
@@ -371,13 +370,13 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   }
 
   const PREVIEW_VIDEOS = [
-    { id:1,  title:'Brand Story GreenBite',     brand:'GreenBite',     demo:true,  aspect:'16:9',
+    { id:1,  title:'Brand Story GreenBite',     brand:'GreenBite',     demo:true,  aspect:'9:16',
       url:'https://video.wixstatic.com/video/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58/720p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ce7d9d81dc674bf384f5258ae87f3c58f001.jpg'},
-    { id:10, title:'Sales pitch — Joeri',        brand:'Ontwikkel Guru',demo:false, aspect:'16:9',
+    { id:10, title:'Sales pitch — Joeri',        brand:'Ontwikkel Guru',demo:false, aspect:'9:16',
       url:'https://video.wixstatic.com/video/6c17f4_ee6c06f261d346ffb27384ddd7370368/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_ee6c06f261d346ffb27384ddd7370368f001.jpg'},
-    { id:12, title:'AI-workshop — Verdant Group', brand:'Verdant Group', demo:true,  aspect:'16:9',
+    { id:12, title:'AI-workshop — Verdant Group', brand:'Verdant Group', demo:true,  aspect:'9:16',
       url:'https://video.wixstatic.com/video/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87ff/1080p/mp4/file.mp4',
       poster:'https://static.wixstatic.com/media/6c17f4_bc7dd2114dd44aeeb857c9e05f3c87fff001.jpg'}
   ];
