@@ -105,7 +105,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-trust-check { color: #4ade80; }
 
 /* Hero avatar card (right column) */
-.og1h-hero-visual { position: relative; max-width: 400px; margin-left: auto; }
+.og1h-hero-visual { position: relative; width: 400px; max-width: 100%; margin-left: auto; }
 .og1h-hero-card {
   background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
   backdrop-filter: blur(12px); border-radius: var(--radius-lg); overflow: hidden;
@@ -335,7 +335,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 /* ════════════ RESPONSIVE ════════════ */
 @media (max-width: 1024px) {
   .og1h-hero-inner   { grid-template-columns: 1fr; }
-  .og1h-hero-visual  { max-width: 260px; margin: 2.5rem auto 0; }
+  .og1h-hero-visual  { width: 260px; max-width: 100%; margin: 2.5rem auto 0; }
   .og1h-float        { display: none; }
   .og1h-stats-inner  { grid-template-columns: repeat(2,1fr); }
   .og1h-stat:nth-child(2) { border-right: none; }
