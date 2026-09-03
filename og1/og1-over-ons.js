@@ -164,24 +164,26 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
 .og1o-bb-visual-name { color: var(--white); font-weight: 700; font-size: 1.05rem; }
 .og1o-bb-visual-desc { color: rgba(255,255,255,0.55); font-size: 0.875rem; line-height: 1.6; }
 
-/* ════════════ PARTNERSHIP ════════════ */
-.og1o-partnership { background: var(--warm-white); }
-.og1o-partnership-card {
-  background: var(--white); border-radius: var(--radius-lg);
+/* ════════════ SECTOREN ════════════ */
+.og1o-sectoren { background: var(--warm-white); }
+.og1o-sectoren-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.og1o-sector-card {
+  background: var(--white); border-radius: var(--radius-md);
   border: 1px solid rgba(0,0,0,0.06); box-shadow: var(--shadow-card);
-  padding: 2.5rem; display: flex; gap: 2rem; align-items: flex-start;
-  transition: var(--transition); position: relative; overflow: hidden;
+  padding: 1.75rem; text-align: center; display: flex; flex-direction: column;
+  align-items: center; gap: 0.6rem; transition: var(--transition);
+  text-decoration: none; position: relative; overflow: hidden;
 }
-.og1o-partnership-card::before {
+.og1o-sector-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
   background: var(--indigo); transform: scaleX(0); transform-origin: left;
   transition: transform var(--transition);
 }
-.og1o-partnership-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
-.og1o-partnership-card:hover::before { transform: scaleX(1); }
-.og1o-partnership-icon { font-size: 2.5rem; flex-shrink: 0; }
-.og1o-partnership-h3 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 0.5rem; }
-.og1o-partnership-p { color: var(--text-mid); line-height: 1.75; font-size: 0.95rem; margin-bottom: 1rem; }
+.og1o-sector-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); border-color: rgba(92,79,246,0.2); }
+.og1o-sector-card:hover::before { transform: scaleX(1); }
+.og1o-sector-icon { font-size: 2.2rem; }
+.og1o-sector-name { font-size: 0.95rem; font-weight: 700; color: var(--navy); }
+.og1o-sector-desc { font-size: 0.8rem; color: var(--text-mid); line-height: 1.5; }
 
 /* ════════════ VALUES ════════════ */
 .og1o-values { background: var(--navy); }
@@ -215,13 +217,14 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
 @media (max-width: 1024px) {
   .og1o-bb-card { grid-template-columns: 1fr; }
   .og1o-values-grid { grid-template-columns: 1fr 1fr; }
+  .og1o-sectoren-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
   :root { --section-pad: 64px; }
   .og1o-hero { padding: 64px 0 48px; }
   .og1o-about-grid { grid-template-columns: 1fr; gap: 2rem; }
   .og1o-values-grid { grid-template-columns: 1fr; }
-  .og1o-partnership-card { flex-direction: column; }
+  .og1o-sectoren-grid { grid-template-columns: repeat(2, 1fr); }
   .og1o-hero-actions { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
@@ -352,23 +355,45 @@ og1-over-ons button { cursor: pointer; font-family: inherit; border: none; backg
           </div>
         </section>
 
-        <!-- ══ PARTNERSHIP ══ -->
-        <section class="og1-section og1o-partnership">
+        <!-- ══ SECTOREN ══ -->
+        <section class="og1-section og1o-sectoren">
           <div class="og1-container">
-            <div class="og1-section-header og1o-r" style="text-align:left;margin-bottom:2.5rem;">
-              <h2 class="og1-display-md" style="color:var(--navy)">Samenwerking</h2>
-              <p style="color:var(--text-mid);font-size:1.05rem;margin-top:0.5rem;">Partnerorganisaties die dezelfde visie delen.</p>
+            <div class="og1-section-header og1o-r">
+              <span class="og1-eyebrow">Ervaring</span>
+              <h2 class="og1-display-md" style="color:var(--navy)">Branches waar we al mee werkten</h2>
+              <p style="color:var(--text-mid);max-width:520px;margin:0 auto;">Van zorg tot sport, van food tot corporate: AI werkt in elke branche. Bekijk ons werk in het portfolio.</p>
             </div>
-            <div class="og1o-partnership-card og1o-r og1o-r-d1">
-              <span class="og1o-partnership-icon">&#129309;</span>
-              <div>
-                <h3 class="og1o-partnership-h3">Starterscentrum Limburg × BusinessBaas</h3>
-                <p class="og1o-partnership-p">Starterscentrum Limburg werkt samen met BusinessBaas om startende ondernemers in Limburg te ondersteunen met praktische AI-kennis en begeleiding. Via workshops en tools helpen ze de volgende generatie ondernemers een vliegende start te maken — met slimme tech als fundament.</p>
-                <a href="https://www.businessbaas.com" target="_blank" rel="noopener" class="og1-btn og1-btn-indigo-outline">
-                  Meer via BusinessBaas
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
+            <div class="og1o-sectoren-grid">
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r">
+                <span class="og1o-sector-icon">&#127869;</span>
+                <span class="og1o-sector-name">Voeding & Horeca</span>
+                <span class="og1o-sector-desc">Campagnevideo, menufilm en merkcontentproductie</span>
+              </a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r og1o-r-d1">
+                <span class="og1o-sector-icon">&#127973;</span>
+                <span class="og1o-sector-name">Zorg</span>
+                <span class="og1o-sector-desc">AI-avatar voor begeleiding en zorg op afstand</span>
+              </a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r og1o-r-d2">
+                <span class="og1o-sector-icon">&#128188;</span>
+                <span class="og1o-sector-name">Bedrijfsdienstverlening</span>
+                <span class="og1o-sector-desc">Onboarding, automatisering en AI-coaching</span>
+              </a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r og1o-r-d1">
+                <span class="og1o-sector-icon">&#9917;</span>
+                <span class="og1o-sector-name">Sport</span>
+                <span class="og1o-sector-desc">Cinematic campagne- en sponsorvideo</span>
+              </a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r og1o-r-d2">
+                <span class="og1o-sector-icon">&#127970;</span>
+                <span class="og1o-sector-name">Corporate</span>
+                <span class="og1o-sector-desc">Employer branding, b-roll en workshops</span>
+              </a>
+              <a href="https://www.ontwikkel.guru/portfolio" class="og1o-sector-card og1o-r og1o-r-d3">
+                <span class="og1o-sector-icon">&#128717;</span>
+                <span class="og1o-sector-name">Detailhandel & Beauty</span>
+                <span class="og1o-sector-desc">Productvideo, lifecycle-campagnes en social content</span>
+              </a>
             </div>
           </div>
         </section>
