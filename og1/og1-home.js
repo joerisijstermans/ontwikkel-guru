@@ -315,6 +315,16 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
 .og1h-cta-inner p  { color: rgba(255,255,255,0.65); font-size: 1.05rem; margin-bottom: 2.5rem; }
 .og1h-cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
+/* ════════════ ERVARINGEN ════════════ */
+.og1h-ervaringen { background: var(--white); }
+.og1h-testimonials { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.og1h-testimonial { background: var(--warm-white); border-radius: var(--radius-md); padding: 2rem 2rem 1.75rem; display: flex; flex-direction: column; }
+.og1h-testimonial-mark { font-size: 3.5rem; line-height: 0.8; color: var(--indigo); font-family: Georgia, serif; margin-bottom: 1rem; }
+.og1h-testimonial-quote { font-size: 0.975rem; line-height: 1.75; color: var(--text-dark); flex: 1; margin-bottom: 1.5rem; }
+.og1h-testimonial-author { border-top: 1px solid var(--sand); padding-top: 1rem; }
+.og1h-testimonial-name { font-weight: 700; font-size: 0.9rem; color: var(--navy); display: block; }
+.og1h-testimonial-role { font-size: 0.8rem; color: var(--text-mid); display: block; margin-top: 0.2rem; }
+
 /* ════════════ VIDEO MODAL ════════════ */
 .og1h-modal { display: none; position: fixed; inset: 0; z-index: 9999; background: rgba(0,0,0,0.92); align-items: center; justify-content: center; padding: 24px; }
 .og1h-modal.open { display: flex; }
@@ -351,6 +361,7 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
   .og1h-pillars-grid { grid-template-columns: 1fr; }
   .og1h-diensten-grid { grid-template-columns: 1fr; }
   .og1h-portfolio-grid { grid-template-columns: 1fr; }
+  .og1h-testimonials { grid-template-columns: 1fr; }
   .og1h-stats-inner  { grid-template-columns: repeat(2,1fr); gap: 1.5rem; }
   .og1h-stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1.5rem; }
   .og1h-stat:nth-last-child(-n+2) { border-bottom: none; }
@@ -657,6 +668,42 @@ og1-home button { cursor: pointer; font-family: inherit; border: none; backgroun
                     <span class="og1h-tool-chip">✓ Geen technische kennis nodig</span>
                     <span class="og1h-tool-chip">✓ Altijd eerlijk advies</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ ERVARINGEN ══ -->
+        <section class="og1-section og1h-ervaringen">
+          <div class="og1-container">
+            <div class="og1-section-header">
+              <span class="og1-eyebrow">Ervaringen</span>
+              <h2 class="og1-display-md og1h-r">Wat anderen zeggen</h2>
+            </div>
+            <div class="og1h-testimonials">
+              <div class="og1h-testimonial og1h-r og1h-r-d1">
+                <div class="og1h-testimonial-mark">"</div>
+                <p class="og1h-testimonial-quote">De training was voor iedere laag in de organisatie toepasbaar. De stof werd telkens teruggebracht naar de praktijk, met mooie nieuwe inzichten als resultaat.</p>
+                <div class="og1h-testimonial-author">
+                  <span class="og1h-testimonial-name">Sven Beckers</span>
+                  <span class="og1h-testimonial-role">Plus Beckers</span>
+                </div>
+              </div>
+              <div class="og1h-testimonial og1h-r og1h-r-d2">
+                <div class="og1h-testimonial-mark">"</div>
+                <p class="og1h-testimonial-quote">Last minute een workshop in elkaar gezet die paste bij onze vraag. Theorie en praktijk gecombineerd voor alle niveaus, voor iedereen begrijpelijk. Geslaagd!</p>
+                <div class="og1h-testimonial-author">
+                  <span class="og1h-testimonial-name">Renske de Vries</span>
+                  <span class="og1h-testimonial-role">Beatrix College</span>
+                </div>
+              </div>
+              <div class="og1h-testimonial og1h-r og1h-r-d3">
+                <div class="og1h-testimonial-mark">"</div>
+                <p class="og1h-testimonial-quote">Op ons verzoek is een interactief programma op maat gemaakt, echt leuk gedaan. Laagdrempelig bracht hij ons onderling goed in verbinding met elkaar.</p>
+                <div class="og1h-testimonial-author">
+                  <span class="og1h-testimonial-name">Moniek van Loon</span>
+                  <span class="og1h-testimonial-role">Nederlandse Spoorwegen</span>
                 </div>
               </div>
             </div>

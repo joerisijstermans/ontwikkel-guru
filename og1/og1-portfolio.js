@@ -330,7 +330,19 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
       brand:'ZorgConnect', category:'avatar', aspect:'16:9', demo:true,
       description:'AI-avatar verpleegkundige die patiënten in bijna 2 minuten op afstand begeleidt bij herstel, medicatie en dagelijkse vragen. Maakt schaalbaar en persoonlijk zorgcontact mogelijk zonder extra personeel, 24/7 beschikbaar voor elke patiënt.',
       url:'https://video.wixstatic.com/video/6c17f4_d91c90769bb8463f960ec5b9d331b6fc/1080p/mp4/file.mp4',
-      poster:'https://static.wixstatic.com/media/6c17f4_d91c90769bb8463f960ec5b9d331b6fcf001.jpg'}
+      poster:'https://static.wixstatic.com/media/6c17f4_d91c90769bb8463f960ec5b9d331b6fcf001.jpg'},
+    { id:21,
+      title:'Cinematic: "Binnenstappen en Thuiskomen"',
+      brand:'Estato', category:'campagne', aspect:'16:9', demo:true,
+      description:'Cinematische rondgang van gevel tot woonkamer die een woning in 20 seconden verkoopt op sfeer en beleving, zonder makelaar of voice-over. Perfect voor vastgoed, projectontwikkeling of een huizenwebsite die bezoekers direct laat voelen: dit is het.',
+      url:'https://video.wixstatic.com/video/6c17f4_8223810799264d65be990cbd05d13312/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_8223810799264d65be990cbd05d13312f001.jpg'},
+    { id:22,
+      title:'Campagne: "Welzijn Begint Hier"',
+      brand:'SerenaSpa', category:'campagne', aspect:'16:9', demo:true,
+      description:'Dromerige campagnevideo die wellness-beleving vertaalt naar beeld: sauna, zwembad en relaxzone in één vloeiende beweging. Ideaal voor een spa, hotel of wellness-concept dat gasten direct laat voelen wat ze missen als ze niet boeken.',
+      url:'https://video.wixstatic.com/video/6c17f4_80c76d1d434c465582adecfd7f1b293d/1080p/mp4/file.mp4',
+      poster:'https://static.wixstatic.com/media/6c17f4_80c76d1d434c465582adecfd7f1b293df001.jpg'}
   ];
 
   const FILTERS = [
