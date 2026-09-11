@@ -379,7 +379,7 @@ og1-portfolio button { cursor: pointer; font-family: inherit; border: none; back
                 <span class="og1p-eyebrow-text">Ons werk</span>
               </div>
               <h1 class="og1p-hero-h1">Ons portfolio</h1>
-              <p class="og1p-hero-lead">20 video's: van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
+              <p class="og1p-hero-lead">22 video's: van campagnevideo tot AI-avatar en onboarding. Zien is geloven.</p>
               <div class="og1p-hero-actions">
                 <a href="https://www.ontwikkel.guru/contact" class="og1-btn og1-btn-primary">
                   Gratis intake plannen
